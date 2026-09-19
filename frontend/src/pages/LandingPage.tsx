@@ -237,7 +237,7 @@ export const LandingPage: React.FC = () => {
             {/* Step 1 */}
             <TiltCard intensity="medium" className="h-full">
               <div className="bento-box p-7 h-full hud-corner group hover:border-indigo-500/40 transition-all duration-300">
-                <div className="text-4xl font-black text-slate-800 group-hover:text-indigo-500/30 transition-colors font-mono mb-5">
+                <div className="text-4xl font-black text-slate-800 watermark-number group-hover:text-indigo-500/30 transition-colors font-mono mb-5">
                   01
                 </div>
                 <div className="w-13 h-13 rounded-2xl bg-indigo-500/15 text-indigo-400 flex items-center justify-center mb-5 border border-indigo-500/30 shadow-neon-violet group-hover:scale-110 transition-transform">
@@ -253,7 +253,7 @@ export const LandingPage: React.FC = () => {
             {/* Step 2 */}
             <TiltCard intensity="medium" className="h-full">
               <div className="bento-box p-7 h-full hud-corner group hover:border-cyan-500/40 transition-all duration-300">
-                <div className="text-4xl font-black text-slate-800 group-hover:text-cyan-500/30 transition-colors font-mono mb-5">
+                <div className="text-4xl font-black text-slate-800 watermark-number group-hover:text-cyan-500/30 transition-colors font-mono mb-5">
                   02
                 </div>
                 <div className="w-13 h-13 rounded-2xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center mb-5 border border-cyan-500/30 shadow-neon-cyan group-hover:scale-110 transition-transform">
@@ -269,7 +269,7 @@ export const LandingPage: React.FC = () => {
             {/* Step 3 */}
             <TiltCard intensity="medium" className="h-full">
               <div className="bento-box p-7 h-full hud-corner group hover:border-amber-500/40 transition-all duration-300">
-                <div className="text-4xl font-black text-slate-800 group-hover:text-amber-500/30 transition-colors font-mono mb-5">
+                <div className="text-4xl font-black text-slate-800 watermark-number group-hover:text-amber-500/30 transition-colors font-mono mb-5">
                   03
                 </div>
                 <div className="w-13 h-13 rounded-2xl bg-amber-500/15 text-amber-400 flex items-center justify-center mb-5 border border-amber-500/30 shadow-neon-amber group-hover:scale-110 transition-transform">
@@ -285,7 +285,7 @@ export const LandingPage: React.FC = () => {
             {/* Step 4 */}
             <TiltCard intensity="medium" className="h-full">
               <div className="bento-box p-7 h-full hud-corner group hover:border-rose-500/40 transition-all duration-300">
-                <div className="text-4xl font-black text-slate-800 group-hover:text-rose-500/30 transition-colors font-mono mb-5">
+                <div className="text-4xl font-black text-slate-800 watermark-number group-hover:text-rose-500/30 transition-colors font-mono mb-5">
                   04
                 </div>
                 <div className="w-13 h-13 rounded-2xl bg-rose-500/15 text-rose-400 flex items-center justify-center mb-5 border border-rose-500/30 shadow-neon-coral group-hover:scale-110 transition-transform">

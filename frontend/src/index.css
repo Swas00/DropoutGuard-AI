@@ -669,9 +669,14 @@ html:not(.dark) .text-slate-400 {
   color: #64748b;
 }
 
-/* Watermark and decorative large numbers */
 html.light .text-slate-800,
 html:not(.dark) .text-slate-800 {
+  color: #1e293b;
+}
+
+/* Watermark and decorative large numbers */
+html.light .watermark-number,
+html:not(.dark) .watermark-number {
   color: #cbd5e1;
 }
 
