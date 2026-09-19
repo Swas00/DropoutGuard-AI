@@ -513,279 +513,280 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                 }}
                 className={`p-2 rounded-xl border transition-all cursor-pointer shrink-0 ${
                   isMobileMenuOpen
-                    ? 'bg-rose-500/20 border-rose-500/40 text-rose-300'
-                    : 'bg-indigo-500/15 border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/25'
+                    ? 'bg-rose-100 dark:bg-rose-500/20 border-rose-300 dark:border-rose-500/40 text-rose-600 dark:text-rose-300 shadow-sm'
+                    : 'bg-slate-100 hover:bg-slate-200 dark:bg-indigo-500/15 border-slate-300 dark:border-indigo-500/30 text-slate-800 dark:text-indigo-300 hover:text-slate-950 dark:hover:bg-indigo-500/25 shadow-sm'
                 }`}
                 aria-label={isMobileMenuOpen ? 'Close Menu' : 'Open Navigation Menu'}
+                title={isMobileMenuOpen ? 'Close Menu' : 'Open Menu'}
               >
                 {isMobileMenuOpen ? (
-                  <X className="w-4 h-4 text-rose-400" />
+                  <X className="w-5 h-5 text-rose-600 dark:text-rose-400" />
                 ) : (
-                  <Menu className="w-4 h-4 text-indigo-400" />
+                  <Menu className="w-5 h-5 text-slate-800 dark:text-indigo-400" />
                 )}
               </button>
             </div>
 
           </div>
         </div>
+      </header>
 
-        {/* Full-Screen Mobile Slide-Down Navigation Drawer (Visible on < lg) */}
-        {isMobileMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-[#070b14] border-t border-white/[0.14] overflow-y-auto px-4 py-5 space-y-4 animate-in fade-in slide-in-from-top-3 duration-200 shadow-2xl">
-            
-            {/* 1. Mobile User Profile / Auth Action Card */}
-            <div className="p-3.5 rounded-2xl bg-[#0b1120] border border-white/[0.14]">
-              {user ? (
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className={`w-10 h-10 rounded-xl bg-gradient-to-tr ${roleMeta.gradient} flex items-center justify-center text-white font-bold text-sm shadow-md shrink-0`}>
-                        {getInitials(user.name)}
-                      </div>
-                      <div className="overflow-hidden">
-                        <div className="text-sm font-bold text-white truncate">{user.name}</div>
-                        <div className="text-[11px] text-slate-400 font-mono truncate">{roleMeta.label} • {user.department || user.email}</div>
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => {
-                        logout();
-                        setIsMobileMenuOpen(false);
-                      }}
-                      className="p-2 text-rose-400 hover:bg-rose-500/15 rounded-xl transition-colors cursor-pointer"
-                      title="Sign Out Session"
-                    >
-                      <LogOut className="w-4 h-4" />
-                    </button>
-                  </div>
-
-                  {/* 1-Click Role Persona Switcher for Mobile */}
-                  <div className="pt-2 border-t border-white/[0.06]">
-                    <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-                      <Zap className="w-3 h-3 text-amber-400" /> Instant Role Persona
-                    </div>
-                    <div className="grid grid-cols-3 gap-1.5">
-                      <button
-                        onClick={async () => {
-                          await quickLoginDemo('admin');
-                          setIsMobileMenuOpen(false);
-                        }}
-                        className={`p-2 rounded-xl text-[11px] font-mono text-center border transition-all cursor-pointer ${
-                          user.role === 'admin'
-                            ? 'bg-indigo-500/25 text-indigo-300 border-indigo-500/50 font-bold'
-                            : 'bg-slate-900/80 text-slate-400 border-white/[0.06]'
-                        }`}
-                      >
-                        Admin
-                      </button>
-                      <button
-                        onClick={async () => {
-                          await quickLoginDemo('faculty');
-                          setIsMobileMenuOpen(false);
-                        }}
-                        className={`p-2 rounded-xl text-[11px] font-mono text-center border transition-all cursor-pointer ${
-                          user.role === 'faculty'
-                            ? 'bg-cyan-500/25 text-cyan-300 border-cyan-500/50 font-bold'
-                            : 'bg-slate-900/80 text-slate-400 border-white/[0.06]'
-                        }`}
-                      >
-                        Faculty
-                      </button>
-                      <button
-                        onClick={async () => {
-                          await quickLoginDemo('student');
-                          setIsMobileMenuOpen(false);
-                        }}
-                        className={`p-2 rounded-xl text-[11px] font-mono text-center border transition-all cursor-pointer ${
-                          user.role === 'student'
-                            ? 'bg-emerald-500/25 text-emerald-300 border-emerald-500/50 font-bold'
-                            : 'bg-slate-900/80 text-slate-400 border-white/[0.06]'
-                        }`}
-                      >
-                        Student
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <div className="space-y-3">
+      {/* Full-Screen Mobile Slide-Down Navigation Drawer (Anchored to Viewport) */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-white dark:bg-[#070b14] border-t border-slate-200 dark:border-white/[0.14] overflow-y-auto px-4 py-5 space-y-4 animate-in fade-in slide-in-from-top-2 duration-200 shadow-2xl">
+          
+          {/* 1. Mobile User Profile / Auth Action Card */}
+          <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-[#0b1120] border border-slate-200 dark:border-white/[0.14]">
+            {user ? (
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center shrink-0">
-                      <User className="w-5 h-5 text-indigo-400" />
+                    <div className={`w-10 h-10 rounded-xl bg-gradient-to-tr ${roleMeta.gradient} flex items-center justify-center text-white font-bold text-sm shadow-md shrink-0`}>
+                      {getInitials(user.name)}
                     </div>
-                    <div>
-                      <div className="text-sm font-bold text-white">Institutional Access</div>
-                      <div className="text-xs text-slate-400">Sign in to evaluate role-specific dashboards</div>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-2 gap-2 pt-1">
-                    <button
-                      onClick={() => {
-                        setAuthModalTab('login');
-                        setIsAuthModalOpen(true);
-                        setIsMobileMenuOpen(false);
-                      }}
-                      className="btn-primary py-2 text-xs flex items-center justify-center gap-1.5 cursor-pointer"
-                    >
-                      <LogIn className="w-3.5 h-3.5" />
-                      <span>Sign In</span>
-                    </button>
-                    <button
-                      onClick={() => {
-                        setAuthModalTab('register');
-                        setIsAuthModalOpen(true);
-                        setIsMobileMenuOpen(false);
-                      }}
-                      className="btn-secondary py-2 text-xs flex items-center justify-center gap-1.5 cursor-pointer"
-                    >
-                      <span>Register</span>
-                    </button>
-                  </div>
-                  {/* Quick test demo persona shortcuts for unauthenticated judges */}
-                  <div className="pt-2 border-t border-white/[0.06]">
-                    <div className="text-[10px] font-mono text-slate-400 mb-1.5 flex items-center gap-1">
-                      <Zap className="w-3 h-3 text-amber-400" /> 1-Click Demo Evaluation:
-                    </div>
-                    <div className="grid grid-cols-3 gap-1.5">
-                      <button
-                        onClick={async () => {
-                          await quickLoginDemo('admin');
-                          setIsMobileMenuOpen(false);
-                        }}
-                        className="py-1.5 px-1 rounded-lg bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-[10px] font-mono text-center cursor-pointer"
-                      >
-                        Admin
-                      </button>
-                      <button
-                        onClick={async () => {
-                          await quickLoginDemo('faculty');
-                          setIsMobileMenuOpen(false);
-                        }}
-                        className="py-1.5 px-1 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-[10px] font-mono text-center cursor-pointer"
-                      >
-                        Faculty
-                      </button>
-                      <button
-                        onClick={async () => {
-                          await quickLoginDemo('student');
-                          setIsMobileMenuOpen(false);
-                        }}
-                        className="py-1.5 px-1 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] font-mono text-center cursor-pointer"
-                      >
-                        Student
-                      </button>
+                    <div className="overflow-hidden">
+                      <div className="text-sm font-bold text-slate-900 dark:text-white truncate">{user.name}</div>
+                      <div className="text-[11px] text-slate-500 dark:text-slate-400 font-mono truncate">{roleMeta.label} • {user.department || user.email}</div>
                     </div>
                   </div>
-                </div>
-              )}
-            </div>
-
-            {/* 2. Command Palette / Search Trigger */}
-            <button
-              onClick={() => {
-                soundFx.playClick();
-                setIsMobileMenuOpen(false);
-                onOpenCommandPalette();
-              }}
-              className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-slate-900/90 border border-white/[0.08] text-xs text-slate-300 transition-all cursor-pointer shadow-inner"
-            >
-              <div className="flex items-center gap-2.5">
-                <Search className="w-4 h-4 text-indigo-400" />
-                <span className="font-medium text-slate-200">Quick search students or command...</span>
-              </div>
-              <kbd className="flex items-center gap-0.5 px-1.5 py-0.5 text-[10px] font-mono text-slate-400 bg-slate-800 border border-slate-700 rounded">
-                <Command className="w-2.5 h-2.5" /> K
-              </kbd>
-            </button>
-
-            {/* Mobile Theme Switcher */}
-            <div className="flex items-center justify-between p-3 rounded-2xl bg-[#0b1120] border border-white/[0.14]">
-              <div className="flex items-center gap-2.5 text-xs text-slate-300 font-medium">
-                {theme === 'dark' ? <Moon className="w-4 h-4 text-indigo-400" /> : <Sun className="w-4 h-4 text-amber-500" />}
-                <span>Theme: <strong className="text-white">{theme === 'dark' ? 'Dark Cybernetic' : 'Light Academic'}</strong></span>
-              </div>
-              <button
-                onClick={() => {
-                  toggleTheme();
-                  soundFx.playClick();
-                }}
-                className="px-3 py-1.5 rounded-xl text-xs font-bold bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-400 border border-indigo-500/30 flex items-center gap-1.5 cursor-pointer transition-colors"
-              >
-                {theme === 'dark' ? <Sun className="w-3.5 h-3.5 text-amber-400" /> : <Moon className="w-3.5 h-3.5 text-indigo-400" />}
-                <span>{theme === 'dark' ? 'Switch Light' : 'Switch Dark'}</span>
-              </button>
-            </div>
-
-            {/* 3. Benchmark STU1024 Quick Link Card */}
-            <Link
-              to="/students/STU1024"
-              onClick={() => {
-                soundFx.playClick();
-                setIsMobileMenuOpen(false);
-              }}
-              className="w-full p-3 rounded-2xl bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/30 flex items-center justify-between text-xs text-amber-200 transition-all cursor-pointer"
-            >
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-amber-500/20 flex items-center justify-center shrink-0">
-                  <Activity className="w-4 h-4 text-amber-400 animate-pulse" />
-                </div>
-                <div>
-                  <div className="font-bold text-white font-mono">STU1024 • Kavya Sharma</div>
-                  <div className="text-[10px] text-amber-300/80">Benchmark Student Case Study</div>
-                </div>
-              </div>
-              <span className="px-2.5 py-1 rounded-full bg-amber-500/25 text-[10px] font-mono font-bold text-amber-200 border border-amber-500/40">
-                78% High Risk
-              </span>
-            </Link>
-
-            {/* 4. Primary Navigation Console Links */}
-            <div className="space-y-1.5">
-              <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500 px-2">
-                Navigation Console
-              </div>
-              {navLinks.map((link) => {
-                const Icon = link.icon;
-                const isActive = location.pathname === link.to;
-                return (
-                  <Link
-                    key={link.to}
-                    to={link.to}
+                  <button
                     onClick={() => {
-                      soundFx.playClick();
+                      logout();
                       setIsMobileMenuOpen(false);
                     }}
-                    className={`flex items-center justify-between px-3.5 py-3 rounded-xl text-xs font-semibold transition-all ${
-                      isActive
-                        ? 'bg-gradient-to-r from-indigo-500/20 via-purple-500/15 to-cyan-500/20 text-white border border-indigo-500/40 shadow-glow-sm'
-                        : 'text-slate-300 hover:text-white hover:bg-white/[0.04] border border-transparent'
-                    }`}
+                    className="p-2 text-rose-500 hover:bg-rose-100 dark:text-rose-400 dark:hover:bg-rose-500/15 rounded-xl transition-colors cursor-pointer"
+                    title="Sign Out Session"
                   >
-                    <div className="flex items-center gap-3">
-                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${isActive ? 'bg-indigo-500/20 text-indigo-400' : 'bg-white/[0.04] text-slate-400'}`}>
-                        <Icon className="w-4 h-4" />
-                      </div>
-                      <span className="text-sm">{link.label}</span>
-                    </div>
-                    {isActive && <Check className="w-4 h-4 text-cyan-400" />}
-                  </Link>
-                );
-              })}
-            </div>
+                    <LogOut className="w-4 h-4" />
+                  </button>
+                </div>
 
-            {/* 5. Institutional Footer */}
-            <div className="pt-4 border-t border-white/[0.06] text-center">
-              <p className="text-[10px] text-slate-500 font-mono">
-                DropoutGuard AI Enterprise • Apex University
-              </p>
-              <p className="text-[9px] text-slate-600 font-mono mt-0.5">
-                Office of Student Retention & Academic Care
-              </p>
-            </div>
-
+                {/* 1-Click Role Persona Switcher for Mobile */}
+                <div className="pt-2 border-t border-slate-200 dark:border-white/[0.06]">
+                  <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2 flex items-center gap-1.5">
+                    <Zap className="w-3 h-3 text-amber-500" /> Instant Role Persona
+                  </div>
+                  <div className="grid grid-cols-3 gap-1.5">
+                    <button
+                      onClick={async () => {
+                        await quickLoginDemo('admin');
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className={`p-2 rounded-xl text-[11px] font-mono text-center border transition-all cursor-pointer ${
+                        user.role === 'admin'
+                          ? 'bg-indigo-100 dark:bg-indigo-500/25 text-indigo-700 dark:text-indigo-300 border-indigo-300 dark:border-indigo-500/50 font-bold'
+                          : 'bg-white dark:bg-slate-900/80 text-slate-700 dark:text-slate-400 border-slate-200 dark:border-white/[0.06] hover:bg-slate-100'
+                      }`}
+                    >
+                      Admin
+                    </button>
+                    <button
+                      onClick={async () => {
+                        await quickLoginDemo('faculty');
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className={`p-2 rounded-xl text-[11px] font-mono text-center border transition-all cursor-pointer ${
+                        user.role === 'faculty'
+                          ? 'bg-cyan-100 dark:bg-cyan-500/25 text-cyan-700 dark:text-cyan-300 border-cyan-300 dark:border-cyan-500/50 font-bold'
+                          : 'bg-white dark:bg-slate-900/80 text-slate-700 dark:text-slate-400 border-slate-200 dark:border-white/[0.06] hover:bg-slate-100'
+                      }`}
+                    >
+                      Faculty
+                    </button>
+                    <button
+                      onClick={async () => {
+                        await quickLoginDemo('student');
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className={`p-2 rounded-xl text-[11px] font-mono text-center border transition-all cursor-pointer ${
+                        user.role === 'student'
+                          ? 'bg-emerald-100 dark:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-500/50 font-bold'
+                          : 'bg-white dark:bg-slate-900/80 text-slate-700 dark:text-slate-400 border-slate-200 dark:border-white/[0.06] hover:bg-slate-100'
+                      }`}
+                    >
+                      Student
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/30 flex items-center justify-center shrink-0">
+                    <User className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-slate-900 dark:text-white">Institutional Access</div>
+                    <div className="text-xs text-slate-500 dark:text-slate-400">Sign in to evaluate role-specific dashboards</div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2 pt-1">
+                  <button
+                    onClick={() => {
+                      setAuthModalTab('login');
+                      setIsAuthModalOpen(true);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className="btn-primary py-2 text-xs flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <LogIn className="w-3.5 h-3.5" />
+                    <span>Sign In</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      setAuthModalTab('register');
+                      setIsAuthModalOpen(true);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className="btn-secondary py-2 text-xs flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <span>Register</span>
+                  </button>
+                </div>
+                {/* Quick test demo persona shortcuts for unauthenticated judges */}
+                <div className="pt-2 border-t border-slate-200 dark:border-white/[0.06]">
+                  <div className="text-[10px] font-mono text-slate-500 dark:text-slate-400 mb-1.5 flex items-center gap-1">
+                    <Zap className="w-3 h-3 text-amber-500" /> 1-Click Demo Evaluation:
+                  </div>
+                  <div className="grid grid-cols-3 gap-1.5">
+                    <button
+                      onClick={async () => {
+                        await quickLoginDemo('admin');
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="py-1.5 px-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-500/10 dark:hover:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 text-[10px] font-mono text-center cursor-pointer"
+                    >
+                      Admin
+                    </button>
+                    <button
+                      onClick={async () => {
+                        await quickLoginDemo('faculty');
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="py-1.5 px-1 rounded-lg bg-cyan-50 hover:bg-cyan-100 dark:bg-cyan-500/10 dark:hover:bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/30 text-[10px] font-mono text-center cursor-pointer"
+                    >
+                      Faculty
+                    </button>
+                    <button
+                      onClick={async () => {
+                        await quickLoginDemo('student');
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className="py-1.5 px-1 rounded-lg bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-500/10 dark:hover:bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-500/30 text-[10px] font-mono text-center cursor-pointer"
+                    >
+                      Student
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
-        )}
-      </header>
+
+          {/* 2. Command Palette / Search Trigger */}
+          <button
+            onClick={() => {
+              soundFx.playClick();
+              setIsMobileMenuOpen(false);
+              onOpenCommandPalette();
+            }}
+            className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200 dark:border-white/[0.08] text-xs text-slate-700 dark:text-slate-300 transition-all cursor-pointer shadow-sm"
+          >
+            <div className="flex items-center gap-2.5">
+              <Search className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+              <span className="font-semibold text-slate-800 dark:text-slate-200">Quick search students or command...</span>
+            </div>
+            <kbd className="flex items-center gap-0.5 px-1.5 py-0.5 text-[10px] font-mono text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded shadow-sm">
+              <Command className="w-2.5 h-2.5" /> K
+            </kbd>
+          </button>
+
+          {/* Mobile Theme Switcher */}
+          <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 dark:bg-[#0b1120] border border-slate-200 dark:border-white/[0.14]">
+            <div className="flex items-center gap-2.5 text-xs text-slate-700 dark:text-slate-300 font-medium">
+              {theme === 'dark' ? <Moon className="w-4 h-4 text-indigo-400" /> : <Sun className="w-4 h-4 text-amber-500" />}
+              <span>Theme: <strong className="text-slate-900 dark:text-white">{theme === 'dark' ? 'Dark Cybernetic' : 'Light Academic'}</strong></span>
+            </div>
+            <button
+              onClick={() => {
+                toggleTheme();
+                soundFx.playClick();
+              }}
+              className="px-3 py-1.5 rounded-xl text-xs font-bold bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-500/15 dark:hover:bg-indigo-500/25 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-500/30 flex items-center gap-1.5 cursor-pointer transition-colors"
+            >
+              {theme === 'dark' ? <Sun className="w-3.5 h-3.5 text-amber-400" /> : <Moon className="w-3.5 h-3.5 text-indigo-600" />}
+              <span>{theme === 'dark' ? 'Switch Light' : 'Switch Dark'}</span>
+            </button>
+          </div>
+
+          {/* 3. Benchmark STU1024 Quick Link Card */}
+          <Link
+            to="/students/STU1024"
+            onClick={() => {
+              soundFx.playClick();
+              setIsMobileMenuOpen(false);
+            }}
+            className="w-full p-3 rounded-2xl bg-amber-50 hover:bg-amber-100/80 dark:bg-amber-500/10 dark:hover:bg-amber-500/15 border border-amber-200 dark:border-amber-500/30 flex items-center justify-between text-xs text-amber-900 dark:text-amber-200 transition-all cursor-pointer shadow-sm"
+          >
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-xl bg-amber-100 dark:bg-amber-500/20 flex items-center justify-center shrink-0">
+                <Activity className="w-4 h-4 text-amber-600 dark:text-amber-400 animate-pulse" />
+              </div>
+              <div>
+                <div className="font-bold text-slate-900 dark:text-white font-mono">STU1024 • Kavya Sharma</div>
+                <div className="text-[10px] text-amber-700 dark:text-amber-300/80 font-medium">Benchmark Student Case Study</div>
+              </div>
+            </div>
+            <span className="px-2.5 py-1 rounded-full bg-amber-200/70 dark:bg-amber-500/25 text-[10px] font-mono font-bold text-amber-800 dark:text-amber-200 border border-amber-300 dark:border-amber-500/40">
+              78% High Risk
+            </span>
+          </Link>
+
+          {/* 4. Primary Navigation Console Links */}
+          <div className="space-y-1.5">
+            <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 px-2">
+              Navigation Console
+            </div>
+            {navLinks.map((link) => {
+              const Icon = link.icon;
+              const isActive = location.pathname === link.to;
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => {
+                    soundFx.playClick();
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className={`flex items-center justify-between px-3.5 py-3 rounded-xl text-xs font-semibold transition-all ${
+                    isActive
+                      ? 'bg-indigo-50 dark:bg-gradient-to-r dark:from-indigo-500/20 dark:via-purple-500/15 dark:to-cyan-500/20 text-indigo-700 dark:text-white border border-indigo-200 dark:border-indigo-500/40 shadow-sm'
+                      : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/[0.04] border border-transparent'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${isActive ? 'bg-indigo-100 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400' : 'bg-slate-100 dark:bg-white/[0.04] text-slate-500 dark:text-slate-400'}`}>
+                      <Icon className="w-4 h-4" />
+                    </div>
+                    <span className="text-sm font-semibold">{link.label}</span>
+                  </div>
+                  {isActive && <Check className="w-4 h-4 text-indigo-600 dark:text-cyan-400" />}
+                </Link>
+              );
+            })}
+          </div>
+
+          {/* 5. Institutional Footer */}
+          <div className="pt-4 border-t border-slate-200 dark:border-white/[0.06] text-center">
+            <p className="text-[10px] text-slate-500 dark:text-slate-400 font-mono">
+              DropoutGuard AI Enterprise • Apex University
+            </p>
+            <p className="text-[9px] text-slate-400 dark:text-slate-600 font-mono mt-0.5">
+              Office of Student Retention & Academic Care
+            </p>
+          </div>
+
+        </div>
+      )}
 
       {/* Mobile Persistent Bottom Navigation Dock (Visible on < lg screens: tablets and phones) */}
       <nav 

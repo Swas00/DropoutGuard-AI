@@ -536,10 +536,8 @@ html:not(.dark) .bg-\[\#030712\] {
 
 html.light header.bg-\[\#070b14\],
 html:not(.dark) header.bg-\[\#070b14\] {
-  background-color: rgba(255, 255, 255, 0.95) !important;
+  background-color: #ffffff !important;
   border-bottom-color: #e2e8f0 !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
 }
 
 html.light nav.bg-\[\#070b14\],
