@@ -22,9 +22,12 @@ import {
   VolumeX,
   Menu,
   X,
-  Globe
+  Globe,
+  Sun,
+  Moon
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { useTheme } from '../context/ThemeContext';
 import { AuthModal } from './AuthModal';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { soundFx } from '../lib/soundFx';
@@ -36,6 +39,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
   const location = useLocation();
   const { user, isAuthenticated, logout, quickLoginDemo } = useAuth();
+  const { theme, toggleTheme } = useTheme();
   
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authModalTab, setAuthModalTab] = useState<'login' | 'register'>('login');
@@ -252,6 +256,28 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
 
               {/* Regional Multi-Language Selector */}
               <LanguageSwitcher />
+
+              {/* Light / Dark Mode Switcher */}
+              <button
+                onClick={() => {
+                  toggleTheme();
+                  soundFx.playClick();
+                }}
+                onMouseEnter={() => soundFx.playHover()}
+                className={`p-2 rounded-xl border transition-all cursor-pointer ${
+                  theme === 'dark'
+                    ? 'bg-slate-900/80 border-white/[0.08] text-amber-400 hover:text-amber-300 hover:bg-slate-800'
+                    : 'bg-white border-slate-300 text-indigo-600 hover:bg-slate-100 shadow-sm'
+                }`}
+                title={theme === 'dark' ? 'Switch to Light Academic Theme' : 'Switch to Dark Cybernetic Theme'}
+                aria-label="Toggle Light and Dark Mode"
+              >
+                {theme === 'dark' ? (
+                  <Sun className="w-3.5 h-3.5 hover:rotate-45 transition-transform duration-300" />
+                ) : (
+                  <Moon className="w-3.5 h-3.5 hover:-rotate-12 transition-transform duration-300" />
+                )}
+              </button>
 
               {/* User Account / Profile Menu */}
               {user ? (
@@ -650,6 +676,24 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                 <Command className="w-2.5 h-2.5" /> K
               </kbd>
             </button>
+
+            {/* Mobile Theme Switcher */}
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-[#0b1120] border border-white/[0.14]">
+              <div className="flex items-center gap-2.5 text-xs text-slate-300 font-medium">
+                {theme === 'dark' ? <Moon className="w-4 h-4 text-indigo-400" /> : <Sun className="w-4 h-4 text-amber-500" />}
+                <span>Theme: <strong className="text-white">{theme === 'dark' ? 'Dark Cybernetic' : 'Light Academic'}</strong></span>
+              </div>
+              <button
+                onClick={() => {
+                  toggleTheme();
+                  soundFx.playClick();
+                }}
+                className="px-3 py-1.5 rounded-xl text-xs font-bold bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-400 border border-indigo-500/30 flex items-center gap-1.5 cursor-pointer transition-colors"
+              >
+                {theme === 'dark' ? <Sun className="w-3.5 h-3.5 text-amber-400" /> : <Moon className="w-3.5 h-3.5 text-indigo-400" />}
+                <span>{theme === 'dark' ? 'Switch Light' : 'Switch Dark'}</span>
+              </button>
+            </div>
 
             {/* 3. Benchmark STU1024 Quick Link Card */}
             <Link

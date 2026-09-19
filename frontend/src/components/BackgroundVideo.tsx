@@ -18,10 +18,12 @@ import {
   ChevronDown
 } from 'lucide-react';
 import { soundFx } from '../lib/soundFx';
+import { useTheme } from '../context/ThemeContext';
 
 type VisualizerMode = 'neural' | 'hyperspace' | 'matrix' | 'aurora' | 'video';
 
 export const BackgroundVideo: React.FC = () => {
+  const { theme } = useTheme();
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   
@@ -346,7 +348,9 @@ export const BackgroundVideo: React.FC = () => {
   return (
     <>
       {/* Background Media Canvas & Video Underlay */}
-      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+      <div className={`fixed inset-0 pointer-events-none z-0 overflow-hidden transition-colors duration-300 ${
+        theme === 'dark' ? 'bg-[#030712]' : 'bg-slate-50'
+      }`}>
         {/* Ambient Video Loop */}
         {showVideoLayer && (
           <video
@@ -356,7 +360,9 @@ export const BackgroundVideo: React.FC = () => {
             muted
             playsInline
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-              intensity === 'vivid' ? 'opacity-35' : 'opacity-16'
+              theme === 'dark' 
+                ? (intensity === 'vivid' ? 'opacity-35' : 'opacity-16')
+                : 'opacity-10'
             }`}
           >
             <source src="/background-video.webm" type="video/webm" />
@@ -366,16 +372,28 @@ export const BackgroundVideo: React.FC = () => {
         {/* Dynamic Multi-Mode Canvas Overlay */}
         <canvas
           ref={canvasRef}
-          className="absolute inset-0 w-full h-full pointer-events-none"
+          className={`absolute inset-0 w-full h-full pointer-events-none transition-opacity duration-300 ${
+            theme === 'dark' ? 'opacity-100' : 'opacity-40'
+          }`}
         />
 
         {/* Multi-layered Radiant Aurora Lights */}
-        <div className="absolute top-[-10%] left-[20%] w-[850px] h-[520px] bg-indigo-600/12 rounded-full blur-[140px] pointer-events-none" />
-        <div className="absolute top-[30%] right-[-5%] w-[650px] h-[480px] bg-cyan-500/10 rounded-full blur-[130px] pointer-events-none" />
-        <div className="absolute bottom-[10%] left-[-5%] w-[750px] h-[550px] bg-violet-600/10 rounded-full blur-[150px] pointer-events-none" />
+        <div className={`absolute top-[-10%] left-[20%] w-[850px] h-[520px] rounded-full blur-[140px] pointer-events-none ${
+          theme === 'dark' ? 'bg-indigo-600/12' : 'bg-indigo-300/20'
+        }`} />
+        <div className={`absolute top-[30%] right-[-5%] w-[650px] h-[480px] rounded-full blur-[130px] pointer-events-none ${
+          theme === 'dark' ? 'bg-cyan-500/10' : 'bg-cyan-300/20'
+        }`} />
+        <div className={`absolute bottom-[10%] left-[-5%] w-[750px] h-[550px] rounded-full blur-[150px] pointer-events-none ${
+          theme === 'dark' ? 'bg-violet-600/10' : 'bg-violet-300/15'
+        }`} />
 
         {/* Cinematic Vignette Masks */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#030712]/85 via-[#030712]/92 to-[#030712]/98" />
+        <div className={`absolute inset-0 transition-colors duration-300 ${
+          theme === 'dark' 
+            ? 'bg-gradient-to-b from-[#030712]/85 via-[#030712]/92 to-[#030712]/98' 
+            : 'bg-gradient-to-b from-slate-50/70 via-slate-100/85 to-slate-200/90'
+        }`} />
       </div>
 
       {/* Retro CRT Scanline Grid & Sweeping Radar Beam */}

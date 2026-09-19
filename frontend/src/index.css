@@ -476,8 +476,238 @@ input[type=range]::-webkit-slider-thumb:hover {
   perspective: 1000px;
 }
 
-.preserve-3d {
-  transform-style: preserve-3d;
+/* ==========================================================================
+   Comprehensive Light Theme Architecture System
+   Ensures 100% crisp contrast, zero washed-out surfaces, and seamless toggle
+   ========================================================================== */
+html.light body,
+html:not(.dark) body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Glass & Bento Surfaces in Light Mode */
+html.light .glass-card,
+html:not(.dark) .glass-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+}
+
+html.light .glass-card-hover,
+html:not(.dark) .glass-card-hover {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+html.light .glass-card-hover:hover,
+html:not(.dark) .glass-card-hover:hover {
+  border-color: #6366f1;
+  box-shadow: 0 12px 28px -3px rgba(99, 102, 241, 0.15), 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+}
+
+html.light .glass-card-solid,
+html:not(.dark) .glass-card-solid {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+html.light .bento-box,
+html:not(.dark) .bento-box {
+  background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.05), transparent 60%), #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+html.light .laser-beam-inner,
+html:not(.dark) .laser-beam-inner {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* Background Utility Classes Adaptations */
+html.light .bg-\[\#0b1120\],
+html:not(.dark) .bg-\[\#0b1120\] {
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+}
+
+html.light .bg-\[\#070b14\],
+html:not(.dark) .bg-\[\#070b14\] {
+  background-color: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+html.light .bg-\[\#030712\],
+html:not(.dark) .bg-\[\#030712\] {
+  background-color: #f1f5f9;
+}
+
+html.light header.bg-\[\#070b14\],
+html:not(.dark) header.bg-\[\#070b14\] {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom-color: #e2e8f0;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+html.light nav.bg-\[\#070b14\],
+html:not(.dark) nav.bg-\[\#070b14\] {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-top-color: #e2e8f0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+}
+
+html.light .bg-slate-900,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/90,
+html:not(.dark) .bg-slate-900,
+html:not(.dark) .bg-slate-900\/80,
+html:not(.dark) .bg-slate-900\/90 {
+  background-color: #f1f5f9;
+  border-color: #e2e8f0;
+}
+
+/* Typography Hierarchy in Light Mode */
+html.light .text-white:not(.btn-primary *):not(.btn-primary):not(.btn-cyber *):not(.btn-cyber):not(.badge-enterprise):not([data-keep-white]):not([data-keep-white] *),
+html:not(.dark) .text-white:not(.btn-primary *):not(.btn-primary):not(.btn-cyber *):not(.btn-cyber):not(.badge-enterprise):not([data-keep-white]):not([data-keep-white] *) {
+  color: #0f172a;
+}
+
+html.light .text-slate-100,
+html:not(.dark) .text-slate-100 {
+  color: #0f172a;
+}
+
+html.light .text-slate-200,
+html:not(.dark) .text-slate-200 {
+  color: #1e293b;
+}
+
+html.light .text-slate-300,
+html:not(.dark) .text-slate-300 {
+  color: #334155;
+}
+
+html.light .text-slate-400,
+html:not(.dark) .text-slate-400 {
+  color: #64748b;
+}
+
+/* Border Adapters in Light Mode */
+html.light .border-white\/\[0\.06\],
+html.light .border-white\/\[0\.08\],
+html.light .border-white\/\[0\.12\],
+html.light .border-white\/\[0\.13\],
+html.light .border-white\/\[0\.14\],
+html.light .border-white\/\[0\.16\],
+html:not(.dark) .border-white\/\[0\.06\],
+html:not(.dark) .border-white\/\[0\.08\],
+html:not(.dark) .border-white\/\[0\.12\],
+html:not(.dark) .border-white\/\[0\.13\],
+html:not(.dark) .border-white\/\[0\.14\],
+html:not(.dark) .border-white\/\[0\.16\] {
+  border-color: #e2e8f0;
+}
+
+/* Buttons in Light Mode */
+html.light .btn-secondary,
+html:not(.dark) .btn-secondary {
+  color: #1e293b;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+html.light .btn-secondary:hover,
+html:not(.dark) .btn-secondary:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+html.light .btn-ghost,
+html:not(.dark) .btn-ghost {
+  color: #64748b;
+}
+
+html.light .btn-ghost:hover,
+html:not(.dark) .btn-ghost:hover {
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Table Design in Light Mode */
+html.light .enterprise-th,
+html:not(.dark) .enterprise-th {
+  color: #475569;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+html.light .enterprise-td,
+html:not(.dark) .enterprise-td {
+  color: #1e293b;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+html.light .interactive-tr:hover,
+html:not(.dark) .interactive-tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Forms, Inputs, and Sliders in Light Mode */
+html.light input:not([type=range]):not([type=checkbox]):not([type=radio]),
+html.light select,
+html.light textarea,
+html:not(.dark) input:not([type=range]):not([type=checkbox]):not([type=radio]),
+html:not(.dark) select,
+html:not(.dark) textarea {
+  background-color: #ffffff;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+html.light input:focus,
+html.light select:focus,
+html.light textarea:focus,
+html:not(.dark) input:focus,
+html:not(.dark) select:focus,
+html:not(.dark) textarea:focus {
+  border-color: #6366f1;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+html.light input[type=range],
+html:not(.dark) input[type=range] {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+/* Scrollbars in Light Mode */
+html.light ::-webkit-scrollbar-track,
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.light ::-webkit-scrollbar-thumb,
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover,
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* CRT Scanlines in Light Mode softened */
+html.light .scanline-crt,
+html:not(.dark) .scanline-crt {
+  opacity: 0.15;
 }
 
 /* Print-to-PDF Stylesheet for Official Diagnostic Reports */

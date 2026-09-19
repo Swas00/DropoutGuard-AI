@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { BackgroundVideo } from './components/BackgroundVideo';
@@ -33,8 +34,9 @@ export function App() {
 
   return (
     <Router>
-      <AuthProvider>
-        <div className="min-h-screen relative bg-slate-950 text-slate-100 flex flex-col font-sans overflow-x-hidden selection:bg-emerald-500 selection:text-slate-950">
+      <ThemeProvider>
+        <AuthProvider>
+          <div className="min-h-screen relative bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans overflow-x-hidden selection:bg-indigo-500 selection:text-white transition-colors duration-200">
           {/* Animated High-Quality AI Network & Neural Background Layer */}
           <BackgroundVideo />
 
@@ -89,6 +91,7 @@ export function App() {
         </div>
       </div>
     </AuthProvider>
+    </ThemeProvider>
     </Router>
   );
 }
