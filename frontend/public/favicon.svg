@@ -1,0 +1,20 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="20" y1="20" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  <path d="M32 6L10 14V29.5C10 43.8 19.4 54.4 32 58C44.6 54.4 54 43.8 54 29.5V14L32 6Z" fill="#020617" stroke="url(#shieldGrad)" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="32" cy="27" r="5" fill="url(#nodeGrad)" />
+  <circle cx="23" cy="38" r="3.5" fill="#10B981" />
+  <circle cx="41" cy="38" r="3.5" fill="#06B6D4" />
+  <line x1="32" y1="27" x2="23" y2="38" stroke="#34D399" stroke-width="2" stroke-linecap="round"/>
+  <line x1="32" y1="27" x2="41" y2="38" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+  <line x1="23" y1="38" x2="41" y2="38" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.6"/>
+</svg>

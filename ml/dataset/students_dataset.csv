@@ -1,0 +1,1251 @@
+student_id,name,course,semester,attendance,previous_gpa,current_gpa,assignment_rate,internal_marks,backlogs,engagement,dropout,gpa_trend
+STU0001,Ayaan Sharma,B.Tech Mechanical,5,89,8.13,8.41,99,84,0,83,0,0.28
+STU0002,Krishna Mehta,B.Tech Mechanical,2,94,8.58,8.64,94,83,0,81,0,0.06
+STU0003,Aditya Sharma,B.Tech Computer Science,4,88,7.24,7.05,89,79,0,87,0,-0.19
+STU0004,Shreya Sharma,MBA,4,82,7.49,7.93,90,86,0,75,0,0.44
+STU0005,Neha Bose,MCA,8,84,8.26,8.18,93,82,0,82,0,-0.08
+STU0006,Aarav Kumar,B.Tech Mechanical,7,83,9.13,9.28,86,90,0,76,0,0.15
+STU0007,Ishaan Iyer,BCA,2,88,7.22,7.1,92,90,0,86,0,-0.12
+STU0008,Reyansh Das,BCA,5,86,8.05,7.9,88,83,0,92,0,-0.15
+STU0009,Zoya Kapoor,B.Tech Computer Science,7,88,7.32,7.53,90,81,0,89,0,0.21
+STU0010,Aadhya Kulkarni,BCA,4,92,8.67,8.65,90,87,0,91,0,-0.02
+STU0011,Aditya Nair,BCA,2,84,8.11,8.04,86,90,0,94,0,-0.07
+STU0012,Reyansh Joshi,BCA,8,86,8.7,8.92,88,88,0,95,0,0.22
+STU0013,Riya Kumar,BCA,6,86,8.98,8.68,96,86,0,82,0,-0.3
+STU0014,Saanvi Patel,MBA,3,87,7.21,7.32,93,94,0,81,0,0.11
+STU0015,Ananya Kumar,B.Tech Electronics,7,82,7.95,8.28,93,82,0,88,0,0.33
+STU0016,Priya Nair,B.Tech Mechanical,6,87,8.68,8.69,90,83,0,74,0,0.01
+STU0017,Vihaan Nair,B.Tech Computer Science,6,88,8.33,8.48,90,77,0,82,0,0.15
+STU0018,Arjun Iyer,MBA,6,85,7.8,7.92,94,97,0,86,0,0.12
+STU0019,Kavya Joshi,B.Tech Mechanical,8,88,8.16,7.93,91,86,0,98,0,-0.23
+STU0020,Krishna Nair,B.Tech Mechanical,5,86,8.35,8.49,86,92,0,90,0,0.14
+STU0021,Sneha Chopra,B.Tech Electronics,6,90,7.75,8.18,84,89,0,98,0,0.43
+STU0022,Krishna Malhotra,B.Tech Electronics,2,82,7.92,8.09,89,76,0,85,0,0.17
+STU0023,Ayaan Singh,B.Tech Mechanical,3,81,8.44,8.41,99,81,0,82,0,-0.03
+STU0024,Sneha Kulkarni,B.Tech Computer Science,7,91,7.58,7.78,98,76,0,86,0,0.2
+STU0025,Zoya Malhotra,BCA,1,88,8.59,8.49,85,89,0,87,0,-0.1
+STU0026,Ayaan Kapoor,BCA,6,88,8.37,8.38,93,87,0,79,0,0.01
+STU0027,Sneha Kumar,B.Tech Electronics,1,96,8.44,8.35,95,80,1,90,0,-0.09
+STU0028,Diya Malhotra,MCA,2,92,7.79,8.13,94,90,0,98,0,0.34
+STU0029,Pari Malhotra,MBA,4,85,7.82,7.79,87,85,0,87,0,-0.03
+STU0030,Shaurya Kapoor,MBA,1,88,8.61,8.76,99,84,0,98,0,0.15
+STU0031,Kavya Sharma,B.Tech Computer Science,6,90,7.77,7.71,94,84,0,89,0,-0.06
+STU0032,Pari Nair,B.Tech Computer Science,4,89,8.16,8.14,84,83,0,90,0,-0.02
+STU0033,Sai Patel,B.Tech Mechanical,8,88,7.58,7.76,93,80,0,86,0,0.18
+STU0034,Neha Singh,MCA,8,87,7.63,7.85,94,92,1,92,0,0.22
+STU0035,Shaurya Reddy,MBA,7,80,7.73,7.98,94,89,1,98,0,0.25
+STU0036,Neha Iyer,B.Tech Mechanical,5,89,8.77,9.11,95,84,0,90,0,0.34
+STU0037,Riya Chatterjee,MBA,8,83,8.08,8.13,92,99,0,71,0,0.05
+STU0038,Rohan Patel,BCA,1,90,7.39,7.45,97,86,0,77,0,0.06
+STU0039,Rohan Chopra,MCA,1,83,8.54,8.54,93,86,0,80,0,0.0
+STU0040,Vihaan Nair,B.Tech Computer Science,1,97,8.52,8.26,92,82,0,90,0,-0.26
+STU0041,Arjun Malhotra,MCA,5,83,8.14,8.39,96,78,0,82,0,0.25
+STU0042,Kabir Kapoor,MCA,8,84,7.87,8.37,94,78,0,91,0,0.5
+STU0043,Rahul Bose,MCA,2,97,8.72,8.57,89,93,0,80,0,-0.15
+STU0044,Sneha Das,B.Tech Electronics,7,89,8.59,8.55,91,72,0,77,0,-0.04
+STU0045,Vihaan Mehta,B.Tech Computer Science,7,85,7.58,8.06,84,83,0,85,0,0.48
+STU0046,Reyansh Nair,MCA,4,94,7.48,7.86,92,80,0,88,0,0.38
+STU0047,Krishna Bose,MCA,5,87,7.9,8.06,90,86,0,89,0,0.16
+STU0048,Arjun Chatterjee,MBA,2,94,7.58,8.16,82,85,0,89,0,0.58
+STU0049,Neha Sharma,B.Tech Computer Science,4,88,7.89,8.0,89,82,0,90,0,0.11
+STU0050,Kavya Mishra,MCA,7,88,7.85,8.18,93,90,0,89,0,0.33
+STU0051,Shaurya Joshi,B.Tech Computer Science,7,82,7.92,8.22,95,85,0,85,0,0.3
+STU0052,Zoya Rao,B.Tech Electronics,8,93,7.9,8.16,90,84,0,92,0,0.26
+STU0053,Aadhya Iyer,B.Tech Computer Science,1,91,8.61,9.02,92,90,0,82,0,0.41
+STU0054,Vihaan Verma,MBA,8,88,8.13,8.3,94,81,0,98,0,0.17
+STU0055,Vikram Kumar,B.Tech Computer Science,2,81,7.59,7.97,95,89,0,89,0,0.38
+STU0056,Arjun Kulkarni,B.Tech Computer Science,4,86,7.75,7.92,88,91,0,83,0,0.17
+STU0057,Amit Nair,MBA,1,82,8.04,8.27,89,81,0,86,0,0.23
+STU0058,Pooja Chopra,MBA,6,88,7.95,8.01,93,77,0,75,0,0.06
+STU0059,Kabir Gupta,MCA,5,83,8.09,8.3,99,91,0,83,0,0.21
+STU0060,Pari Chatterjee,BCA,2,86,7.7,7.85,90,87,0,79,0,0.15
+STU0061,Simran Chopra,B.Tech Computer Science,2,89,8.97,9.1,94,90,0,82,0,0.13
+STU0062,Deepak Reddy,MCA,6,88,8.21,8.38,88,86,0,88,0,0.17
+STU0063,Ananya Das,BCA,3,94,8.68,9.26,88,91,0,86,0,0.58
+STU0064,Neha Rao,MBA,1,97,7.8,7.78,89,73,0,81,0,-0.02
+STU0065,Priya Rao,B.Tech Mechanical,2,83,8.28,8.5,100,91,0,80,0,0.22
+STU0066,Krishna Reddy,B.Tech Computer Science,2,82,8.45,8.34,100,93,0,81,0,-0.11
+STU0067,Ishaan Reddy,BCA,4,78,8.88,9.01,98,76,0,80,0,0.13
+STU0068,Kabir Reddy,MBA,8,87,8.22,8.28,95,79,0,84,0,0.06
+STU0069,Vihaan Patel,B.Tech Mechanical,7,87,8.46,8.75,86,76,0,93,0,0.29
+STU0070,Aditya Sharma,BCA,3,88,7.83,8.29,92,93,0,85,0,0.46
+STU0071,Diya Kumar,B.Tech Mechanical,8,97,9.08,9.18,96,89,0,94,0,0.1
+STU0072,Sneha Kapoor,B.Tech Computer Science,2,82,8.54,8.9,83,78,0,70,0,0.36
+STU0073,Ishaan Kapoor,B.Tech Computer Science,6,85,8.56,9.01,92,95,0,75,0,0.45
+STU0074,Ishaan Bose,MCA,1,78,8.17,8.4,91,73,0,84,0,0.23
+STU0075,Aditya Das,MCA,4,80,8.53,8.75,87,82,0,77,0,0.22
+STU0076,Navya Kapoor,B.Tech Electronics,3,86,8.68,8.63,94,82,0,79,0,-0.05
+STU0077,Ananya Kumar,MCA,7,86,7.68,7.72,86,97,0,85,0,0.04
+STU0078,Isha Bose,B.Tech Mechanical,4,83,8.31,8.44,90,89,0,90,0,0.13
+STU0079,Reyansh Joshi,B.Tech Computer Science,8,84,7.91,8.0,80,76,0,94,0,0.09
+STU0080,Zoya Das,BCA,4,95,8.08,8.35,93,99,0,92,0,0.27
+STU0081,Dhruv Joshi,BCA,5,86,7.72,7.55,93,81,0,75,0,-0.17
+STU0082,Saanvi Das,B.Tech Mechanical,7,83,7.66,8.15,96,85,0,95,0,0.49
+STU0083,Neha Gupta,B.Tech Computer Science,2,87,7.77,8.22,94,79,0,83,0,0.45
+STU0084,Diya Kumar,MBA,5,82,7.51,7.85,100,77,0,88,0,0.34
+STU0085,Shreya Bose,BCA,6,83,7.96,7.99,87,86,0,79,0,0.03
+STU0086,Deepak Mehta,B.Tech Electronics,4,88,8.17,8.27,87,82,0,90,0,0.1
+STU0087,Sneha Sharma,MBA,4,89,7.71,7.88,95,75,0,88,0,0.17
+STU0088,Arjun Gupta,MBA,6,83,8.49,8.49,82,76,0,85,0,0.0
+STU0089,Ayaan Rao,MBA,5,88,7.75,8.03,83,85,0,76,0,0.28
+STU0090,Fatima Joshi,B.Tech Mechanical,5,83,8.22,8.2,90,92,0,80,0,-0.02
+STU0091,Dhruv Bose,B.Tech Mechanical,7,91,7.64,7.9,99,72,0,79,0,0.26
+STU0092,Atharva Kulkarni,MBA,5,89,8.1,8.32,88,86,0,83,0,0.22
+STU0093,Aarav Rao,BCA,4,92,8.33,8.55,89,83,0,81,0,0.22
+STU0094,Manish Kulkarni,B.Tech Mechanical,6,88,7.99,8.2,100,91,0,82,0,0.21
+STU0095,Tanvi Iyer,MBA,8,93,8.0,7.74,86,74,0,82,0,-0.26
+STU0096,Shaurya Patel,BCA,6,87,9.04,9.26,90,90,0,70,0,0.22
+STU0097,Ananya Rao,MCA,4,88,8.59,8.44,97,88,0,82,0,-0.15
+STU0098,Aditya Nair,B.Tech Electronics,2,90,9.34,9.53,93,83,0,79,0,0.19
+STU0099,Amit Iyer,B.Tech Mechanical,7,91,7.77,7.93,89,88,0,87,0,0.16
+STU0100,Ananya Singh,B.Tech Mechanical,1,92,7.94,8.04,87,83,0,87,0,0.1
+STU0101,Reyansh Bose,MCA,3,90,7.74,8.06,98,88,0,98,0,0.32
+STU0102,Vikram Chatterjee,B.Tech Computer Science,4,83,7.58,7.37,99,89,0,84,0,-0.21
+STU0103,Ayaan Chatterjee,MCA,8,88,7.64,8.28,92,86,0,90,0,0.64
+STU0104,Priya Kulkarni,BCA,8,89,8.31,8.3,94,97,0,94,0,-0.01
+STU0105,Deepak Bose,MBA,8,94,7.94,7.89,91,86,0,92,0,-0.05
+STU0106,Rahul Chatterjee,BCA,4,78,8.96,9.08,89,79,0,73,0,0.12
+STU0107,Saanvi Malhotra,B.Tech Electronics,4,91,8.24,8.13,85,83,0,96,0,-0.11
+STU0108,Arjun Rao,MCA,5,85,7.45,7.55,90,72,0,84,0,0.1
+STU0109,Neha Patel,MCA,3,85,8.55,9.07,97,84,0,77,0,0.52
+STU0110,Ishaan Iyer,B.Tech Computer Science,7,99,8.23,8.38,91,87,0,83,0,0.15
+STU0111,Neha Chatterjee,B.Tech Electronics,1,84,7.93,8.07,89,81,0,85,0,0.14
+STU0112,Pooja Joshi,MBA,1,85,8.95,8.65,97,93,0,70,0,-0.3
+STU0113,Amit Joshi,B.Tech Electronics,1,85,8.01,7.88,88,79,1,97,0,-0.13
+STU0114,Pari Joshi,B.Tech Electronics,4,91,8.84,9.13,86,82,0,88,0,0.29
+STU0115,Saanvi Bose,B.Tech Electronics,1,80,8.56,8.66,90,90,0,88,0,0.1
+STU0116,Meera Kumar,B.Tech Electronics,3,85,8.78,8.71,95,89,1,82,0,-0.07
+STU0117,Neha Sharma,B.Tech Electronics,1,88,7.57,7.9,91,82,0,92,0,0.33
+STU0118,Sneha Singh,B.Tech Electronics,3,83,7.5,7.34,95,78,0,97,0,-0.16
+STU0119,Myra Gupta,MCA,8,76,9.05,9.24,91,82,0,87,0,0.19
+STU0120,Myra Reddy,B.Tech Electronics,5,86,8.75,8.92,92,83,0,84,0,0.17
+STU0121,Rahul Sharma,B.Tech Mechanical,1,88,7.34,7.22,95,87,1,83,0,-0.12
+STU0122,Navya Nair,B.Tech Mechanical,2,87,8.37,8.41,88,87,0,78,0,0.04
+STU0123,Aditya Sharma,MCA,4,89,7.35,7.71,94,87,0,91,0,0.36
+STU0124,Simran Singh,MCA,3,95,8.71,8.49,85,82,0,85,0,-0.22
+STU0125,Ayaan Chopra,MCA,8,89,7.84,8.03,88,82,0,75,0,0.19
+STU0126,Riya Kumar,MBA,2,82,7.52,7.47,97,80,0,98,0,-0.05
+STU0127,Shaurya Rao,B.Tech Computer Science,1,89,8.29,8.27,95,82,0,85,0,-0.02
+STU0128,Amit Joshi,B.Tech Electronics,4,99,8.15,8.53,88,85,0,97,0,0.38
+STU0129,Ananya Mehta,B.Tech Mechanical,5,83,9.11,9.4,89,89,0,91,0,0.29
+STU0130,Shreya Mehta,MBA,1,90,7.41,7.41,90,85,0,89,0,0.0
+STU0131,Sneha Das,B.Tech Computer Science,6,87,7.53,7.76,95,89,0,92,0,0.23
+STU0132,Pooja Mishra,B.Tech Computer Science,7,91,8.43,8.57,83,88,1,86,0,0.14
+STU0133,Zoya Singh,B.Tech Electronics,3,88,7.56,7.49,97,85,0,89,0,-0.07
+STU0134,Saanvi Kulkarni,MBA,8,87,8.21,8.55,89,86,0,81,0,0.34
+STU0135,Manish Reddy,BCA,4,84,8.05,8.24,89,93,0,78,0,0.19
+STU0136,Sai Reddy,B.Tech Electronics,4,86,7.98,8.42,92,92,0,74,0,0.44
+STU0137,Amit Kulkarni,B.Tech Mechanical,7,88,8.64,8.81,97,82,0,94,0,0.17
+STU0138,Kavya Gupta,MCA,8,98,8.02,8.08,99,95,0,81,0,0.06
+STU0139,Diya Gupta,BCA,5,84,8.06,7.94,87,79,0,79,0,-0.12
+STU0140,Vikram Iyer,B.Tech Computer Science,4,86,8.32,8.78,87,91,0,83,0,0.46
+STU0141,Kavya Kapoor,MCA,8,86,8.54,8.47,93,86,0,88,0,-0.07
+STU0142,Kavya Chatterjee,B.Tech Computer Science,2,88,9.43,9.45,89,82,0,81,0,0.02
+STU0143,Meera Nair,BCA,6,83,8.79,9.22,89,81,0,88,0,0.43
+STU0144,Vikram Das,B.Tech Electronics,6,84,8.52,8.71,84,95,0,97,0,0.19
+STU0145,Zoya Reddy,BCA,5,83,8.01,8.22,93,89,0,98,0,0.21
+STU0146,Dhruv Gupta,B.Tech Computer Science,3,86,7.8,7.67,88,85,0,97,0,-0.13
+STU0147,Rahul Reddy,B.Tech Mechanical,5,84,8.31,8.46,97,99,1,81,0,0.15
+STU0148,Dhruv Rao,MCA,6,84,8.72,9.01,100,89,0,82,0,0.29
+STU0149,Aarav Kapoor,MCA,5,89,8.75,9.06,94,92,0,93,0,0.31
+STU0150,Vihaan Kapoor,BCA,3,93,8.52,8.64,92,93,0,79,0,0.12
+STU0151,Kavya Mehta,B.Tech Computer Science,5,88,8.0,8.16,98,87,0,85,0,0.16
+STU0152,Tanvi Gupta,MCA,1,80,8.57,8.85,100,84,0,86,0,0.28
+STU0153,Rahul Mehta,B.Tech Computer Science,7,88,8.99,9.12,93,89,0,86,0,0.13
+STU0154,Amit Verma,MCA,3,84,8.3,8.66,86,86,0,80,0,0.36
+STU0155,Pari Patel,MCA,2,92,7.44,7.48,93,95,0,84,0,0.04
+STU0156,Pooja Kulkarni,MBA,4,84,9.14,9.0,81,88,0,81,0,-0.14
+STU0157,Myra Chatterjee,B.Tech Electronics,5,81,8.55,8.75,89,78,0,91,0,0.2
+STU0158,Sneha Rao,MBA,1,90,8.15,8.67,86,76,0,80,0,0.52
+STU0159,Reyansh Iyer,B.Tech Mechanical,4,86,8.32,8.42,93,78,0,95,0,0.1
+STU0160,Sai Kumar,MCA,3,86,8.76,8.98,94,89,0,88,0,0.22
+STU0161,Shaurya Sharma,B.Tech Electronics,8,90,8.86,9.05,95,85,0,95,0,0.19
+STU0162,Rahul Rao,B.Tech Computer Science,4,83,9.1,9.24,84,86,0,80,0,0.14
+STU0163,Aadhya Chatterjee,B.Tech Computer Science,4,91,7.87,7.93,82,83,0,70,0,0.06
+STU0164,Manish Iyer,B.Tech Electronics,2,79,8.58,8.89,94,80,0,84,0,0.31
+STU0165,Ishaan Reddy,MCA,2,86,7.62,8.07,96,84,0,85,0,0.45
+STU0166,Pari Kulkarni,B.Tech Mechanical,5,88,7.2,7.3,88,79,0,83,0,0.1
+STU0167,Zoya Rao,B.Tech Mechanical,7,95,8.52,8.56,94,94,1,91,0,0.04
+STU0168,Deepak Kapoor,B.Tech Electronics,8,87,7.88,8.17,93,91,0,89,0,0.29
+STU0169,Aditya Bose,B.Tech Mechanical,6,92,7.93,8.34,92,98,0,80,0,0.41
+STU0170,Vivaan Patel,MCA,1,95,8.3,8.32,89,84,1,87,0,0.02
+STU0171,Saanvi Chopra,B.Tech Computer Science,3,89,7.91,8.06,100,96,0,88,0,0.15
+STU0172,Tanvi Reddy,MCA,7,87,8.26,8.53,86,84,0,73,0,0.27
+STU0173,Kavya Patel,B.Tech Electronics,6,88,8.52,8.57,99,78,0,74,0,0.05
+STU0174,Fatima Mehta,MCA,6,88,8.72,9.21,89,92,0,84,0,0.49
+STU0175,Kavya Rao,B.Tech Mechanical,7,86,8.64,8.92,84,94,0,94,0,0.28
+STU0176,Priya Verma,B.Tech Electronics,2,83,8.4,8.65,93,82,0,80,0,0.25
+STU0177,Fatima Mehta,B.Tech Electronics,1,86,8.79,9.05,90,90,0,70,0,0.26
+STU0178,Neha Chatterjee,B.Tech Electronics,1,92,7.33,7.41,86,78,0,93,0,0.08
+STU0179,Riya Kulkarni,B.Tech Electronics,8,84,8.37,8.51,94,86,0,76,0,0.14
+STU0180,Kabir Reddy,MBA,3,91,7.95,7.79,89,95,0,90,0,-0.16
+STU0181,Tanvi Mishra,B.Tech Computer Science,1,85,8.03,8.12,100,88,1,88,0,0.09
+STU0182,Shreya Nair,B.Tech Mechanical,3,92,8.32,8.42,91,85,0,84,0,0.1
+STU0183,Aarav Kapoor,B.Tech Electronics,2,90,8.23,8.53,91,86,0,71,0,0.3
+STU0184,Ayaan Chatterjee,B.Tech Computer Science,3,91,8.37,8.72,80,98,0,84,0,0.35
+STU0185,Aadhya Malhotra,B.Tech Mechanical,5,92,7.68,7.95,86,82,0,98,0,0.27
+STU0186,Rahul Mishra,MCA,8,86,8.31,8.63,94,86,0,87,0,0.32
+STU0187,Myra Iyer,MBA,3,99,8.17,8.36,97,92,0,93,0,0.19
+STU0188,Saanvi Bose,BCA,5,90,7.63,8.11,86,87,0,79,0,0.48
+STU0189,Aadhya Rao,MBA,8,86,8.36,8.57,94,95,0,88,0,0.21
+STU0190,Tanvi Kapoor,B.Tech Electronics,6,85,8.68,9.07,85,89,0,89,0,0.39
+STU0191,Neha Joshi,B.Tech Electronics,6,85,8.89,9.01,92,84,0,85,0,0.12
+STU0192,Ananya Chopra,B.Tech Electronics,4,81,7.48,7.95,87,80,0,70,0,0.47
+STU0193,Pooja Verma,BCA,8,83,7.54,8.02,97,81,0,98,0,0.48
+STU0194,Myra Joshi,B.Tech Mechanical,3,91,8.04,7.74,100,77,0,73,0,-0.3
+STU0195,Aditya Singh,MBA,6,92,9.42,9.85,94,89,0,90,0,0.43
+STU0196,Tanvi Mehta,MBA,8,90,8.34,8.51,91,81,0,83,0,0.17
+STU0197,Ishaan Bose,B.Tech Mechanical,3,78,8.15,8.1,86,87,0,94,0,-0.05
+STU0198,Diya Gupta,MBA,7,91,7.41,7.36,96,80,0,83,0,-0.05
+STU0199,Isha Kapoor,B.Tech Electronics,6,89,7.72,7.89,85,82,0,87,0,0.17
+STU0200,Kavya Kapoor,B.Tech Computer Science,2,79,8.42,8.57,94,87,0,94,0,0.15
+STU0201,Aadhya Nair,B.Tech Mechanical,2,87,7.99,8.16,94,86,0,85,0,0.17
+STU0202,Reyansh Mehta,B.Tech Electronics,3,83,7.87,7.74,100,78,0,80,0,-0.13
+STU0203,Vivaan Verma,BCA,1,83,8.65,8.74,98,81,0,86,0,0.09
+STU0204,Riya Bose,MCA,4,82,9.27,9.18,93,89,0,87,0,-0.09
+STU0205,Amit Kumar,MCA,3,86,8.14,8.3,91,91,0,98,0,0.16
+STU0206,Myra Kulkarni,B.Tech Mechanical,4,84,7.52,7.65,100,81,0,96,0,0.13
+STU0207,Manish Singh,MCA,8,95,7.92,8.18,100,83,0,83,0,0.26
+STU0208,Zoya Reddy,B.Tech Mechanical,1,84,7.69,7.71,85,86,0,79,0,0.02
+STU0209,Zoya Rao,B.Tech Mechanical,3,88,7.42,7.64,96,74,0,87,0,0.22
+STU0210,Navya Chopra,BCA,7,93,7.6,8.08,94,81,0,84,0,0.48
+STU0211,Zoya Rao,MCA,7,89,8.24,8.5,87,87,0,75,0,0.26
+STU0212,Reyansh Nair,B.Tech Electronics,6,86,7.75,7.75,98,92,0,89,0,0.0
+STU0213,Aadhya Sharma,B.Tech Mechanical,7,81,8.04,8.43,92,99,0,87,0,0.39
+STU0214,Amit Verma,MBA,8,87,8.05,8.23,91,90,0,91,0,0.18
+STU0215,Aadhya Nair,MBA,6,83,7.53,7.31,94,79,0,70,0,-0.22
+STU0216,Dhruv Kulkarni,BCA,3,88,9.45,9.6,96,86,0,84,0,0.15
+STU0217,Aditya Rao,B.Tech Electronics,1,91,8.05,8.25,93,81,0,91,0,0.2
+STU0218,Krishna Patel,BCA,6,86,7.82,8.08,87,86,0,84,0,0.26
+STU0219,Atharva Iyer,MCA,6,92,8.44,8.58,96,94,0,88,0,0.14
+STU0220,Saanvi Kumar,BCA,8,87,7.54,7.48,90,82,1,83,0,-0.06
+STU0221,Aadhya Gupta,B.Tech Computer Science,8,87,8.46,8.6,94,86,1,71,0,0.14
+STU0222,Ishaan Nair,B.Tech Mechanical,7,82,8.13,8.04,94,95,1,93,0,-0.09
+STU0223,Priya Das,B.Tech Computer Science,7,85,8.95,9.13,90,82,0,82,0,0.18
+STU0224,Neha Mehta,B.Tech Electronics,6,85,8.29,8.47,92,88,0,93,0,0.18
+STU0225,Diya Chopra,B.Tech Electronics,6,91,7.46,7.16,96,77,0,83,0,-0.3
+STU0226,Rohan Mishra,B.Tech Computer Science,6,81,7.3,7.56,95,82,0,70,0,0.26
+STU0227,Rohan Patel,B.Tech Mechanical,8,84,8.4,8.25,92,85,0,89,0,-0.15
+STU0228,Pari Bose,B.Tech Computer Science,3,87,7.71,8.1,91,85,0,78,0,0.39
+STU0229,Aditya Rao,B.Tech Electronics,2,84,7.76,7.88,100,77,0,73,0,0.12
+STU0230,Neha Singh,B.Tech Electronics,8,94,8.1,8.12,97,82,0,97,0,0.02
+STU0231,Neha Bose,MBA,3,90,7.96,8.54,88,90,0,87,0,0.58
+STU0232,Reyansh Mishra,MBA,7,93,8.98,9.14,88,88,0,80,0,0.16
+STU0233,Saanvi Verma,B.Tech Mechanical,6,97,8.27,8.35,92,77,0,78,0,0.08
+STU0234,Tanvi Nair,BCA,2,93,7.87,7.81,94,93,1,90,0,-0.06
+STU0235,Riya Kapoor,B.Tech Mechanical,6,91,7.82,7.69,99,84,0,83,0,-0.13
+STU0236,Saanvi Iyer,B.Tech Computer Science,8,93,8.48,8.72,100,82,0,91,0,0.24
+STU0237,Kabir Kulkarni,B.Tech Computer Science,1,87,8.33,8.79,94,89,0,92,0,0.46
+STU0238,Ananya Singh,MBA,4,85,7.78,7.72,82,98,0,77,0,-0.06
+STU0239,Priya Iyer,MBA,4,85,8.06,8.27,96,91,0,80,0,0.21
+STU0240,Rohan Gupta,MCA,1,86,8.34,8.44,100,88,0,90,0,0.1
+STU0241,Ishaan Singh,MBA,5,90,8.79,8.98,85,88,0,80,0,0.19
+STU0242,Ayaan Sharma,MCA,1,84,8.49,8.89,92,87,0,96,0,0.4
+STU0243,Ananya Chopra,BCA,1,88,9.5,9.76,83,90,0,87,0,0.26
+STU0244,Vihaan Singh,B.Tech Mechanical,7,93,8.54,8.66,85,84,0,79,0,0.12
+STU0245,Arjun Mishra,B.Tech Electronics,6,84,8.49,8.97,93,78,0,88,0,0.48
+STU0246,Reyansh Chatterjee,MBA,4,92,7.9,8.02,92,81,1,89,0,0.12
+STU0247,Aditya Malhotra,BCA,8,86,8.41,8.38,89,90,0,82,0,-0.03
+STU0248,Vivaan Verma,B.Tech Electronics,7,95,8.0,8.19,96,77,0,72,0,0.19
+STU0249,Reyansh Mishra,B.Tech Mechanical,8,79,8.83,8.87,100,82,0,86,0,0.04
+STU0250,Sai Gupta,MBA,3,94,9.2,9.76,98,92,0,89,0,0.56
+STU0251,Saanvi Kulkarni,B.Tech Mechanical,6,90,7.92,7.91,91,84,0,81,0,-0.01
+STU0252,Shreya Malhotra,BCA,8,90,8.68,8.85,99,79,0,83,0,0.17
+STU0253,Sneha Mehta,B.Tech Mechanical,2,83,7.27,7.4,91,95,0,89,0,0.13
+STU0254,Priya Iyer,B.Tech Electronics,8,81,9.13,9.52,94,84,0,78,0,0.39
+STU0255,Pooja Gupta,B.Tech Electronics,7,85,8.74,9.27,99,83,0,77,0,0.53
+STU0256,Reyansh Gupta,B.Tech Electronics,6,87,7.32,7.53,91,83,0,73,0,0.21
+STU0257,Riya Singh,B.Tech Mechanical,8,89,7.93,7.85,80,85,0,97,0,-0.08
+STU0258,Sai Patel,B.Tech Electronics,2,95,7.97,8.0,94,80,0,87,0,0.03
+STU0259,Riya Singh,MBA,1,90,8.81,8.94,90,80,0,79,0,0.13
+STU0260,Priya Kapoor,BCA,2,85,8.38,8.71,87,94,0,83,0,0.33
+STU0261,Sneha Verma,BCA,5,86,7.83,7.53,96,90,0,83,0,-0.3
+STU0262,Amit Malhotra,MCA,3,87,8.46,8.3,89,90,0,76,0,-0.16
+STU0263,Rohan Mehta,BCA,6,88,7.52,7.76,91,76,0,93,0,0.24
+STU0264,Saanvi Chopra,MCA,7,83,7.79,7.98,97,79,0,85,0,0.19
+STU0265,Simran Kulkarni,B.Tech Mechanical,1,89,8.55,8.74,90,81,0,85,0,0.19
+STU0266,Saanvi Sharma,MCA,5,81,7.2,7.44,96,72,0,77,0,0.24
+STU0267,Pari Gupta,BCA,1,90,9.23,9.38,88,84,0,94,0,0.15
+STU0268,Ishaan Chopra,B.Tech Mechanical,7,83,7.8,7.85,87,86,0,96,0,0.05
+STU0269,Vivaan Patel,B.Tech Mechanical,4,88,8.07,8.16,84,91,0,84,0,0.09
+STU0270,Zoya Gupta,MCA,6,86,9.8,10.0,88,83,0,93,0,0.2
+STU0271,Fatima Chopra,MBA,2,87,7.48,7.81,88,97,0,92,0,0.33
+STU0272,Ishaan Kumar,MBA,1,84,8.84,9.0,96,88,0,79,0,0.16
+STU0273,Saanvi Chatterjee,B.Tech Mechanical,7,83,8.71,8.79,89,80,0,87,0,0.08
+STU0274,Tanvi Bose,BCA,4,97,7.67,7.82,99,85,0,88,0,0.15
+STU0275,Ayaan Das,B.Tech Electronics,2,81,8.41,8.52,96,93,0,98,0,0.11
+STU0276,Manish Mishra,MBA,5,89,8.36,8.55,90,88,0,82,0,0.19
+STU0277,Meera Kulkarni,B.Tech Computer Science,1,87,8.86,8.81,97,93,0,84,0,-0.05
+STU0278,Kabir Singh,BCA,5,76,7.9,8.31,91,80,0,81,0,0.41
+STU0279,Aarav Mishra,B.Tech Mechanical,7,91,8.47,8.57,90,83,0,78,0,0.1
+STU0280,Myra Kapoor,B.Tech Mechanical,4,95,8.04,8.43,99,91,0,81,0,0.39
+STU0281,Navya Patel,B.Tech Electronics,1,89,8.19,8.16,93,78,0,93,0,-0.03
+STU0282,Zoya Patel,BCA,7,84,8.3,8.51,90,89,0,81,0,0.21
+STU0283,Pooja Rao,B.Tech Computer Science,7,91,7.53,7.71,100,79,0,80,0,0.18
+STU0284,Fatima Kumar,MBA,8,89,8.29,8.51,94,89,0,92,0,0.22
+STU0285,Riya Patel,B.Tech Electronics,2,89,8.08,8.36,100,85,0,78,0,0.28
+STU0286,Manish Joshi,MBA,2,92,8.14,7.86,96,82,0,84,0,-0.28
+STU0287,Pari Gupta,MCA,6,88,8.3,8.59,89,89,0,83,0,0.29
+STU0288,Arjun Malhotra,B.Tech Mechanical,2,90,8.51,8.47,97,82,0,90,0,-0.04
+STU0289,Dhruv Das,BCA,3,88,9.12,9.23,90,85,0,82,0,0.11
+STU0290,Ishaan Reddy,MCA,3,90,7.39,7.33,86,91,0,96,0,-0.06
+STU0291,Arjun Kumar,B.Tech Mechanical,8,86,8.12,8.28,97,80,0,86,0,0.16
+STU0292,Amit Chopra,B.Tech Electronics,6,91,8.45,8.64,97,72,0,89,0,0.19
+STU0293,Fatima Singh,B.Tech Electronics,2,83,7.28,7.53,98,85,0,91,0,0.25
+STU0294,Pari Reddy,MBA,1,95,8.86,9.34,95,86,0,73,0,0.48
+STU0295,Arjun Rao,B.Tech Electronics,8,85,7.78,8.36,91,86,0,88,0,0.58
+STU0296,Riya Rao,B.Tech Computer Science,2,87,9.05,9.08,92,81,0,75,0,0.03
+STU0297,Deepak Joshi,B.Tech Electronics,1,83,8.18,8.24,88,77,0,84,0,0.06
+STU0298,Amit Iyer,BCA,8,79,8.58,8.75,84,84,0,79,0,0.17
+STU0299,Vihaan Chatterjee,B.Tech Computer Science,6,88,8.87,8.64,92,85,1,89,0,-0.23
+STU0300,Sai Malhotra,B.Tech Mechanical,3,88,7.82,7.91,88,92,0,85,0,0.09
+STU0301,Tanvi Chatterjee,MBA,3,96,8.17,8.18,84,75,0,73,0,0.01
+STU0302,Aadhya Joshi,B.Tech Electronics,6,88,8.45,8.28,96,83,0,86,0,-0.17
+STU0303,Vihaan Gupta,B.Tech Computer Science,6,95,8.65,8.75,87,73,0,79,0,0.1
+STU0304,Myra Rao,BCA,3,85,7.71,7.83,92,84,0,80,0,0.12
+STU0305,Manish Singh,BCA,5,87,8.42,8.35,99,85,1,85,0,-0.07
+STU0306,Meera Singh,MBA,2,90,8.32,8.66,93,82,0,87,0,0.34
+STU0307,Myra Gupta,MCA,2,81,8.25,8.39,90,85,0,71,0,0.14
+STU0308,Sneha Malhotra,BCA,1,84,8.25,8.43,86,93,0,78,0,0.18
+STU0309,Atharva Iyer,BCA,8,91,8.41,8.43,100,78,0,91,0,0.02
+STU0310,Krishna Singh,B.Tech Computer Science,5,92,7.86,8.29,90,87,0,86,0,0.43
+STU0311,Reyansh Malhotra,MBA,1,86,8.61,8.92,83,93,0,73,0,0.31
+STU0312,Simran Singh,MBA,7,92,8.76,8.69,89,79,0,83,0,-0.07
+STU0313,Atharva Kulkarni,MCA,8,85,8.59,9.0,98,82,0,83,0,0.41
+STU0314,Riya Nair,B.Tech Electronics,5,78,7.8,8.14,100,78,0,80,0,0.34
+STU0315,Tanvi Nair,MBA,4,86,8.34,8.33,94,83,0,84,0,-0.01
+STU0316,Rahul Iyer,BCA,8,89,8.2,8.26,91,85,0,82,0,0.06
+STU0317,Aadhya Joshi,MBA,7,85,9.0,9.26,90,90,1,82,0,0.26
+STU0318,Dhruv Kulkarni,MCA,5,92,8.38,8.51,94,76,0,77,0,0.13
+STU0319,Rahul Das,MBA,2,81,8.27,8.77,100,89,0,88,0,0.5
+STU0320,Vikram Mehta,BCA,2,77,7.93,7.92,88,84,0,81,0,-0.01
+STU0321,Saanvi Chatterjee,MBA,3,77,8.57,8.51,93,98,0,78,0,-0.06
+STU0322,Sai Nair,B.Tech Electronics,6,76,8.06,8.43,100,78,0,88,0,0.37
+STU0323,Pooja Verma,B.Tech Electronics,6,84,8.15,8.83,84,87,0,88,0,0.68
+STU0324,Sai Das,MCA,1,92,8.25,8.46,90,87,0,82,0,0.21
+STU0325,Reyansh Gupta,MCA,3,90,8.02,8.25,91,92,0,84,0,0.23
+STU0326,Rahul Singh,B.Tech Mechanical,8,78,8.83,8.8,88,82,0,94,0,-0.03
+STU0327,Aarav Patel,B.Tech Computer Science,5,76,9.77,10.0,93,85,0,86,0,0.23
+STU0328,Ishaan Kapoor,B.Tech Mechanical,7,89,8.52,8.78,92,84,0,83,0,0.26
+STU0329,Aadhya Nair,BCA,2,86,8.77,9.04,80,89,0,86,0,0.27
+STU0330,Pooja Kulkarni,B.Tech Electronics,2,86,8.01,8.38,96,81,0,87,0,0.37
+STU0331,Kavya Kulkarni,MBA,1,82,7.51,7.53,96,91,0,88,0,0.02
+STU0332,Amit Nair,B.Tech Mechanical,3,90,8.46,8.48,94,90,0,90,0,0.02
+STU0333,Aarav Kulkarni,BCA,4,92,8.55,8.77,97,85,0,78,0,0.22
+STU0334,Atharva Patel,MBA,6,86,7.83,7.84,91,81,0,82,0,0.01
+STU0335,Vikram Kapoor,MBA,1,77,8.31,8.46,87,89,0,91,0,0.15
+STU0336,Rahul Verma,B.Tech Mechanical,7,78,7.82,7.82,87,90,1,83,0,0.0
+STU0337,Diya Sharma,BCA,2,85,7.2,7.48,85,86,0,86,0,0.28
+STU0338,Reyansh Chopra,B.Tech Mechanical,6,93,7.55,7.25,92,96,0,93,0,-0.3
+STU0339,Navya Kapoor,BCA,3,88,7.95,8.26,87,88,0,88,0,0.31
+STU0340,Zoya Mishra,B.Tech Mechanical,3,92,9.58,9.81,89,85,0,72,0,0.23
+STU0341,Arjun Chatterjee,B.Tech Computer Science,5,83,8.0,8.05,92,81,0,92,0,0.05
+STU0342,Dhruv Verma,BCA,5,87,8.2,8.28,92,90,0,78,0,0.08
+STU0343,Neha Mishra,BCA,1,83,8.05,7.93,87,83,0,91,0,-0.12
+STU0344,Dhruv Rao,BCA,1,88,8.3,8.62,91,88,0,84,0,0.32
+STU0345,Isha Reddy,B.Tech Computer Science,6,88,7.91,7.61,91,94,0,91,0,-0.3
+STU0346,Meera Chatterjee,B.Tech Electronics,6,91,8.82,8.99,92,82,1,82,0,0.17
+STU0347,Kavya Mishra,BCA,5,90,8.8,8.92,89,86,0,89,0,0.12
+STU0348,Sneha Patel,B.Tech Electronics,3,79,7.2,7.24,85,82,0,83,0,0.04
+STU0349,Fatima Mehta,B.Tech Computer Science,6,84,8.93,9.15,93,89,0,77,0,0.22
+STU0350,Pari Chatterjee,MBA,7,92,8.16,8.44,86,76,0,90,0,0.28
+STU0351,Tanvi Das,B.Tech Electronics,1,88,7.75,7.73,97,78,0,96,0,-0.02
+STU0352,Navya Kulkarni,B.Tech Electronics,5,82,8.52,8.6,95,82,0,83,0,0.08
+STU0353,Vihaan Patel,B.Tech Mechanical,7,87,7.7,8.0,89,84,0,78,0,0.3
+STU0354,Shaurya Sharma,MCA,8,76,8.1,8.73,95,85,0,83,0,0.63
+STU0355,Arjun Nair,B.Tech Mechanical,6,87,8.47,8.38,97,90,0,90,0,-0.09
+STU0356,Amit Verma,MBA,3,89,8.21,8.49,94,83,0,80,0,0.28
+STU0357,Riya Das,B.Tech Electronics,2,87,8.97,8.87,84,86,0,85,0,-0.1
+STU0358,Vikram Das,B.Tech Electronics,6,87,8.32,8.43,99,76,0,79,0,0.11
+STU0359,Ananya Mehta,B.Tech Computer Science,3,86,7.38,7.49,100,86,0,86,0,0.11
+STU0360,Myra Kapoor,B.Tech Computer Science,5,80,7.89,7.96,90,93,0,88,0,0.07
+STU0361,Tanvi Iyer,MBA,5,81,8.32,8.57,97,95,0,77,0,0.25
+STU0362,Kavya Iyer,B.Tech Computer Science,3,82,7.57,7.67,94,91,0,84,0,0.1
+STU0363,Tanvi Kumar,B.Tech Mechanical,8,85,8.28,8.26,100,76,1,86,0,-0.02
+STU0364,Fatima Das,B.Tech Mechanical,2,97,8.2,8.31,90,84,0,94,0,0.11
+STU0365,Aadhya Rao,MCA,3,76,8.97,8.84,90,83,0,89,0,-0.13
+STU0366,Deepak Nair,B.Tech Computer Science,4,79,8.43,8.98,85,87,0,80,0,0.55
+STU0367,Ananya Mishra,B.Tech Computer Science,6,89,8.21,8.23,94,96,0,83,0,0.02
+STU0368,Riya Chatterjee,MBA,3,90,7.55,7.51,94,94,0,87,0,-0.04
+STU0369,Sai Patel,BCA,7,85,8.2,8.1,95,91,1,81,0,-0.1
+STU0370,Rahul Malhotra,B.Tech Electronics,7,84,8.33,8.39,91,98,0,83,0,0.06
+STU0371,Arjun Singh,BCA,2,85,7.88,8.18,91,82,0,94,0,0.3
+STU0372,Vikram Das,MCA,3,94,7.9,7.68,97,81,0,90,0,-0.22
+STU0373,Krishna Bose,MBA,1,77,8.65,8.56,95,86,0,78,0,-0.09
+STU0374,Vikram Singh,BCA,3,84,8.54,8.71,94,97,0,74,0,0.17
+STU0375,Rohan Das,MBA,5,95,8.25,8.22,85,84,0,91,0,-0.03
+STU0376,Diya Iyer,B.Tech Mechanical,5,86,8.96,8.82,91,78,0,87,0,-0.14
+STU0377,Pari Kulkarni,MBA,2,91,7.99,7.69,92,88,0,87,0,-0.3
+STU0378,Shaurya Chopra,MBA,3,93,7.66,7.95,97,75,0,87,0,0.29
+STU0379,Simran Kulkarni,BCA,1,84,8.16,8.38,89,81,0,85,0,0.22
+STU0380,Vivaan Patel,B.Tech Computer Science,5,81,7.66,7.95,86,89,0,88,0,0.29
+STU0381,Amit Bose,MBA,1,78,7.86,8.25,87,83,0,88,0,0.39
+STU0382,Neha Rao,B.Tech Mechanical,5,90,8.07,8.1,99,96,0,91,0,0.03
+STU0383,Meera Rao,B.Tech Electronics,2,87,7.8,7.78,94,88,0,94,0,-0.02
+STU0384,Shaurya Chatterjee,B.Tech Electronics,8,90,7.45,7.81,87,83,0,86,0,0.36
+STU0385,Isha Kulkarni,MCA,6,96,9.75,10.0,91,89,0,91,0,0.25
+STU0386,Fatima Das,B.Tech Electronics,3,85,9.1,9.3,94,89,0,87,0,0.2
+STU0387,Deepak Kapoor,B.Tech Computer Science,6,91,7.89,7.93,86,88,0,90,0,0.04
+STU0388,Ayaan Reddy,B.Tech Electronics,4,89,9.04,9.19,95,79,0,82,0,0.15
+STU0389,Vihaan Rao,B.Tech Electronics,7,90,8.62,8.71,91,76,0,82,0,0.09
+STU0390,Shaurya Gupta,MBA,6,91,8.49,8.74,92,86,0,80,0,0.25
+STU0391,Shaurya Mishra,MBA,8,90,8.41,8.66,89,73,0,92,0,0.25
+STU0392,Pari Mishra,B.Tech Computer Science,2,84,7.77,8.06,90,92,1,89,0,0.29
+STU0393,Deepak Chatterjee,MCA,4,90,7.52,7.91,93,83,0,86,0,0.39
+STU0394,Vihaan Verma,BCA,8,78,8.4,8.34,85,76,0,92,0,-0.06
+STU0395,Rahul Rao,MBA,1,83,8.97,9.01,83,79,0,93,0,0.04
+STU0396,Sneha Singh,BCA,6,86,7.93,8.11,94,92,0,95,0,0.18
+STU0397,Riya Verma,B.Tech Electronics,1,85,7.54,7.61,93,80,0,78,0,0.07
+STU0398,Dhruv Das,MBA,5,88,8.18,8.34,88,84,0,78,0,0.16
+STU0399,Deepak Chatterjee,MBA,5,91,8.72,8.5,87,77,0,80,0,-0.22
+STU0400,Simran Kulkarni,B.Tech Computer Science,3,86,7.48,7.45,86,87,1,85,0,-0.03
+STU0401,Meera Das,BCA,6,83,8.29,8.33,90,96,0,94,0,0.04
+STU0402,Dhruv Kulkarni,MBA,7,80,8.61,8.92,86,90,0,95,0,0.31
+STU0403,Aditya Verma,MCA,6,81,7.74,8.09,93,89,0,87,0,0.35
+STU0404,Vikram Chatterjee,MCA,3,88,7.54,7.9,97,84,0,84,0,0.36
+STU0405,Simran Gupta,MCA,7,79,8.46,8.72,91,92,1,82,0,0.26
+STU0406,Pari Chopra,BCA,8,89,7.69,7.84,91,87,0,82,0,0.15
+STU0407,Pari Mishra,B.Tech Computer Science,6,86,8.61,8.67,83,96,0,94,0,0.06
+STU0408,Ayaan Bose,MBA,5,80,8.54,8.59,93,87,0,83,0,0.05
+STU0409,Vivaan Kulkarni,B.Tech Electronics,5,83,7.85,7.82,87,85,1,79,0,-0.03
+STU0410,Manish Chopra,MCA,1,90,8.94,8.97,93,88,0,88,0,0.03
+STU0411,Shaurya Malhotra,B.Tech Mechanical,7,87,8.57,8.82,85,91,0,91,0,0.25
+STU0412,Ananya Verma,MBA,2,83,8.22,8.51,90,92,0,98,0,0.29
+STU0413,Tanvi Gupta,B.Tech Electronics,3,83,7.51,7.72,95,84,0,95,0,0.21
+STU0414,Kabir Bose,MBA,8,80,8.55,8.58,100,97,0,79,0,0.03
+STU0415,Vihaan Singh,MBA,4,84,8.63,8.7,91,86,0,71,0,0.07
+STU0416,Rahul Malhotra,B.Tech Electronics,6,86,7.86,7.91,99,78,1,90,0,0.05
+STU0417,Zoya Kapoor,BCA,6,85,8.06,8.37,93,89,0,91,0,0.31
+STU0418,Diya Kulkarni,B.Tech Electronics,4,85,7.89,7.82,87,99,1,93,0,-0.07
+STU0419,Saanvi Kapoor,BCA,4,80,7.54,7.79,94,89,1,83,0,0.25
+STU0420,Pari Rao,B.Tech Mechanical,4,86,8.36,8.53,80,84,0,79,0,0.17
+STU0421,Kavya Gupta,B.Tech Electronics,6,87,9.69,9.91,90,91,0,88,0,0.22
+STU0422,Saanvi Rao,B.Tech Computer Science,7,89,8.5,9.06,86,88,0,78,0,0.56
+STU0423,Meera Das,MCA,5,89,7.74,7.81,90,91,0,91,0,0.07
+STU0424,Sai Das,B.Tech Electronics,5,80,8.23,8.24,85,84,0,82,0,0.01
+STU0425,Kabir Iyer,MBA,5,99,8.42,8.29,89,92,0,98,0,-0.13
+STU0426,Saanvi Singh,B.Tech Computer Science,4,79,7.26,7.78,93,80,0,88,0,0.52
+STU0427,Vikram Nair,B.Tech Mechanical,4,76,8.2,8.42,96,79,0,85,0,0.22
+STU0428,Pooja Gupta,B.Tech Mechanical,8,82,8.33,8.3,89,80,0,89,0,-0.03
+STU0429,Krishna Sharma,MBA,3,91,8.08,8.24,84,84,0,84,0,0.16
+STU0430,Rahul Mishra,B.Tech Mechanical,4,99,7.64,8.08,96,87,0,97,0,0.44
+STU0431,Aadhya Gupta,BCA,1,88,8.39,8.53,98,92,0,80,0,0.14
+STU0432,Sai Chopra,MCA,1,80,8.1,8.09,91,93,0,81,0,-0.01
+STU0433,Atharva Bose,MCA,1,86,8.23,8.55,80,82,1,86,0,0.32
+STU0434,Meera Mishra,MCA,5,93,7.95,7.72,95,82,0,76,0,-0.23
+STU0435,Aarav Rao,MBA,2,83,8.11,8.14,80,91,0,93,0,0.03
+STU0436,Isha Rao,B.Tech Electronics,8,90,7.63,7.74,91,89,0,89,0,0.11
+STU0437,Krishna Malhotra,B.Tech Electronics,5,83,8.24,8.48,99,90,0,90,0,0.24
+STU0438,Ayaan Gupta,MCA,8,87,8.91,9.14,87,94,0,89,0,0.23
+STU0439,Atharva Sharma,B.Tech Mechanical,6,84,7.96,8.17,94,87,0,87,0,0.21
+STU0440,Amit Iyer,MCA,7,95,8.74,8.93,96,79,0,87,0,0.19
+STU0441,Deepak Gupta,B.Tech Computer Science,7,96,8.09,8.07,88,79,0,79,0,-0.02
+STU0442,Atharva Singh,B.Tech Electronics,6,85,7.5,7.65,96,80,0,95,0,0.15
+STU0443,Aarav Reddy,B.Tech Electronics,4,89,8.72,8.74,96,79,0,91,0,0.02
+STU0444,Saanvi Gupta,BCA,1,87,8.48,8.39,87,89,0,78,0,-0.09
+STU0445,Riya Nair,B.Tech Computer Science,2,89,7.52,7.84,85,89,0,89,0,0.32
+STU0446,Shaurya Joshi,B.Tech Mechanical,5,83,8.49,8.69,89,79,0,71,0,0.2
+STU0447,Aadhya Das,MBA,4,88,7.42,7.59,90,90,0,82,0,0.17
+STU0448,Krishna Mishra,MCA,8,85,8.57,8.79,93,88,0,74,0,0.22
+STU0449,Shreya Das,B.Tech Electronics,8,90,8.51,8.46,90,85,0,84,0,-0.05
+STU0450,Kabir Nair,B.Tech Mechanical,2,88,8.92,9.29,85,89,0,94,0,0.37
+STU0451,Vikram Das,B.Tech Computer Science,2,88,8.75,9.3,97,87,0,92,0,0.55
+STU0452,Priya Malhotra,MCA,3,87,8.21,8.29,99,81,0,95,0,0.08
+STU0453,Vikram Chatterjee,B.Tech Computer Science,4,89,7.5,7.72,81,89,0,91,0,0.22
+STU0454,Kavya Patel,MBA,8,84,8.26,8.8,89,79,0,95,0,0.54
+STU0455,Zoya Singh,MBA,7,96,8.2,8.55,98,81,0,81,0,0.35
+STU0456,Vihaan Kapoor,B.Tech Electronics,5,93,9.04,9.3,87,97,0,81,0,0.26
+STU0457,Meera Reddy,B.Tech Computer Science,4,85,8.37,8.83,96,88,0,88,0,0.46
+STU0458,Aditya Bose,BCA,2,87,8.48,8.18,90,87,0,76,0,-0.3
+STU0459,Vihaan Patel,B.Tech Electronics,1,88,8.1,8.6,99,83,0,83,0,0.5
+STU0460,Atharva Singh,B.Tech Mechanical,7,86,7.97,8.16,88,79,0,89,0,0.19
+STU0461,Myra Chatterjee,B.Tech Electronics,7,90,7.8,8.13,88,87,0,90,0,0.33
+STU0462,Neha Singh,B.Tech Mechanical,6,86,8.43,8.48,91,84,0,79,0,0.05
+STU0463,Neha Joshi,MBA,3,86,7.43,7.48,90,84,0,83,0,0.05
+STU0464,Rohan Sharma,B.Tech Computer Science,5,86,8.44,8.76,88,78,0,77,0,0.32
+STU0465,Neha Bose,MBA,7,84,8.02,8.02,85,83,0,86,0,0.0
+STU0466,Ananya Chatterjee,BCA,3,89,7.92,7.99,87,85,0,79,0,0.07
+STU0467,Ayaan Verma,B.Tech Mechanical,7,89,7.31,7.39,93,87,0,98,0,0.08
+STU0468,Vivaan Nair,MCA,2,88,7.7,7.83,83,85,0,79,0,0.13
+STU0469,Aditya Chatterjee,MBA,1,91,7.93,8.06,88,96,0,82,0,0.13
+STU0470,Aditya Joshi,B.Tech Electronics,4,96,8.61,8.86,93,88,0,71,0,0.25
+STU0471,Vihaan Singh,MBA,5,85,8.62,8.76,84,85,0,96,0,0.14
+STU0472,Amit Gupta,MBA,6,93,8.17,8.51,90,75,0,78,0,0.34
+STU0473,Ishaan Malhotra,MCA,7,94,8.06,8.16,90,97,0,96,0,0.1
+STU0474,Vihaan Kapoor,MBA,3,98,8.12,8.33,84,94,0,76,0,0.21
+STU0475,Sneha Kapoor,B.Tech Electronics,1,88,7.65,7.68,87,82,1,81,0,0.03
+STU0476,Myra Malhotra,BCA,7,84,8.62,8.55,93,93,0,81,0,-0.07
+STU0477,Pari Joshi,MCA,8,83,8.08,8.47,92,82,0,88,0,0.39
+STU0478,Rohan Rao,B.Tech Mechanical,3,81,8.54,8.77,90,80,0,78,0,0.23
+STU0479,Vihaan Kapoor,B.Tech Electronics,7,89,8.81,8.83,94,73,0,80,0,0.02
+STU0480,Krishna Joshi,MCA,5,86,7.75,7.71,88,87,0,83,0,-0.04
+STU0481,Sai Chatterjee,BCA,2,76,7.2,7.23,94,72,0,81,0,0.03
+STU0482,Dhruv Verma,BCA,7,84,8.89,8.96,93,86,0,70,0,0.07
+STU0483,Shreya Verma,B.Tech Computer Science,4,90,8.31,8.56,100,73,0,97,0,0.25
+STU0484,Manish Kapoor,MCA,8,85,8.34,8.48,89,82,0,87,0,0.14
+STU0485,Isha Rao,B.Tech Computer Science,4,79,8.58,8.65,86,83,0,93,0,0.07
+STU0486,Ayaan Mishra,MCA,4,84,8.38,8.38,95,90,0,97,0,0.0
+STU0487,Ananya Kapoor,BCA,5,86,8.53,8.7,98,81,0,90,0,0.17
+STU0488,Neha Das,BCA,5,86,8.17,8.34,93,85,0,86,0,0.17
+STU0489,Kavya Chatterjee,B.Tech Computer Science,8,94,8.69,9.01,89,80,0,91,0,0.32
+STU0490,Fatima Iyer,BCA,6,91,8.94,8.97,90,76,0,82,0,0.03
+STU0491,Amit Nair,B.Tech Mechanical,3,91,7.97,8.25,91,87,0,76,0,0.28
+STU0492,Priya Chopra,MBA,7,87,7.2,7.31,83,93,0,90,0,0.11
+STU0493,Dhruv Gupta,MCA,7,89,8.96,8.92,100,91,0,83,0,-0.04
+STU0494,Ananya Mishra,MBA,6,92,7.65,7.64,88,82,0,77,0,-0.01
+STU0495,Kavya Mishra,B.Tech Electronics,3,93,8.07,8.29,89,75,0,86,0,0.22
+STU0496,Navya Kumar,MCA,8,77,8.17,8.05,100,91,0,85,0,-0.12
+STU0497,Neha Verma,MBA,1,93,7.78,8.04,92,87,0,93,0,0.26
+STU0498,Arjun Verma,B.Tech Computer Science,7,90,8.34,8.16,87,85,0,85,0,-0.18
+STU0499,Rohan Patel,B.Tech Mechanical,3,81,9.41,9.86,95,86,0,83,0,0.45
+STU0500,Deepak Chatterjee,BCA,1,82,8.24,8.44,85,88,0,83,0,0.2
+STU0501,Simran Mishra,B.Tech Mechanical,8,77,7.77,7.84,100,89,0,75,0,0.07
+STU0502,Neha Kapoor,B.Tech Electronics,1,89,7.43,7.8,89,85,0,94,0,0.37
+STU0503,Saanvi Kapoor,BCA,1,80,7.5,7.53,97,76,0,70,0,0.03
+STU0504,Sneha Kumar,B.Tech Computer Science,2,84,8.48,8.87,89,83,0,93,0,0.39
+STU0505,Ananya Iyer,MBA,5,77,8.01,8.2,94,82,0,85,0,0.19
+STU0506,Saanvi Joshi,B.Tech Computer Science,6,76,7.87,8.11,87,86,1,88,0,0.24
+STU0507,Zoya Chopra,MCA,4,85,8.29,8.25,90,89,0,86,0,-0.04
+STU0508,Sai Verma,B.Tech Computer Science,7,84,8.31,8.6,81,92,0,82,0,0.29
+STU0509,Priya Mishra,B.Tech Computer Science,1,89,8.8,8.68,88,84,0,79,0,-0.12
+STU0510,Sai Mishra,B.Tech Electronics,6,95,7.77,7.81,93,78,0,82,0,0.04
+STU0511,Reyansh Malhotra,B.Tech Computer Science,4,88,8.03,8.16,89,76,0,87,0,0.13
+STU0512,Amit Mishra,BCA,1,95,8.21,8.41,95,78,0,96,0,0.2
+STU0513,Saanvi Kapoor,MBA,1,88,9.02,9.02,100,90,0,88,0,0.0
+STU0514,Fatima Sharma,MCA,3,88,8.08,8.47,92,74,0,77,0,0.39
+STU0515,Meera Patel,BCA,3,86,8.35,8.49,98,74,0,86,0,0.14
+STU0516,Amit Joshi,B.Tech Mechanical,6,77,8.58,8.71,94,80,0,93,0,0.13
+STU0517,Krishna Patel,MBA,6,92,8.49,8.61,94,81,0,90,0,0.12
+STU0518,Sneha Nair,B.Tech Computer Science,6,95,8.74,8.74,93,78,0,89,0,0.0
+STU0519,Simran Kulkarni,B.Tech Electronics,6,89,7.27,7.19,90,84,0,76,0,-0.08
+STU0520,Saanvi Chatterjee,B.Tech Electronics,4,88,8.33,8.44,88,92,0,96,0,0.11
+STU0521,Myra Bose,MCA,7,84,7.89,8.14,90,85,0,90,0,0.25
+STU0522,Simran Rao,MCA,2,77,8.86,9.02,89,85,0,84,0,0.16
+STU0523,Ishaan Joshi,B.Tech Mechanical,3,78,8.95,9.11,94,91,0,77,0,0.16
+STU0524,Fatima Das,B.Tech Computer Science,2,89,8.07,8.39,81,85,0,80,0,0.32
+STU0525,Pari Chatterjee,BCA,5,89,8.44,8.45,88,85,0,78,0,0.01
+STU0526,Sai Kumar,B.Tech Electronics,8,91,8.02,7.72,90,79,0,73,0,-0.3
+STU0527,Deepak Bose,B.Tech Computer Science,1,80,8.25,8.67,93,82,0,88,0,0.42
+STU0528,Priya Patel,MBA,6,84,7.85,7.77,83,83,0,86,0,-0.08
+STU0529,Aarav Rao,B.Tech Electronics,7,86,7.99,7.95,95,78,0,90,0,-0.04
+STU0530,Priya Nair,MBA,3,81,7.82,7.68,89,91,0,88,0,-0.14
+STU0531,Shaurya Singh,BCA,5,91,8.46,8.39,90,81,0,94,0,-0.07
+STU0532,Ishaan Patel,MCA,7,81,8.65,8.98,100,83,0,89,0,0.33
+STU0533,Pari Mishra,B.Tech Computer Science,6,98,7.89,7.73,82,90,0,71,0,-0.16
+STU0534,Ananya Mishra,MBA,4,85,8.42,8.61,94,87,0,93,0,0.19
+STU0535,Krishna Rao,B.Tech Computer Science,7,82,7.86,7.86,96,91,0,88,0,0.0
+STU0536,Simran Joshi,BCA,8,92,7.61,8.09,99,90,0,97,0,0.48
+STU0537,Shreya Singh,BCA,6,78,7.94,7.94,95,79,0,90,0,0.0
+STU0538,Dhruv Mishra,BCA,3,93,8.55,8.76,87,80,1,93,0,0.21
+STU0539,Fatima Rao,B.Tech Mechanical,8,90,8.18,8.25,81,79,1,98,0,0.07
+STU0540,Ananya Gupta,B.Tech Electronics,5,80,8.29,8.64,85,87,0,91,0,0.35
+STU0541,Meera Das,B.Tech Computer Science,4,87,9.63,9.45,97,84,0,90,0,-0.18
+STU0542,Neha Kumar,B.Tech Mechanical,1,89,7.83,8.03,82,89,1,87,0,0.2
+STU0543,Zoya Iyer,B.Tech Electronics,5,90,8.73,8.95,92,80,0,80,0,0.22
+STU0544,Arjun Bose,B.Tech Mechanical,8,92,8.92,9.02,92,80,0,93,0,0.1
+STU0545,Pari Nair,BCA,3,90,9.17,9.14,90,87,0,89,0,-0.03
+STU0546,Myra Patel,B.Tech Electronics,8,85,7.76,8.09,95,80,0,94,0,0.33
+STU0547,Neha Malhotra,B.Tech Mechanical,7,92,8.27,8.44,94,80,0,85,0,0.17
+STU0548,Riya Kapoor,MBA,2,76,8.64,8.48,99,84,0,83,0,-0.16
+STU0549,Ananya Das,MCA,1,83,8.06,8.49,80,93,0,87,0,0.43
+STU0550,Meera Gupta,B.Tech Electronics,2,80,7.66,8.15,87,79,0,92,0,0.49
+STU0551,Diya Nair,MBA,4,88,7.73,7.92,86,92,0,92,0,0.19
+STU0552,Meera Chatterjee,B.Tech Mechanical,3,89,8.38,8.88,91,78,0,88,0,0.5
+STU0553,Vivaan Mishra,B.Tech Computer Science,5,97,7.69,7.77,94,85,0,78,0,0.08
+STU0554,Sai Mehta,B.Tech Mechanical,3,92,9.36,9.55,87,76,0,86,0,0.19
+STU0555,Isha Chatterjee,MCA,8,92,8.44,8.59,89,79,0,90,0,0.15
+STU0556,Reyansh Chatterjee,B.Tech Mechanical,8,91,7.43,7.9,94,94,0,75,0,0.47
+STU0557,Pari Verma,B.Tech Mechanical,2,80,8.13,8.38,100,90,0,83,0,0.25
+STU0558,Isha Mehta,B.Tech Mechanical,3,81,8.82,8.78,100,84,0,96,0,-0.04
+STU0559,Ananya Malhotra,MCA,3,90,8.13,8.18,90,88,0,85,0,0.05
+STU0560,Sneha Chatterjee,MCA,7,84,8.12,8.29,81,88,0,78,0,0.17
+STU0561,Atharva Bose,B.Tech Electronics,1,81,7.36,7.15,85,81,0,98,0,-0.21
+STU0562,Dhruv Chatterjee,MBA,7,84,8.29,8.52,92,85,0,76,0,0.23
+STU0563,Kabir Iyer,BCA,2,94,9.1,8.91,86,84,0,78,0,-0.19
+STU0564,Neha Kumar,BCA,6,89,7.84,8.42,97,87,0,92,0,0.58
+STU0565,Ayaan Reddy,B.Tech Mechanical,8,92,7.92,7.91,92,91,0,85,0,-0.01
+STU0566,Fatima Kulkarni,B.Tech Electronics,7,79,7.8,7.94,91,97,0,75,0,0.14
+STU0567,Navya Das,B.Tech Electronics,3,89,8.94,9.54,89,88,0,88,0,0.6
+STU0568,Pari Kulkarni,MBA,2,87,8.15,8.39,80,90,0,85,0,0.24
+STU0569,Fatima Mehta,MCA,5,85,9.22,9.24,89,97,0,79,0,0.02
+STU0570,Riya Singh,MBA,7,84,8.13,8.45,93,78,0,81,0,0.32
+STU0571,Krishna Chopra,B.Tech Electronics,7,83,8.16,8.4,94,75,0,92,0,0.24
+STU0572,Neha Kumar,MBA,3,88,8.89,9.13,97,88,0,94,0,0.24
+STU0573,Krishna Kumar,BCA,8,89,8.15,8.75,96,89,0,76,0,0.6
+STU0574,Navya Sharma,B.Tech Electronics,3,80,8.35,8.53,88,86,0,96,0,0.18
+STU0575,Myra Kapoor,MBA,8,90,7.63,7.76,87,83,0,82,0,0.13
+STU0576,Kavya Bose,B.Tech Mechanical,8,84,7.57,7.69,89,72,0,98,0,0.12
+STU0577,Sai Chopra,B.Tech Computer Science,4,92,8.01,8.16,86,96,0,98,0,0.15
+STU0578,Saanvi Nair,MBA,5,87,8.71,8.9,85,83,0,85,0,0.19
+STU0579,Zoya Chopra,B.Tech Mechanical,8,84,8.09,8.22,91,86,0,77,0,0.13
+STU0580,Ayaan Chopra,B.Tech Computer Science,5,83,7.56,7.91,81,92,0,94,0,0.35
+STU0581,Riya Kapoor,B.Tech Computer Science,8,85,7.2,7.28,91,79,0,81,0,0.08
+STU0582,Sneha Mehta,B.Tech Mechanical,4,94,8.53,8.5,84,84,0,83,0,-0.03
+STU0583,Aditya Chatterjee,BCA,6,89,7.93,8.18,100,90,0,84,0,0.25
+STU0584,Sai Chatterjee,B.Tech Computer Science,4,86,8.02,8.41,88,86,0,85,0,0.39
+STU0585,Manish Das,B.Tech Mechanical,7,84,7.51,7.72,91,89,0,81,0,0.21
+STU0586,Krishna Iyer,MCA,1,93,7.76,8.25,83,88,0,88,0,0.49
+STU0587,Neha Reddy,MBA,3,83,8.41,8.82,80,89,0,70,0,0.41
+STU0588,Aadhya Rao,MBA,5,82,9.01,9.04,86,84,1,98,0,0.03
+STU0589,Deepak Mehta,MCA,7,77,7.67,8.12,100,85,0,76,0,0.45
+STU0590,Saanvi Singh,B.Tech Mechanical,3,97,9.0,9.29,87,85,0,83,0,0.29
+STU0591,Fatima Nair,B.Tech Mechanical,7,88,8.93,9.26,86,94,0,87,0,0.33
+STU0592,Amit Reddy,B.Tech Mechanical,7,90,8.93,8.86,91,82,0,74,0,-0.07
+STU0593,Arjun Patel,B.Tech Electronics,5,88,9.46,9.24,91,89,0,85,0,-0.22
+STU0594,Riya Chatterjee,B.Tech Electronics,6,86,7.55,7.75,88,72,0,93,0,0.2
+STU0595,Sai Chatterjee,B.Tech Mechanical,6,91,8.23,8.43,97,87,0,91,0,0.2
+STU0596,Neha Joshi,MCA,7,85,8.86,9.07,92,78,0,87,0,0.21
+STU0597,Kavya Reddy,BCA,5,82,7.88,7.87,86,98,0,94,0,-0.01
+STU0598,Amit Singh,MBA,8,96,7.59,7.75,85,81,0,78,0,0.16
+STU0599,Vihaan Verma,B.Tech Computer Science,8,93,8.0,8.36,95,99,0,74,0,0.36
+STU0600,Shaurya Chatterjee,B.Tech Electronics,1,93,8.77,8.73,97,88,1,83,0,-0.04
+STU0601,Sneha Iyer,B.Tech Mechanical,3,82,7.84,8.4,92,90,0,79,0,0.56
+STU0602,Pari Kumar,BCA,2,83,8.74,8.62,89,86,0,85,0,-0.12
+STU0603,Diya Patel,BCA,3,86,8.4,8.69,95,80,0,83,0,0.29
+STU0604,Pari Nair,B.Tech Electronics,2,92,8.65,8.53,93,74,0,85,0,-0.12
+STU0605,Aarav Iyer,B.Tech Electronics,2,96,7.73,7.71,95,76,0,80,0,-0.02
+STU0606,Rohan Malhotra,B.Tech Mechanical,8,89,7.88,7.98,95,88,0,86,0,0.1
+STU0607,Isha Mehta,B.Tech Electronics,3,85,8.39,8.52,94,83,0,83,0,0.13
+STU0608,Rohan Joshi,B.Tech Computer Science,2,82,8.18,8.17,86,87,0,86,0,-0.01
+STU0609,Riya Rao,MCA,7,90,7.98,8.21,94,88,0,79,0,0.23
+STU0610,Krishna Singh,B.Tech Computer Science,1,87,8.38,8.53,81,86,0,98,0,0.15
+STU0611,Shaurya Chatterjee,BCA,4,85,7.84,8.06,93,93,0,76,0,0.22
+STU0612,Ishaan Bose,MBA,8,90,8.5,8.62,93,92,0,91,0,0.12
+STU0613,Sai Mehta,MCA,2,81,8.61,8.75,92,86,0,83,0,0.14
+STU0614,Myra Das,B.Tech Electronics,6,92,8.16,8.09,90,87,0,93,0,-0.07
+STU0615,Ananya Reddy,B.Tech Mechanical,2,90,7.77,8.42,93,93,0,83,0,0.65
+STU0616,Shreya Kulkarni,B.Tech Mechanical,5,89,8.62,9.01,97,91,0,82,0,0.39
+STU0617,Vivaan Rao,MCA,4,84,8.37,8.71,90,92,0,95,0,0.34
+STU0618,Aadhya Verma,MCA,8,82,7.78,7.9,93,82,0,94,0,0.12
+STU0619,Ananya Mishra,B.Tech Mechanical,2,89,8.22,8.08,85,87,0,70,0,-0.14
+STU0620,Aarav Das,BCA,3,92,8.12,8.92,100,84,0,84,0,0.8
+STU0621,Amit Bose,BCA,3,91,9.05,8.87,83,82,0,89,0,-0.18
+STU0622,Arjun Sharma,MBA,2,89,8.73,8.64,80,91,0,79,0,-0.09
+STU0623,Kabir Verma,B.Tech Computer Science,7,76,8.27,8.58,91,83,0,83,0,0.31
+STU0624,Deepak Bose,B.Tech Electronics,7,85,7.53,7.54,94,87,0,86,0,0.01
+STU0625,Neha Kapoor,MBA,3,82,8.11,7.82,92,94,0,74,0,-0.29
+STU0626,Pari Patel,MBA,4,84,8.36,8.76,89,81,1,71,0,0.4
+STU0627,Ishaan Kapoor,BCA,7,87,9.22,9.43,91,87,0,84,0,0.21
+STU0628,Arjun Rao,B.Tech Mechanical,7,82,8.61,8.81,92,80,0,94,0,0.2
+STU0629,Ananya Verma,MCA,2,90,7.92,8.27,89,81,0,79,0,0.35
+STU0630,Ayaan Chatterjee,MBA,1,78,8.44,8.22,85,73,0,84,0,-0.22
+STU0631,Atharva Mehta,B.Tech Computer Science,3,86,8.04,7.98,86,88,0,81,0,-0.06
+STU0632,Shaurya Mishra,BCA,5,88,7.76,7.95,98,89,0,82,0,0.19
+STU0633,Krishna Reddy,B.Tech Mechanical,2,88,8.08,8.23,90,85,0,86,0,0.15
+STU0634,Vivaan Gupta,B.Tech Electronics,5,82,7.69,7.56,83,78,0,86,0,-0.13
+STU0635,Diya Chopra,B.Tech Mechanical,2,82,8.46,8.62,82,89,0,90,0,0.16
+STU0636,Deepak Das,B.Tech Computer Science,8,82,8.41,8.39,92,78,0,72,0,-0.02
+STU0637,Shaurya Das,MCA,5,85,8.14,8.21,86,83,0,86,0,0.07
+STU0638,Amit Mehta,MCA,1,86,8.29,8.31,97,78,0,88,0,0.02
+STU0639,Aarav Nair,B.Tech Computer Science,8,92,8.44,8.55,89,92,0,75,0,0.11
+STU0640,Ishaan Kumar,B.Tech Computer Science,7,82,8.0,8.4,93,80,0,82,0,0.4
+STU0641,Ananya Bose,B.Tech Mechanical,6,83,7.85,8.2,85,95,0,90,0,0.35
+STU0642,Arjun Chopra,BCA,2,92,7.97,8.09,84,82,0,88,0,0.12
+STU0643,Vihaan Kumar,MCA,1,93,7.65,7.73,91,77,1,89,0,0.08
+STU0644,Arjun Chatterjee,BCA,5,83,8.1,8.16,88,85,0,83,0,0.06
+STU0645,Priya Chatterjee,B.Tech Computer Science,6,85,7.84,8.05,100,86,0,91,0,0.21
+STU0646,Amit Rao,B.Tech Mechanical,4,80,8.28,8.21,84,81,0,93,0,-0.07
+STU0647,Manish Mishra,MCA,4,91,8.32,8.16,91,87,0,86,0,-0.16
+STU0648,Pooja Sharma,MCA,6,77,7.75,7.89,94,72,0,83,0,0.14
+STU0649,Aarav Gupta,B.Tech Computer Science,7,87,8.62,8.91,94,81,0,71,0,0.29
+STU0650,Pari Mehta,MCA,4,85,8.7,9.13,95,88,0,87,0,0.43
+STU0651,Vihaan Singh,B.Tech Mechanical,5,84,8.13,8.61,87,95,0,82,0,0.48
+STU0652,Rohan Malhotra,B.Tech Electronics,6,93,7.5,7.77,88,77,0,86,0,0.27
+STU0653,Sai Chopra,B.Tech Computer Science,3,92,7.78,7.63,91,85,0,88,0,-0.15
+STU0654,Meera Patel,MBA,1,91,8.17,8.69,93,83,0,73,0,0.52
+STU0655,Krishna Nair,BCA,5,85,8.03,8.37,94,78,0,86,0,0.34
+STU0656,Meera Gupta,BCA,8,90,8.96,9.29,95,86,0,87,0,0.33
+STU0657,Arjun Iyer,MCA,2,93,7.53,7.61,88,88,0,93,0,0.08
+STU0658,Shaurya Chatterjee,B.Tech Electronics,6,84,7.2,7.27,96,89,0,87,0,0.07
+STU0659,Neha Das,MCA,8,85,7.56,7.81,87,99,0,88,0,0.25
+STU0660,Diya Mehta,B.Tech Computer Science,3,84,7.89,8.02,90,92,0,86,0,0.13
+STU0661,Pari Kulkarni,B.Tech Computer Science,4,83,9.15,9.31,95,82,0,87,0,0.16
+STU0662,Fatima Singh,B.Tech Computer Science,4,88,7.26,7.81,98,83,1,77,0,0.55
+STU0663,Meera Malhotra,B.Tech Computer Science,5,88,8.24,8.46,92,89,0,95,0,0.22
+STU0664,Atharva Sharma,B.Tech Electronics,8,89,7.68,8.1,100,99,0,77,0,0.42
+STU0665,Priya Nair,B.Tech Computer Science,8,88,7.2,7.46,89,97,0,79,0,0.26
+STU0666,Krishna Mehta,B.Tech Computer Science,1,78,7.96,7.71,95,73,0,85,0,-0.25
+STU0667,Rohan Singh,MCA,7,76,8.04,8.52,93,80,0,84,0,0.48
+STU0668,Sai Chopra,MBA,5,87,8.44,8.32,94,72,0,80,0,-0.12
+STU0669,Arjun Sharma,B.Tech Computer Science,4,84,8.52,8.67,84,80,0,86,0,0.15
+STU0670,Tanvi Singh,B.Tech Computer Science,6,86,7.91,7.96,95,82,0,84,0,0.05
+STU0671,Zoya Verma,MCA,7,97,7.49,7.27,95,81,0,82,0,-0.22
+STU0672,Meera Mishra,B.Tech Computer Science,7,83,8.07,8.54,96,91,0,75,0,0.47
+STU0673,Atharva Das,MCA,3,81,7.2,7.19,96,89,0,83,0,-0.01
+STU0674,Tanvi Singh,B.Tech Computer Science,4,86,7.86,8.05,95,76,0,87,0,0.19
+STU0675,Kavya Bose,MBA,8,91,7.99,8.28,100,85,0,87,0,0.29
+STU0676,Saanvi Joshi,MCA,7,83,8.29,8.53,92,79,0,86,0,0.24
+STU0677,Vikram Nair,B.Tech Mechanical,1,94,8.42,8.76,90,90,1,86,0,0.34
+STU0678,Navya Mishra,MBA,8,82,8.36,8.31,88,87,0,87,0,-0.05
+STU0679,Amit Malhotra,BCA,7,81,8.73,8.99,88,76,0,83,0,0.26
+STU0680,Vivaan Gupta,MBA,4,84,8.26,8.34,81,83,0,82,0,0.08
+STU0681,Saanvi Verma,B.Tech Electronics,6,90,7.85,8.34,82,93,0,83,0,0.49
+STU0682,Rohan Kumar,B.Tech Computer Science,4,91,8.24,8.62,90,79,0,94,0,0.38
+STU0683,Saanvi Kapoor,B.Tech Mechanical,1,86,8.31,8.71,86,89,0,80,0,0.4
+STU0684,Rohan Chopra,B.Tech Electronics,6,86,8.24,8.09,88,94,0,91,0,-0.15
+STU0685,Atharva Kumar,MCA,6,86,8.32,8.41,98,84,0,86,0,0.09
+STU0686,Navya Chopra,B.Tech Computer Science,6,92,7.81,8.27,84,95,1,82,0,0.46
+STU0687,Amit Singh,MBA,4,85,7.25,7.31,86,82,0,84,0,0.06
+STU0688,Kavya Kapoor,BCA,3,91,8.3,8.51,86,80,0,97,0,0.21
+STU0689,Sai Verma,MCA,4,83,9.03,9.13,92,92,0,93,0,0.1
+STU0690,Rahul Sharma,BCA,4,86,8.01,8.15,93,91,0,85,0,0.14
+STU0691,Isha Kumar,BCA,1,90,9.02,9.25,93,76,0,70,0,0.23
+STU0692,Manish Singh,B.Tech Computer Science,6,88,8.15,8.2,93,85,1,92,0,0.05
+STU0693,Riya Joshi,MBA,2,87,7.83,8.18,90,89,0,81,0,0.35
+STU0694,Fatima Singh,MCA,7,83,8.24,8.39,94,84,0,72,0,0.15
+STU0695,Kavya Gupta,MCA,6,84,8.6,8.69,90,91,0,80,0,0.09
+STU0696,Manish Kumar,B.Tech Electronics,5,79,8.12,8.17,87,84,0,88,0,0.05
+STU0697,Aadhya Singh,MCA,1,86,8.35,8.86,90,87,1,81,0,0.51
+STU0698,Amit Joshi,MBA,1,82,7.91,7.96,93,99,0,79,0,0.05
+STU0699,Fatima Kulkarni,MCA,2,84,8.17,8.4,93,93,0,70,0,0.23
+STU0700,Ishaan Gupta,B.Tech Mechanical,2,76,7.95,8.32,84,72,0,88,0,0.37
+STU0701,Fatima Kumar,B.Tech Mechanical,2,88,7.65,7.6,87,86,0,80,0,-0.05
+STU0702,Isha Chatterjee,B.Tech Computer Science,5,89,7.2,7.18,86,84,0,81,0,-0.02
+STU0703,Arjun Das,BCA,2,90,7.27,7.43,94,97,0,81,0,0.16
+STU0704,Vihaan Joshi,B.Tech Electronics,7,88,7.3,7.0,96,85,1,93,0,-0.3
+STU0705,Pooja Mishra,B.Tech Electronics,6,80,8.46,8.98,94,87,0,85,0,0.52
+STU0706,Reyansh Mishra,MBA,4,79,8.88,8.91,94,76,0,76,0,0.03
+STU0707,Arjun Verma,BCA,1,94,8.03,8.47,91,74,0,91,0,0.44
+STU0708,Reyansh Patel,BCA,3,84,8.55,8.71,84,86,0,98,0,0.16
+STU0709,Shaurya Patel,MBA,2,89,8.17,8.54,93,87,0,77,0,0.37
+STU0710,Simran Mishra,B.Tech Mechanical,1,88,8.72,8.7,99,85,0,78,0,-0.02
+STU0711,Shaurya Kulkarni,B.Tech Electronics,3,91,8.06,8.36,90,85,0,88,0,0.3
+STU0712,Isha Iyer,MCA,7,88,7.2,7.13,96,85,0,81,0,-0.07
+STU0713,Neha Reddy,B.Tech Mechanical,5,80,7.66,7.41,91,82,0,78,0,-0.25
+STU0714,Reyansh Verma,B.Tech Electronics,8,86,8.38,8.95,84,92,0,91,0,0.57
+STU0715,Riya Sharma,B.Tech Electronics,2,83,8.3,8.36,92,95,0,89,0,0.06
+STU0716,Shreya Mishra,MCA,2,89,7.98,7.83,90,93,0,74,0,-0.15
+STU0717,Shaurya Rao,B.Tech Computer Science,8,81,8.26,8.21,88,83,0,75,0,-0.05
+STU0718,Pari Joshi,B.Tech Electronics,8,82,8.55,8.44,84,82,0,90,0,-0.11
+STU0719,Diya Patel,B.Tech Mechanical,7,86,7.97,8.13,83,88,0,87,0,0.16
+STU0720,Myra Das,MCA,8,84,8.7,8.62,97,86,0,82,0,-0.08
+STU0721,Tanvi Chatterjee,BCA,4,86,8.15,8.54,86,81,0,92,0,0.39
+STU0722,Amit Verma,MCA,2,84,8.65,9.14,89,90,0,76,0,0.49
+STU0723,Navya Kapoor,B.Tech Electronics,4,90,8.3,8.54,88,76,0,88,0,0.24
+STU0724,Myra Malhotra,B.Tech Electronics,8,76,8.04,8.38,92,97,0,92,0,0.34
+STU0725,Ananya Mishra,BCA,2,83,8.21,8.35,84,80,0,81,0,0.14
+STU0726,Aditya Malhotra,MBA,3,76,8.22,8.32,83,88,0,90,0,0.1
+STU0727,Tanvi Kumar,MCA,4,88,8.04,8.31,95,87,0,79,0,0.27
+STU0728,Krishna Verma,B.Tech Electronics,2,88,8.8,8.83,100,82,1,85,0,0.03
+STU0729,Sneha Iyer,B.Tech Mechanical,3,83,8.31,8.11,89,79,0,85,0,-0.2
+STU0730,Diya Gupta,B.Tech Mechanical,2,91,8.52,8.22,100,87,0,79,0,-0.3
+STU0731,Priya Joshi,MBA,6,87,8.29,8.31,92,82,0,82,0,0.02
+STU0732,Vikram Chatterjee,B.Tech Computer Science,7,83,7.48,7.66,94,89,0,90,0,0.18
+STU0733,Ishaan Singh,MBA,2,88,7.93,8.25,85,80,0,78,0,0.32
+STU0734,Amit Mehta,BCA,6,92,8.67,8.92,97,80,0,87,0,0.25
+STU0735,Diya Joshi,B.Tech Mechanical,8,86,8.62,8.75,90,89,0,91,0,0.13
+STU0736,Rahul Verma,MCA,5,83,8.17,8.11,80,87,0,89,0,-0.06
+STU0737,Simran Kulkarni,B.Tech Mechanical,7,88,7.23,7.31,80,94,0,77,0,0.08
+STU0738,Isha Nair,B.Tech Computer Science,8,93,8.67,8.64,86,88,0,79,0,-0.03
+STU0739,Riya Sharma,BCA,5,87,7.96,7.75,80,87,0,81,0,-0.21
+STU0740,Kavya Mehta,MCA,3,84,8.55,8.93,90,83,0,88,0,0.38
+STU0741,Tanvi Gupta,BCA,7,80,8.31,8.57,95,74,0,79,0,0.26
+STU0742,Sai Iyer,B.Tech Electronics,4,82,8.25,8.5,99,83,0,81,0,0.25
+STU0743,Pooja Mishra,MBA,6,92,8.35,8.75,93,79,0,75,0,0.4
+STU0744,Deepak Kumar,B.Tech Computer Science,5,79,8.53,8.92,100,91,0,93,0,0.39
+STU0745,Meera Singh,MBA,1,84,7.62,7.94,94,86,0,87,0,0.32
+STU0746,Dhruv Verma,MCA,1,88,8.84,9.25,94,91,0,88,0,0.41
+STU0747,Riya Iyer,BCA,6,84,8.58,8.45,97,78,0,87,0,-0.13
+STU0748,Deepak Joshi,B.Tech Mechanical,2,82,8.48,8.62,84,88,0,80,0,0.14
+STU0749,Ananya Das,B.Tech Electronics,8,91,8.2,8.43,87,82,0,81,0,0.23
+STU0750,Rahul Chopra,MBA,6,91,9.04,9.03,97,72,0,76,0,-0.01
+STU0751,Diya Patel,BCA,1,82,7.52,7.35,94,84,0,87,0,-0.17
+STU0752,Shaurya Chopra,MCA,4,90,8.33,8.61,91,78,0,92,0,0.28
+STU0753,Kabir Reddy,B.Tech Mechanical,7,84,7.73,7.84,87,83,0,87,0,0.11
+STU0754,Aarav Mishra,MCA,3,88,7.75,7.8,97,88,0,98,0,0.05
+STU0755,Aarav Nair,BCA,5,92,8.77,8.64,95,85,0,81,0,-0.13
+STU0756,Saanvi Bose,B.Tech Electronics,6,87,8.67,8.92,87,90,0,80,0,0.25
+STU0757,Kabir Chatterjee,BCA,7,88,8.05,8.16,95,79,0,98,0,0.11
+STU0758,Aarav Malhotra,B.Tech Mechanical,6,77,7.9,8.12,94,85,0,84,0,0.22
+STU0759,Shreya Kulkarni,BCA,5,89,8.08,8.51,96,91,0,78,0,0.43
+STU0760,Rahul Patel,BCA,5,86,8.05,8.0,93,82,0,89,0,-0.05
+STU0761,Saanvi Reddy,B.Tech Mechanical,5,81,9.06,9.03,93,90,0,81,0,-0.03
+STU0762,Vikram Nair,B.Tech Computer Science,7,91,7.59,8.03,92,82,0,82,0,0.44
+STU0763,Krishna Sharma,B.Tech Mechanical,8,91,7.91,7.91,90,78,1,97,0,0.0
+STU0764,Diya Bose,B.Tech Electronics,7,84,8.62,8.81,87,85,0,90,0,0.19
+STU0765,Manish Chopra,MCA,6,86,8.8,9.15,96,83,0,77,0,0.35
+STU0766,Rohan Kapoor,B.Tech Mechanical,8,83,8.3,8.56,81,85,0,86,0,0.26
+STU0767,Navya Malhotra,BCA,3,85,8.85,9.08,98,84,0,91,0,0.23
+STU0768,Priya Kumar,BCA,2,95,8.86,8.79,90,83,0,88,0,-0.07
+STU0769,Diya Kapoor,MCA,6,90,7.78,7.94,81,94,0,81,0,0.16
+STU0770,Rohan Das,MCA,5,87,8.05,8.43,80,85,0,84,0,0.38
+STU0771,Isha Das,BCA,5,84,9.06,9.03,95,88,0,93,0,-0.03
+STU0772,Ayaan Mishra,B.Tech Computer Science,2,83,7.83,8.2,94,76,0,81,0,0.37
+STU0773,Dhruv Malhotra,B.Tech Computer Science,7,88,8.62,8.63,80,89,0,76,0,0.01
+STU0774,Pooja Verma,MCA,3,76,7.2,7.51,92,84,1,94,0,0.31
+STU0775,Isha Bose,MBA,8,90,9.01,8.88,91,76,0,83,0,-0.13
+STU0776,Atharva Patel,B.Tech Electronics,6,85,8.51,8.67,95,90,0,98,0,0.16
+STU0777,Atharva Gupta,B.Tech Mechanical,1,85,7.73,7.93,87,94,0,83,0,0.2
+STU0778,Saanvi Iyer,MCA,3,84,7.96,8.25,91,82,0,96,0,0.29
+STU0779,Sai Singh,MBA,7,82,8.22,8.5,83,88,0,77,0,0.28
+STU0780,Meera Bose,B.Tech Electronics,7,91,7.72,8.01,97,91,0,86,0,0.29
+STU0781,Neha Iyer,B.Tech Mechanical,6,85,7.91,8.35,88,79,1,89,0,0.44
+STU0782,Fatima Malhotra,MCA,1,83,7.72,7.58,89,85,0,86,0,-0.14
+STU0783,Ananya Nair,B.Tech Mechanical,6,91,8.46,8.57,91,89,0,93,0,0.11
+STU0784,Reyansh Joshi,MBA,5,87,7.97,7.92,84,89,0,89,0,-0.05
+STU0785,Aditya Rao,BCA,8,89,8.14,8.57,89,91,0,84,0,0.43
+STU0786,Shreya Malhotra,BCA,7,83,8.5,8.73,93,86,0,84,0,0.23
+STU0787,Krishna Gupta,B.Tech Electronics,6,98,8.79,9.08,92,92,0,88,0,0.29
+STU0788,Shaurya Joshi,B.Tech Computer Science,4,87,8.05,8.18,80,87,0,81,0,0.13
+STU0789,Krishna Iyer,B.Tech Mechanical,1,94,8.21,8.12,91,79,0,88,0,-0.09
+STU0790,Shaurya Mehta,BCA,1,88,8.68,8.67,92,77,0,89,0,-0.01
+STU0791,Diya Kapoor,MBA,1,89,8.45,8.6,94,95,0,83,0,0.15
+STU0792,Vihaan Mehta,B.Tech Mechanical,1,87,7.66,7.64,92,92,0,83,0,-0.02
+STU0793,Ayaan Bose,B.Tech Electronics,7,85,8.0,8.04,93,77,0,93,0,0.04
+STU0794,Diya Mishra,B.Tech Mechanical,3,83,8.56,8.46,95,90,0,87,0,-0.1
+STU0795,Aarav Rao,B.Tech Electronics,2,82,8.32,8.23,90,92,0,90,0,-0.09
+STU0796,Saanvi Kulkarni,MBA,3,87,7.71,7.99,92,72,0,90,0,0.28
+STU0797,Reyansh Malhotra,B.Tech Mechanical,2,86,8.8,8.73,80,87,0,87,0,-0.07
+STU0798,Reyansh Mishra,MCA,4,78,7.71,8.41,90,90,0,80,0,0.7
+STU0799,Vikram Iyer,BCA,7,76,8.11,8.21,90,85,0,86,0,0.1
+STU0800,Aditya Kapoor,B.Tech Electronics,4,86,7.57,7.82,82,73,0,90,0,0.25
+STU0801,Rahul Gupta,MCA,1,89,8.17,8.04,88,84,0,73,0,-0.13
+STU0802,Sai Mehta,MBA,8,83,8.53,8.97,89,90,0,71,0,0.44
+STU0803,Sai Malhotra,B.Tech Computer Science,2,90,7.8,8.01,90,93,0,78,0,0.21
+STU0804,Rohan Chatterjee,BCA,5,90,8.06,8.18,91,80,0,84,0,0.12
+STU0805,Reyansh Kumar,B.Tech Computer Science,5,86,8.32,8.49,95,91,0,77,0,0.17
+STU0806,Fatima Bose,B.Tech Mechanical,2,91,7.61,7.88,95,74,0,85,0,0.27
+STU0807,Aditya Sharma,MCA,3,84,7.82,8.24,88,81,0,85,0,0.42
+STU0808,Tanvi Kulkarni,BCA,2,90,8.13,8.51,94,72,0,81,0,0.38
+STU0809,Isha Kumar,B.Tech Computer Science,7,84,8.44,8.14,100,89,0,86,0,-0.3
+STU0810,Zoya Reddy,B.Tech Electronics,8,92,9.37,9.69,96,86,0,84,0,0.32
+STU0811,Shaurya Mehta,MCA,1,84,7.79,7.8,85,85,1,73,0,0.01
+STU0812,Shaurya Mehta,B.Tech Electronics,8,87,8.18,8.36,89,99,0,94,0,0.18
+STU0813,Tanvi Kumar,MBA,7,80,8.32,8.35,86,77,0,88,0,0.03
+STU0814,Simran Sharma,B.Tech Mechanical,3,83,8.68,9.03,98,80,0,88,0,0.35
+STU0815,Kavya Mehta,B.Tech Electronics,8,90,7.96,7.96,100,87,0,89,0,0.0
+STU0816,Diya Gupta,B.Tech Computer Science,4,82,7.59,7.63,91,79,1,84,0,0.04
+STU0817,Isha Malhotra,MBA,2,78,7.64,7.92,95,83,0,77,0,0.28
+STU0818,Ananya Mishra,BCA,7,81,8.01,8.29,96,83,0,76,0,0.28
+STU0819,Priya Kulkarni,B.Tech Computer Science,1,88,7.79,7.84,98,90,0,86,0,0.05
+STU0820,Shaurya Malhotra,B.Tech Electronics,8,80,8.31,8.67,90,94,0,94,0,0.36
+STU0821,Arjun Mishra,BCA,4,95,8.35,8.62,99,88,0,81,0,0.27
+STU0822,Saanvi Verma,MBA,4,84,8.32,8.21,91,92,0,70,0,-0.11
+STU0823,Myra Joshi,MCA,2,94,8.76,8.82,94,86,0,93,0,0.06
+STU0824,Amit Chatterjee,B.Tech Computer Science,8,91,7.5,7.77,90,86,0,79,0,0.27
+STU0825,Ayaan Mishra,B.Tech Mechanical,1,95,8.72,8.72,85,83,0,88,0,0.0
+STU0826,Pooja Verma,MBA,1,88,8.83,9.14,96,87,0,75,0,0.31
+STU0827,Shreya Kulkarni,B.Tech Mechanical,5,86,8.73,8.87,94,84,0,77,0,0.14
+STU0828,Priya Iyer,B.Tech Mechanical,8,86,8.35,8.37,90,80,1,92,0,0.02
+STU0829,Riya Verma,MCA,8,85,8.93,9.39,91,79,0,70,0,0.46
+STU0830,Simran Kulkarni,B.Tech Electronics,6,79,7.51,7.94,92,88,0,70,0,0.43
+STU0831,Ayaan Mehta,B.Tech Mechanical,4,81,8.64,8.85,91,89,0,96,0,0.21
+STU0832,Navya Rao,MBA,6,85,8.23,8.42,100,73,0,89,0,0.19
+STU0833,Aditya Kumar,B.Tech Electronics,3,86,8.48,8.5,91,90,0,98,0,0.02
+STU0834,Pooja Mehta,BCA,4,91,7.78,7.85,89,75,0,82,0,0.07
+STU0835,Meera Iyer,B.Tech Electronics,4,90,7.56,7.92,94,81,0,84,0,0.36
+STU0836,Reyansh Bose,B.Tech Computer Science,2,94,8.57,8.72,90,86,0,81,0,0.15
+STU0837,Tanvi Chatterjee,B.Tech Mechanical,3,76,9.22,9.4,93,85,1,79,0,0.18
+STU0838,Aarav Malhotra,B.Tech Mechanical,1,86,7.4,8.01,85,79,0,81,0,0.61
+STU0839,Sneha Chopra,B.Tech Electronics,3,93,8.21,8.11,98,90,0,88,0,-0.1
+STU0840,Atharva Singh,B.Tech Computer Science,7,90,9.4,9.99,88,95,0,87,0,0.59
+STU0841,Shreya Gupta,MBA,7,89,7.35,7.47,87,90,0,92,0,0.12
+STU0842,Shreya Nair,BCA,7,76,8.19,8.56,91,90,1,87,0,0.37
+STU0843,Aadhya Chatterjee,MCA,3,88,8.06,7.97,86,90,0,85,0,-0.09
+STU0844,Deepak Rao,B.Tech Mechanical,6,86,7.99,8.08,97,83,0,75,0,0.09
+STU0845,Priya Iyer,MCA,4,90,8.1,8.26,100,85,0,87,0,0.16
+STU0846,Aadhya Das,B.Tech Mechanical,3,81,8.09,8.36,84,87,1,85,0,0.27
+STU0847,Atharva Malhotra,MBA,6,87,8.72,8.94,99,80,0,85,0,0.22
+STU0848,Navya Kapoor,B.Tech Electronics,7,87,7.67,8.01,100,85,0,88,0,0.34
+STU0849,Neha Rao,B.Tech Electronics,1,87,7.84,7.63,88,77,0,96,0,-0.21
+STU0850,Vivaan Joshi,MCA,1,86,8.03,8.36,86,81,0,85,0,0.33
+STU0851,Dhruv Reddy,MCA,5,92,8.45,8.65,92,88,0,86,0,0.2
+STU0852,Ishaan Verma,B.Tech Mechanical,5,81,8.22,8.16,92,83,0,98,0,-0.06
+STU0853,Neha Verma,BCA,8,86,7.5,7.62,94,96,0,80,0,0.12
+STU0854,Priya Nair,B.Tech Mechanical,7,79,8.61,8.48,89,84,0,84,0,-0.13
+STU0855,Aadhya Verma,B.Tech Electronics,7,90,7.86,7.96,91,86,0,85,0,0.1
+STU0856,Fatima Kapoor,B.Tech Computer Science,1,89,8.62,8.85,94,76,0,85,0,0.23
+STU0857,Dhruv Kulkarni,B.Tech Electronics,4,89,8.56,8.57,88,82,0,88,0,0.01
+STU0858,Riya Chopra,MBA,4,92,8.0,8.33,92,85,0,83,0,0.33
+STU0859,Dhruv Rao,B.Tech Electronics,3,90,8.36,8.97,87,89,1,81,0,0.61
+STU0860,Arjun Kumar,MCA,2,82,8.19,8.37,100,84,0,77,0,0.18
+STU0861,Sneha Reddy,MBA,5,88,7.2,7.33,92,90,0,91,0,0.13
+STU0862,Manish Reddy,B.Tech Computer Science,6,84,8.12,8.12,86,87,0,76,0,0.0
+STU0863,Ishaan Verma,MCA,6,84,7.7,7.96,100,78,0,72,0,0.26
+STU0864,Simran Rao,B.Tech Electronics,6,86,8.21,8.4,89,84,0,87,0,0.19
+STU0865,Fatima Malhotra,MCA,3,92,7.22,7.3,93,80,0,97,0,0.08
+STU0866,Deepak Kumar,B.Tech Electronics,7,83,8.18,8.44,89,74,0,81,0,0.26
+STU0867,Rohan Iyer,B.Tech Mechanical,6,92,8.03,8.01,96,84,0,81,0,-0.02
+STU0868,Aadhya Iyer,MBA,8,87,8.59,9.22,96,92,1,81,0,0.63
+STU0869,Aarav Mehta,B.Tech Mechanical,6,81,8.23,8.4,86,84,0,87,0,0.17
+STU0870,Simran Kulkarni,MCA,1,88,8.45,8.66,89,82,0,76,0,0.21
+STU0871,Fatima Joshi,B.Tech Computer Science,7,95,8.21,8.32,87,99,0,77,0,0.11
+STU0872,Aadhya Sharma,MBA,6,84,8.41,8.68,96,96,0,88,0,0.27
+STU0873,Deepak Chatterjee,B.Tech Electronics,1,81,8.07,8.28,100,77,0,93,0,0.21
+STU0874,Dhruv Gupta,MBA,2,87,8.62,8.75,87,90,1,89,0,0.13
+STU0875,Shaurya Kapoor,MBA,1,91,8.19,8.22,84,90,0,87,0,0.03
+STU0876,Kabir Iyer,B.Tech Mechanical,7,82,7.93,7.99,84,81,0,77,0,0.06
+STU0877,Kabir Kapoor,B.Tech Mechanical,7,84,7.83,7.65,100,93,0,79,0,-0.18
+STU0878,Arjun Singh,B.Tech Computer Science,8,88,8.41,8.8,87,92,0,81,0,0.39
+STU0879,Aditya Patel,B.Tech Computer Science,1,80,8.56,8.97,100,78,0,89,0,0.41
+STU0880,Diya Kapoor,B.Tech Computer Science,4,84,8.59,8.45,85,81,0,85,0,-0.14
+STU0881,Pooja Joshi,B.Tech Electronics,7,83,8.53,8.89,94,95,0,87,0,0.36
+STU0882,Vivaan Joshi,B.Tech Mechanical,2,80,8.88,8.91,96,95,0,88,0,0.03
+STU0883,Simran Patel,B.Tech Mechanical,1,79,7.74,8.15,91,86,0,90,0,0.41
+STU0884,Arjun Das,MBA,2,90,8.34,8.45,90,91,0,88,0,0.11
+STU0885,Pari Kulkarni,B.Tech Computer Science,5,85,8.74,8.86,87,81,0,78,0,0.12
+STU0886,Tanvi Joshi,B.Tech Electronics,1,85,8.82,8.81,92,82,0,83,0,-0.01
+STU0887,Neha Nair,MCA,7,79,8.09,8.2,94,87,0,76,0,0.11
+STU0888,Neha Rao,B.Tech Mechanical,3,92,8.31,8.5,91,82,0,86,0,0.19
+STU0889,Riya Sharma,MBA,3,89,7.33,7.37,90,87,0,93,0,0.04
+STU0890,Aarav Chopra,MBA,7,83,7.95,8.0,87,83,0,90,0,0.05
+STU0891,Sai Rao,MCA,6,81,8.41,8.22,89,84,0,96,0,-0.19
+STU0892,Deepak Singh,MCA,3,85,7.2,7.0,92,89,0,87,0,-0.2
+STU0893,Diya Iyer,B.Tech Computer Science,3,87,8.78,8.82,96,76,0,78,0,0.04
+STU0894,Amit Verma,MBA,8,77,8.06,8.2,92,86,0,78,0,0.14
+STU0895,Arjun Rao,B.Tech Mechanical,2,86,7.45,7.87,90,83,0,96,0,0.42
+STU0896,Dhruv Chopra,B.Tech Electronics,6,80,7.64,7.57,91,88,0,90,0,-0.07
+STU0897,Ananya Mehta,BCA,2,99,7.2,7.47,89,82,0,80,0,0.27
+STU0898,Fatima Mishra,B.Tech Electronics,6,82,9.04,9.36,92,94,0,74,0,0.32
+STU0899,Pari Chopra,MCA,6,80,7.2,7.21,92,86,0,86,0,0.01
+STU0900,Sneha Kumar,B.Tech Computer Science,6,79,8.6,8.8,95,74,0,87,0,0.2
+STU0901,Rohan Bose,BCA,6,81,8.0,8.26,92,80,0,85,0,0.26
+STU0902,Isha Mishra,B.Tech Electronics,8,79,8.78,8.89,97,82,0,81,0,0.11
+STU0903,Pari Mishra,MBA,2,83,8.64,8.65,95,83,0,71,0,0.01
+STU0904,Shreya Patel,BCA,3,84,7.61,7.77,86,91,0,84,0,0.16
+STU0905,Dhruv Reddy,B.Tech Mechanical,2,86,8.53,8.87,91,81,0,72,0,0.34
+STU0906,Vivaan Malhotra,B.Tech Mechanical,1,83,7.89,8.06,90,90,0,80,0,0.17
+STU0907,Manish Joshi,MBA,4,86,8.79,9.01,91,82,0,80,0,0.22
+STU0908,Priya Reddy,MBA,8,82,7.93,8.23,90,77,0,97,0,0.3
+STU0909,Ishaan Das,B.Tech Electronics,4,88,7.5,7.56,92,96,0,77,0,0.06
+STU0910,Manish Rao,MCA,8,91,8.9,8.92,90,79,0,83,0,0.02
+STU0911,Sai Joshi,BCA,1,86,8.53,8.9,88,74,0,84,0,0.37
+STU0912,Simran Kumar,MBA,3,88,8.32,8.4,92,95,0,87,0,0.08
+STU0913,Atharva Chopra,MBA,3,85,7.95,8.07,100,84,0,84,0,0.12
+STU0914,Rahul Das,B.Tech Computer Science,4,84,8.75,9.29,94,86,0,85,0,0.54
+STU0915,Rohan Patel,BCA,6,76,8.57,8.75,94,81,0,82,0,0.18
+STU0916,Kabir Malhotra,BCA,7,84,8.71,8.78,100,88,0,76,0,0.07
+STU0917,Zoya Verma,B.Tech Computer Science,6,86,7.87,7.58,99,90,0,88,0,-0.29
+STU0918,Vikram Reddy,B.Tech Mechanical,5,87,7.51,7.56,96,79,0,70,0,0.05
+STU0919,Amit Kumar,B.Tech Electronics,7,85,8.13,8.31,95,89,0,86,0,0.18
+STU0920,Arjun Malhotra,BCA,7,92,7.44,7.69,95,78,1,74,0,0.25
+STU0921,Rohan Malhotra,B.Tech Electronics,6,83,7.87,8.17,88,80,0,80,0,0.3
+STU0922,Navya Mishra,B.Tech Electronics,1,92,8.21,8.32,91,93,0,79,0,0.11
+STU0923,Krishna Chatterjee,MCA,4,93,8.31,8.43,100,79,0,82,0,0.12
+STU0924,Saanvi Iyer,MCA,3,80,8.68,9.17,100,93,0,83,0,0.49
+STU0925,Shreya Mehta,B.Tech Mechanical,4,85,7.36,7.92,94,83,0,94,0,0.56
+STU0926,Isha Mehta,B.Tech Electronics,8,82,8.4,8.52,95,85,0,74,0,0.12
+STU0927,Manish Kumar,B.Tech Mechanical,7,87,8.72,8.86,95,79,0,84,0,0.14
+STU0928,Aditya Singh,MBA,3,83,8.57,8.73,95,92,0,89,0,0.16
+STU0929,Deepak Verma,MBA,3,88,7.7,7.85,89,83,0,82,0,0.15
+STU0930,Diya Kumar,MBA,7,82,7.22,7.24,92,77,0,85,0,0.02
+STU0931,Amit Sharma,B.Tech Mechanical,5,96,8.71,9.19,93,93,1,79,0,0.48
+STU0932,Kabir Chatterjee,MBA,8,83,7.2,7.59,99,82,0,83,0,0.39
+STU0933,Shaurya Nair,B.Tech Electronics,3,83,8.39,8.76,83,88,0,83,0,0.37
+STU0934,Atharva Kulkarni,B.Tech Mechanical,5,87,8.43,8.54,91,84,0,91,0,0.11
+STU0935,Isha Chatterjee,MBA,2,89,8.31,8.21,90,91,0,85,0,-0.1
+STU0936,Myra Singh,B.Tech Computer Science,1,90,9.08,9.44,92,82,0,70,0,0.36
+STU0937,Deepak Bose,MCA,2,86,8.04,8.27,91,84,0,72,0,0.23
+STU0938,Simran Kulkarni,B.Tech Computer Science,2,82,8.44,8.93,91,87,0,91,0,0.49
+STU0939,Krishna Kulkarni,MBA,1,82,8.38,8.38,96,86,0,87,0,0.0
+STU0940,Sneha Malhotra,B.Tech Electronics,6,83,8.55,9.12,86,83,0,86,0,0.57
+STU0941,Vikram Bose,MCA,8,90,7.92,7.62,98,90,0,72,0,-0.3
+STU0942,Myra Das,MBA,2,83,8.98,9.42,96,84,0,85,0,0.44
+STU0943,Diya Mishra,MCA,2,86,8.76,8.73,87,92,0,84,0,-0.03
+STU0944,Neha Bose,BCA,4,93,7.86,8.0,87,86,0,74,0,0.14
+STU0945,Aarav Chopra,MBA,2,84,7.48,7.77,95,75,0,94,0,0.29
+STU0946,Myra Iyer,B.Tech Mechanical,6,99,8.22,8.24,100,78,0,85,0,0.02
+STU0947,Reyansh Singh,B.Tech Electronics,5,87,8.87,9.09,89,80,0,82,0,0.22
+STU0948,Neha Bose,MBA,6,81,8.22,8.26,84,93,0,81,0,0.04
+STU0949,Meera Iyer,B.Tech Electronics,8,80,8.12,8.28,83,87,0,77,0,0.16
+STU0950,Priya Kapoor,B.Tech Electronics,5,95,8.46,8.53,88,85,1,89,0,0.07
+STU0951,Amit Das,B.Tech Mechanical,7,86,8.09,8.25,88,83,0,70,0,0.16
+STU0952,Ayaan Nair,B.Tech Electronics,3,91,8.35,8.35,100,86,0,77,0,0.0
+STU0953,Deepak Joshi,BCA,1,91,8.4,8.63,89,88,0,83,0,0.23
+STU0954,Aarav Patel,MCA,8,72,6.54,6.03,78,63,2,60,1,-0.51
+STU0955,Diya Nair,BCA,2,68,6.81,5.91,66,68,0,64,0,-0.9
+STU0956,Meera Kulkarni,B.Tech Mechanical,5,69,7.32,7.18,66,64,0,63,0,-0.14
+STU0957,Atharva Mishra,B.Tech Electronics,1,72,7.86,7.3,68,70,1,58,0,-0.56
+STU0958,Vikram Rao,MCA,1,70,6.71,5.87,70,65,1,66,0,-0.84
+STU0959,Aditya Das,MCA,1,69,6.91,6.5,60,76,1,55,1,-0.41
+STU0960,Saanvi Joshi,BCA,7,69,6.88,6.62,66,64,2,70,0,-0.26
+STU0961,Vikram Sharma,B.Tech Mechanical,2,70,7.51,6.86,59,68,0,62,0,-0.65
+STU0962,Priya Chopra,BCA,6,72,7.27,6.92,58,78,1,63,1,-0.35
+STU0963,Dhruv Chatterjee,B.Tech Electronics,1,72,6.97,6.65,60,70,1,62,1,-0.32
+STU0964,Deepak Mehta,MBA,2,70,7.58,6.87,63,70,1,75,0,-0.71
+STU0965,Ayaan Malhotra,BCA,5,69,7.54,7.11,78,57,2,65,0,-0.43
+STU0966,Amit Mishra,MCA,6,63,6.4,6.07,68,66,2,64,0,-0.33
+STU0967,Manish Sharma,B.Tech Electronics,2,77,7.2,6.93,64,69,1,63,1,-0.27
+STU0968,Rohan Nair,BCA,7,68,8.03,7.8,68,54,1,62,0,-0.23
+STU0969,Aarav Reddy,MCA,5,77,7.21,7.09,76,69,0,59,0,-0.12
+STU0970,Isha Patel,MBA,3,62,7.57,6.97,69,60,2,63,0,-0.6
+STU0971,Kabir Chopra,BCA,3,70,7.41,6.73,75,64,1,53,0,-0.68
+STU0972,Dhruv Nair,B.Tech Mechanical,4,69,7.31,6.95,76,66,1,64,1,-0.36
+STU0973,Dhruv Nair,MBA,6,65,7.63,7.28,65,56,1,75,0,-0.35
+STU0974,Ayaan Patel,B.Tech Mechanical,8,65,7.06,6.75,60,59,0,52,0,-0.31
+STU0975,Neha Verma,B.Tech Electronics,6,72,7.08,7.18,62,62,1,61,0,0.1
+STU0976,Amit Reddy,B.Tech Electronics,3,70,7.11,6.86,62,59,1,52,0,-0.25
+STU0977,Amit Singh,B.Tech Computer Science,7,62,7.09,6.61,64,75,2,73,0,-0.48
+STU0978,Aditya Malhotra,BCA,7,68,6.58,6.04,64,64,1,60,0,-0.54
+STU0979,Ayaan Malhotra,B.Tech Electronics,6,67,7.15,6.59,69,70,0,58,1,-0.56
+STU0980,Kabir Joshi,MBA,2,75,6.91,6.11,70,63,1,67,0,-0.8
+STU0981,Diya Kumar,MBA,5,62,7.86,7.63,58,59,1,75,0,-0.23
+STU0982,Simran Gupta,BCA,3,67,6.97,6.07,65,66,2,70,0,-0.9
+STU0983,Pooja Das,BCA,7,64,6.69,6.4,74,58,1,72,0,-0.29
+STU0984,Amit Singh,MBA,4,70,7.74,7.32,55,67,0,72,0,-0.42
+STU0985,Ananya Kapoor,B.Tech Electronics,7,66,7.14,6.7,55,78,1,58,1,-0.44
+STU0986,Ishaan Mishra,B.Tech Computer Science,3,72,7.27,7.18,70,66,2,58,0,-0.09
+STU0987,Vikram Kapoor,B.Tech Mechanical,6,73,6.55,6.31,61,75,2,66,0,-0.24
+STU0988,Priya Chopra,B.Tech Computer Science,7,72,7.33,6.49,62,72,0,66,0,-0.84
+STU0989,Vihaan Iyer,BCA,8,74,7.46,6.82,63,68,0,52,0,-0.64
+STU0990,Isha Reddy,BCA,6,76,7.48,7.39,58,75,1,75,0,-0.09
+STU0991,Pooja Mehta,BCA,4,64,7.61,7.21,58,70,1,70,0,-0.4
+STU0992,Aadhya Das,BCA,8,67,7.77,6.95,59,68,2,65,0,-0.82
+STU0993,Myra Kulkarni,BCA,8,67,7.62,7.35,73,67,1,69,0,-0.27
+STU0994,Isha Bose,B.Tech Mechanical,7,68,8.12,7.52,78,68,0,55,1,-0.6
+STU0995,Isha Nair,BCA,6,75,7.35,7.16,75,70,1,60,0,-0.19
+STU0996,Shreya Joshi,BCA,8,73,7.3,7.07,55,70,1,60,0,-0.23
+STU0997,Vikram Chatterjee,B.Tech Electronics,3,76,7.55,7.21,70,62,1,75,0,-0.34
+STU0998,Krishna Nair,B.Tech Mechanical,5,77,7.46,7.46,64,63,0,65,1,0.0
+STU0999,Meera Mehta,B.Tech Computer Science,2,71,7.14,6.87,69,62,2,68,0,-0.27
+STU1000,Vivaan Joshi,MBA,2,73,7.37,7.26,60,70,0,56,0,-0.11
+STU1001,Ishaan Patel,B.Tech Mechanical,7,65,7.05,6.41,64,66,1,70,1,-0.64
+STU1002,Aadhya Chatterjee,B.Tech Mechanical,3,68,6.67,6.56,62,67,1,68,0,-0.11
+STU1003,Shaurya Sharma,B.Tech Computer Science,6,70,7.74,7.46,62,78,1,66,0,-0.28
+STU1004,Zoya Kapoor,BCA,8,69,7.69,7.35,70,78,1,63,0,-0.34
+STU1005,Neha Kumar,MBA,8,68,7.35,7.22,58,56,2,60,0,-0.13
+STU1006,Neha Rao,BCA,8,63,7.13,6.86,62,59,1,65,0,-0.27
+STU1007,Tanvi Rao,BCA,7,73,6.62,6.43,72,73,1,73,1,-0.19
+STU1008,Aarav Sharma,MBA,3,77,7.16,6.79,65,68,1,75,0,-0.37
+STU1009,Neha Sharma,B.Tech Mechanical,8,64,6.96,6.9,74,65,2,70,0,-0.06
+STU1010,Sneha Rao,MBA,4,71,7.9,7.52,74,78,0,69,0,-0.38
+STU1011,Dhruv Bose,MBA,7,70,7.59,7.1,78,69,2,63,1,-0.49
+STU1012,Myra Joshi,MCA,5,66,7.74,7.56,65,71,0,54,0,-0.18
+STU1013,Ananya Malhotra,MBA,5,70,7.48,7.51,63,60,1,58,0,0.03
+STU1014,Neha Reddy,B.Tech Electronics,4,64,7.83,7.8,69,75,0,65,1,-0.03
+STU1015,Aadhya Mehta,B.Tech Mechanical,8,69,7.17,6.69,58,69,2,64,0,-0.48
+STU1016,Simran Mishra,MCA,6,72,7.34,6.9,62,68,0,70,1,-0.44
+STU1017,Neha Sharma,MCA,2,65,7.33,6.99,63,64,1,66,0,-0.34
+STU1018,Tanvi Sharma,MCA,2,65,7.44,6.82,74,78,1,58,1,-0.62
+STU1019,Kabir Gupta,B.Tech Electronics,5,72,7.01,6.87,60,70,2,58,0,-0.14
+STU1020,Zoya Verma,BCA,2,69,6.89,6.7,62,71,1,62,1,-0.19
+STU1021,Meera Patel,MBA,8,69,7.36,6.77,69,77,1,59,1,-0.59
+STU1022,Diya Joshi,B.Tech Computer Science,2,74,7.9,7.3,59,69,1,61,0,-0.6
+STU1023,Tanvi Nair,B.Tech Mechanical,1,77,7.31,6.71,61,74,1,61,0,-0.6
+STU1024,Kavya Sharma,MCA,3,58,7.1,6.2,50,61,2,55,1,-0.9
+STU1025,Pari Gupta,MCA,1,72,7.21,6.83,65,59,0,66,0,-0.38
+STU1026,Pari Iyer,BCA,1,77,6.95,6.36,62,72,1,68,0,-0.59
+STU1027,Ananya Bose,BCA,1,69,6.93,6.55,58,68,1,71,0,-0.38
+STU1028,Manish Mehta,B.Tech Electronics,4,64,6.69,6.68,64,74,0,63,0,-0.01
+STU1029,Manish Mishra,B.Tech Mechanical,3,69,7.48,6.86,68,65,1,55,0,-0.62
+STU1030,Ananya Kumar,B.Tech Electronics,2,71,7.19,6.75,60,77,1,71,0,-0.44
+STU1031,Vihaan Verma,BCA,3,73,7.18,6.35,78,67,0,59,1,-0.83
+STU1032,Rohan Gupta,MBA,6,71,7.77,7.36,75,74,2,57,0,-0.41
+STU1033,Vivaan Joshi,BCA,3,67,7.68,6.78,67,59,1,61,0,-0.9
+STU1034,Kavya Chatterjee,MBA,5,68,7.16,6.62,61,78,2,75,1,-0.54
+STU1035,Atharva Kapoor,BCA,6,65,7.93,7.43,68,67,2,60,0,-0.5
+STU1036,Shreya Kapoor,MCA,2,73,7.35,6.83,60,62,1,53,0,-0.52
+STU1037,Diya Kapoor,BCA,8,70,6.82,6.35,76,75,0,64,0,-0.47
+STU1038,Deepak Joshi,B.Tech Mechanical,3,69,8.05,7.78,66,59,0,67,0,-0.27
+STU1039,Riya Kulkarni,MCA,6,73,7.05,6.72,65,66,0,52,0,-0.33
+STU1040,Neha Joshi,MCA,8,69,7.69,7.13,68,63,1,67,0,-0.56
+STU1041,Fatima Bose,B.Tech Mechanical,6,69,6.92,6.85,73,64,0,68,1,-0.07
+STU1042,Arjun Verma,MCA,3,72,7.56,6.74,74,64,0,62,1,-0.82
+STU1043,Kavya Iyer,B.Tech Computer Science,1,77,7.42,6.92,55,76,2,55,0,-0.5
+STU1044,Vikram Kulkarni,B.Tech Mechanical,5,65,7.17,7.12,72,67,0,67,0,-0.05
+STU1045,Shreya Patel,B.Tech Computer Science,4,67,7.36,6.98,73,73,2,68,0,-0.38
+STU1046,Sai Chatterjee,B.Tech Mechanical,1,68,7.6,7.18,61,65,1,65,0,-0.42
+STU1047,Pooja Das,B.Tech Mechanical,1,73,7.23,6.53,68,68,1,66,0,-0.7
+STU1048,Arjun Rao,B.Tech Computer Science,4,73,7.71,7.16,64,61,0,69,1,-0.55
+STU1049,Rohan Kapoor,B.Tech Electronics,4,75,7.17,6.71,76,71,1,68,0,-0.46
+STU1050,Ananya Chopra,B.Tech Mechanical,3,65,7.57,6.94,61,65,2,60,0,-0.63
+STU1051,Amit Das,B.Tech Mechanical,8,69,6.72,6.56,74,56,2,71,0,-0.16
+STU1052,Shaurya Kumar,MBA,7,66,7.64,7.22,68,66,1,73,0,-0.42
+STU1053,Neha Kulkarni,B.Tech Electronics,6,65,7.54,7.42,72,78,1,61,0,-0.12
+STU1054,Fatima Das,B.Tech Electronics,7,73,7.26,7.17,67,65,1,74,0,-0.09
+STU1055,Amit Kapoor,MCA,7,68,6.73,6.2,71,76,1,65,0,-0.53
+STU1056,Tanvi Chatterjee,B.Tech Electronics,1,75,6.76,6.25,66,67,0,65,0,-0.51
+STU1057,Shreya Sharma,MBA,3,72,7.12,6.75,67,62,1,64,1,-0.37
+STU1058,Rohan Iyer,BCA,1,69,7.23,6.84,68,65,1,73,0,-0.39
+STU1059,Deepak Kapoor,MBA,3,65,7.01,7.11,61,59,0,70,1,0.1
+STU1060,Navya Singh,MCA,5,62,7.21,7.31,58,56,1,54,0,0.1
+STU1061,Ananya Nair,BCA,5,73,7.75,7.22,72,76,0,75,0,-0.53
+STU1062,Amit Iyer,B.Tech Mechanical,2,69,6.4,5.8,65,66,1,63,0,-0.6
+STU1063,Atharva Mishra,B.Tech Mechanical,2,74,7.81,7.37,74,70,1,65,1,-0.44
+STU1064,Amit Joshi,B.Tech Computer Science,1,73,7.33,7.43,59,64,1,64,0,0.1
+STU1065,Sneha Bose,B.Tech Computer Science,4,71,7.81,7.4,59,73,0,70,0,-0.41
+STU1066,Myra Verma,BCA,1,62,7.3,6.5,64,62,1,70,0,-0.8
+STU1067,Ishaan Gupta,MBA,4,70,6.79,6.61,59,69,1,59,1,-0.18
+STU1068,Meera Chatterjee,MBA,2,68,7.5,7.23,76,67,1,67,0,-0.27
+STU1069,Meera Singh,MCA,6,68,7.37,7.08,67,57,0,67,0,-0.29
+STU1070,Vihaan Kapoor,B.Tech Electronics,5,71,7.03,6.31,76,70,0,63,0,-0.72
+STU1071,Sneha Singh,MCA,8,65,6.97,6.9,68,64,1,68,0,-0.07
+STU1072,Amit Iyer,MBA,4,66,7.9,7.8,65,64,1,52,1,-0.1
+STU1073,Sneha Gupta,B.Tech Mechanical,2,64,6.76,6.39,66,59,0,63,0,-0.37
+STU1074,Sneha Das,BCA,4,72,7.51,6.64,67,59,1,71,0,-0.87
+STU1075,Vivaan Rao,MCA,6,73,6.94,6.35,65,54,2,67,0,-0.59
+STU1076,Tanvi Verma,MCA,4,68,7.69,7.02,64,58,1,57,1,-0.67
+STU1077,Sai Mehta,B.Tech Mechanical,1,65,7.7,7.13,68,65,1,56,0,-0.57
+STU1078,Ishaan Rao,B.Tech Computer Science,6,69,7.54,6.84,72,62,0,61,0,-0.7
+STU1079,Rahul Sharma,BCA,4,72,7.03,6.64,66,68,1,52,1,-0.39
+STU1080,Vikram Reddy,MBA,8,62,7.55,7.41,62,66,1,67,0,-0.14
+STU1081,Vivaan Joshi,MBA,1,72,6.49,5.87,66,72,1,75,1,-0.62
+STU1082,Aadhya Iyer,B.Tech Mechanical,5,69,6.74,6.44,75,68,0,58,0,-0.3
+STU1083,Aarav Patel,B.Tech Electronics,5,73,7.57,6.91,70,73,1,73,0,-0.66
+STU1084,Vivaan Rao,B.Tech Mechanical,7,69,7.16,7.07,60,70,1,55,0,-0.09
+STU1085,Deepak Mehta,BCA,8,74,7.2,7.12,70,60,0,74,1,-0.08
+STU1086,Deepak Chatterjee,MBA,1,76,7.65,7.06,66,68,0,60,1,-0.59
+STU1087,Vikram Rao,BCA,8,76,7.36,6.46,70,65,2,64,0,-0.9
+STU1088,Vivaan Das,B.Tech Mechanical,6,68,7.62,7.5,69,65,1,64,0,-0.12
+STU1089,Ananya Malhotra,BCA,1,70,6.98,6.72,70,77,1,73,0,-0.26
+STU1090,Vivaan Kapoor,BCA,4,67,7.63,6.99,72,64,1,57,0,-0.64
+STU1091,Meera Singh,B.Tech Computer Science,7,71,6.4,5.8,66,68,1,62,0,-0.6
+STU1092,Amit Singh,B.Tech Electronics,5,63,6.97,6.67,71,67,1,73,0,-0.3
+STU1093,Krishna Iyer,B.Tech Mechanical,3,71,7.0,6.53,59,67,1,72,0,-0.47
+STU1094,Pari Malhotra,MCA,7,72,7.86,7.38,76,66,1,75,0,-0.48
+STU1095,Amit Kumar,BCA,2,69,7.58,7.55,66,69,0,74,1,-0.03
+STU1096,Ishaan Sharma,BCA,7,69,6.77,6.87,65,68,2,73,0,0.1
+STU1097,Saanvi Singh,MCA,2,67,6.9,6.56,57,66,1,66,1,-0.34
+STU1098,Simran Kulkarni,BCA,4,68,6.68,6.68,68,76,1,63,1,0.0
+STU1099,Vivaan Das,B.Tech Computer Science,8,66,7.41,6.96,60,76,1,60,0,-0.45
+STU1100,Shreya Mishra,B.Tech Mechanical,6,62,7.83,7.3,64,57,1,75,0,-0.53
+STU1101,Kavya Mishra,MCA,3,64,7.32,7.15,70,67,1,53,1,-0.17
+STU1102,Pooja Sharma,BCA,7,66,7.38,6.78,69,72,1,71,0,-0.6
+STU1103,Dhruv Iyer,B.Tech Computer Science,3,65,8.18,7.8,67,74,2,75,0,-0.38
+STU1104,Kavya Gupta,B.Tech Electronics,4,64,7.21,6.31,69,70,2,64,0,-0.9
+STU1105,Aditya Kulkarni,B.Tech Mechanical,7,67,6.48,6.17,76,64,1,68,0,-0.31
+STU1106,Amit Kulkarni,MBA,1,63,7.48,6.98,63,63,0,62,0,-0.5
+STU1107,Aditya Nair,MBA,7,71,6.78,6.28,67,61,0,75,0,-0.5
+STU1108,Vikram Verma,MCA,5,66,7.03,6.39,78,71,2,58,0,-0.64
+STU1109,Pari Rao,B.Tech Electronics,3,74,7.38,7.04,65,63,2,67,0,-0.34
+STU1110,Vihaan Malhotra,MCA,8,67,8.03,7.31,77,67,2,67,1,-0.72
+STU1111,Deepak Mehta,MCA,3,73,7.05,6.87,55,63,2,58,0,-0.18
+STU1112,Tanvi Sharma,MCA,8,64,7.21,6.91,72,69,1,60,0,-0.3
+STU1113,Sai Reddy,BCA,3,71,7.35,7.18,72,68,0,58,1,-0.17
+STU1114,Tanvi Das,B.Tech Computer Science,7,67,7.08,6.6,69,72,1,64,0,-0.48
+STU1115,Myra Verma,MCA,6,70,7.36,6.83,62,57,1,60,1,-0.53
+STU1116,Ishaan Kumar,B.Tech Mechanical,1,71,7.02,6.56,70,71,2,57,0,-0.46
+STU1117,Tanvi Rao,B.Tech Mechanical,3,73,7.75,7.07,63,75,0,63,0,-0.68
+STU1118,Dhruv Sharma,MBA,5,62,6.74,6.28,61,65,0,65,0,-0.46
+STU1119,Kavya Kapoor,B.Tech Computer Science,8,75,7.18,7.05,76,76,1,66,1,-0.13
+STU1120,Rahul Chatterjee,B.Tech Electronics,8,62,7.48,7.34,67,78,0,71,0,-0.14
+STU1121,Aarav Nair,MBA,5,72,7.73,7.41,55,65,1,73,1,-0.32
+STU1122,Ishaan Verma,B.Tech Mechanical,6,66,7.21,6.55,78,78,0,58,1,-0.66
+STU1123,Aditya Chopra,MBA,5,70,7.03,6.78,71,72,1,67,0,-0.25
+STU1124,Vihaan Mehta,B.Tech Electronics,3,77,6.89,6.06,65,58,1,54,0,-0.83
+STU1125,Simran Kulkarni,MBA,3,65,6.93,6.29,71,64,2,63,0,-0.64
+STU1126,Riya Verma,B.Tech Computer Science,5,73,6.99,6.52,70,56,1,52,0,-0.47
+STU1127,Myra Patel,B.Tech Electronics,2,71,7.5,7.6,68,72,1,63,0,0.1
+STU1128,Ayaan Reddy,BCA,7,71,7.97,7.07,70,78,1,66,0,-0.9
+STU1129,Simran Verma,B.Tech Computer Science,2,76,7.05,6.64,68,54,2,56,0,-0.41
+STU1130,Shreya Rao,B.Tech Electronics,6,65,7.63,7.45,69,72,1,63,0,-0.18
+STU1131,Simran Das,MCA,8,74,7.3,6.91,66,72,2,62,0,-0.39
+STU1132,Atharva Kulkarni,MCA,5,73,6.85,6.18,72,67,1,61,1,-0.67
+STU1133,Vivaan Chatterjee,B.Tech Mechanical,2,73,7.06,6.61,76,77,1,75,0,-0.45
+STU1134,Pooja Bose,B.Tech Computer Science,6,68,7.79,7.15,62,54,1,75,0,-0.64
+STU1135,Kabir Sharma,B.Tech Mechanical,4,66,7.25,6.62,72,65,1,55,0,-0.63
+STU1136,Arjun Rao,BCA,6,71,6.73,6.12,55,59,0,66,1,-0.61
+STU1137,Isha Gupta,B.Tech Electronics,1,62,6.71,6.31,64,78,1,75,1,-0.4
+STU1138,Isha Mishra,B.Tech Electronics,1,66,7.52,7.31,64,59,1,64,0,-0.21
+STU1139,Zoya Kapoor,BCA,8,69,7.13,6.84,63,61,2,65,0,-0.29
+STU1140,Vihaan Malhotra,BCA,6,71,6.83,6.66,57,64,0,63,1,-0.17
+STU1141,Isha Das,B.Tech Computer Science,3,67,7.07,7.14,62,78,1,68,0,0.07
+STU1142,Isha Joshi,B.Tech Mechanical,3,70,7.49,7.59,62,61,2,59,1,0.1
+STU1143,Ayaan Rao,B.Tech Mechanical,6,70,6.61,6.22,78,68,0,62,0,-0.39
+STU1144,Sai Mishra,MCA,6,67,7.66,7.05,78,78,2,66,0,-0.61
+STU1145,Pari Iyer,MBA,5,69,7.71,7.58,63,64,1,55,1,-0.13
+STU1146,Aditya Iyer,B.Tech Computer Science,8,71,7.57,6.83,65,59,0,58,0,-0.74
+STU1147,Deepak Singh,MCA,6,72,7.01,6.53,58,69,2,64,0,-0.48
+STU1148,Vikram Rao,BCA,3,67,7.22,6.87,63,59,0,75,0,-0.35
+STU1149,Vikram Singh,MCA,1,67,7.26,7.11,78,60,2,68,0,-0.15
+STU1150,Vikram Mehta,B.Tech Computer Science,5,67,7.08,6.5,61,67,0,54,0,-0.58
+STU1151,Shreya Patel,BCA,8,73,7.32,7.03,65,65,0,67,1,-0.29
+STU1152,Pari Sharma,MBA,5,65,7.16,6.55,62,55,1,74,0,-0.61
+STU1153,Dhruv Rao,BCA,6,67,7.77,7.64,60,61,2,75,0,-0.13
+STU1154,Saanvi Singh,MCA,5,77,7.29,6.95,64,70,0,59,1,-0.34
+STU1155,Simran Kapoor,MBA,2,62,6.77,6.38,61,67,1,57,0,-0.39
+STU1156,Priya Gupta,BCA,3,66,7.64,7.3,67,73,1,68,0,-0.34
+STU1157,Shaurya Patel,BCA,6,75,7.12,6.61,60,65,2,71,1,-0.51
+STU1158,Vivaan Mishra,B.Tech Mechanical,1,75,7.68,6.83,74,56,0,71,0,-0.85
+STU1159,Sai Bose,B.Tech Electronics,3,68,7.58,6.85,75,59,2,60,0,-0.73
+STU1160,Pari Gupta,MCA,2,66,6.6,6.22,78,78,2,65,0,-0.38
+STU1161,Sai Chatterjee,B.Tech Computer Science,8,74,7.39,7.11,65,69,1,68,0,-0.28
+STU1162,Zoya Mishra,MCA,4,67,7.27,6.86,72,61,1,64,0,-0.41
+STU1163,Simran Reddy,BCA,7,77,7.77,7.71,68,69,1,72,0,-0.06
+STU1164,Isha Gupta,B.Tech Electronics,8,76,6.52,5.8,75,66,0,60,1,-0.72
+STU1165,Ayaan Das,B.Tech Electronics,8,64,7.08,6.33,78,67,1,64,0,-0.75
+STU1166,Navya Kulkarni,MBA,3,72,7.68,7.52,74,64,0,62,0,-0.16
+STU1167,Reyansh Gupta,MBA,7,59,6.74,5.84,52,62,1,39,1,-0.9
+STU1168,Arjun Rao,MBA,5,54,7.26,6.37,50,61,2,60,1,-0.89
+STU1169,Meera Chopra,B.Tech Electronics,3,63,7.72,6.4,50,63,2,57,1,-1.32
+STU1170,Simran Nair,MBA,3,64,6.0,5.05,58,63,1,60,1,-0.95
+STU1171,Rahul Joshi,B.Tech Computer Science,4,61,7.2,6.38,42,51,1,54,1,-0.82
+STU1172,Kabir Chopra,B.Tech Electronics,8,54,7.13,6.08,46,64,2,60,1,-1.05
+STU1173,Sneha Chopra,BCA,6,45,6.53,5.06,44,62,2,49,1,-1.47
+STU1174,Ananya Kumar,B.Tech Mechanical,7,45,7.28,5.9,55,64,2,42,1,-1.38
+STU1175,Arjun Chopra,B.Tech Electronics,2,61,7.16,6.3,37,56,2,51,1,-0.86
+STU1176,Manish Kulkarni,B.Tech Electronics,4,60,7.8,6.4,61,48,1,56,1,-1.4
+STU1177,Priya Mehta,B.Tech Electronics,3,64,6.0,5.4,43,49,2,60,1,-0.6
+STU1178,Pari Joshi,B.Tech Computer Science,6,62,7.7,6.4,50,52,3,60,1,-1.3
+STU1179,Reyansh Kulkarni,B.Tech Electronics,4,57,7.62,6.4,45,56,2,37,1,-1.22
+STU1180,Kavya Verma,B.Tech Computer Science,3,47,7.03,6.4,51,68,2,45,1,-0.63
+STU1181,Krishna Chopra,B.Tech Mechanical,8,59,6.14,5.74,49,52,1,42,1,-0.4
+STU1182,Aarav Singh,B.Tech Mechanical,3,47,7.44,6.4,57,59,2,38,1,-1.04
+STU1183,Tanvi Kapoor,BCA,5,49,7.08,6.4,43,64,2,48,1,-0.68
+STU1184,Simran Chopra,B.Tech Electronics,3,51,7.16,6.38,54,55,2,49,1,-0.78
+STU1185,Kabir Gupta,BCA,6,52,6.98,6.4,36,58,2,56,1,-0.58
+STU1186,Pari Bose,B.Tech Mechanical,4,51,7.03,6.31,37,53,2,47,1,-0.72
+STU1187,Sai Chopra,B.Tech Computer Science,6,51,7.68,6.18,52,58,1,40,1,-1.5
+STU1188,Deepak Joshi,MCA,8,52,7.77,6.3,52,62,2,56,1,-1.47
+STU1189,Aadhya Verma,BCA,6,49,7.33,6.33,35,65,2,46,1,-1.0
+STU1190,Vihaan Sharma,B.Tech Mechanical,6,53,6.48,5.28,62,57,2,46,1,-1.2
+STU1191,Navya Mehta,BCA,8,61,7.02,6.0,48,56,2,56,1,-1.02
+STU1192,Vivaan Nair,B.Tech Electronics,7,51,7.53,6.4,52,53,2,48,1,-1.13
+STU1193,Manish Joshi,B.Tech Mechanical,4,59,6.53,5.64,54,45,2,60,1,-0.89
+STU1194,Myra Joshi,B.Tech Electronics,5,64,6.71,6.31,47,56,3,58,1,-0.4
+STU1195,Neha Iyer,B.Tech Mechanical,3,64,6.26,5.39,50,62,2,46,1,-0.87
+STU1196,Rahul Singh,MCA,6,60,6.63,6.23,54,56,2,37,1,-0.4
+STU1197,Myra Das,B.Tech Electronics,3,47,6.8,5.9,53,54,2,60,1,-0.9
+STU1198,Aadhya Singh,MCA,2,45,6.17,5.77,62,51,2,51,1,-0.4
+STU1199,Arjun Sharma,MCA,7,54,6.97,6.11,54,51,3,60,1,-0.86
+STU1200,Kavya Bose,MCA,2,62,7.32,6.4,49,59,1,54,1,-0.92
+STU1201,Krishna Bose,B.Tech Electronics,8,49,6.5,5.77,46,52,2,47,1,-0.73
+STU1202,Shreya Bose,MBA,3,56,7.69,6.4,49,52,2,50,1,-1.29
+STU1203,Zoya Malhotra,B.Tech Electronics,6,61,7.48,6.4,62,57,2,56,1,-1.08
+STU1204,Tanvi Joshi,BCA,3,59,6.98,6.08,44,64,2,56,1,-0.9
+STU1205,Atharva Bose,MBA,2,54,6.67,5.99,50,59,2,46,1,-0.68
+STU1206,Amit Mishra,B.Tech Mechanical,3,57,6.86,5.92,54,56,2,58,1,-0.94
+STU1207,Deepak Reddy,B.Tech Electronics,6,48,6.97,6.05,55,53,1,60,1,-0.92
+STU1208,Amit Das,B.Tech Computer Science,2,54,6.53,5.36,58,64,2,59,1,-1.17
+STU1209,Amit Mishra,B.Tech Mechanical,4,60,6.99,5.49,45,54,1,45,1,-1.5
+STU1210,Ayaan Chopra,B.Tech Electronics,7,47,7.35,6.4,44,51,1,46,1,-0.95
+STU1211,Sai Singh,B.Tech Mechanical,7,52,7.17,6.38,30,64,2,60,1,-0.79
+STU1212,Vikram Reddy,B.Tech Electronics,6,54,6.95,5.87,46,51,2,44,1,-1.08
+STU1213,Sai Malhotra,MBA,2,48,7.77,6.4,58,60,1,39,1,-1.37
+STU1214,Ananya Mishra,B.Tech Mechanical,7,54,6.61,5.73,51,62,2,60,1,-0.88
+STU1215,Arjun Kapoor,MBA,4,46,6.76,6.36,55,68,3,60,1,-0.4
+STU1216,Simran Verma,BCA,6,53,6.77,6.17,49,68,1,52,1,-0.6
+STU1217,Aarav Mishra,B.Tech Electronics,6,60,6.55,5.54,42,53,2,42,1,-1.01
+STU1218,Rahul Chopra,B.Tech Mechanical,4,60,6.0,5.46,41,52,2,56,1,-0.54
+STU1219,Pooja Das,BCA,4,47,7.8,6.4,54,64,2,48,1,-1.4
+STU1220,Shaurya Verma,B.Tech Mechanical,6,52,7.76,6.4,60,61,3,43,1,-1.36
+STU1221,Pari Chopra,BCA,2,52,6.05,5.27,62,60,1,56,1,-0.78
+STU1222,Rahul Chopra,MCA,6,57,7.45,6.4,47,61,1,55,1,-1.05
+STU1223,Vihaan Rao,B.Tech Mechanical,6,57,7.42,6.4,50,50,2,49,1,-1.02
+STU1224,Vivaan Rao,B.Tech Electronics,2,64,7.27,6.4,54,66,1,54,1,-0.87
+STU1225,Krishna Malhotra,B.Tech Computer Science,8,54,6.91,5.82,61,55,1,56,1,-1.09
+STU1226,Saanvi Reddy,MCA,6,59,6.14,5.4,34,56,2,40,1,-0.74
+STU1227,Saanvi Reddy,BCA,2,59,6.54,5.64,48,55,2,51,1,-0.9
+STU1228,Ayaan Kulkarni,MCA,6,58,6.12,5.0,46,49,2,48,1,-1.12
+STU1229,Ishaan Chatterjee,BCA,8,55,6.29,5.51,43,55,2,54,1,-0.78
+STU1230,Atharva Reddy,B.Tech Mechanical,3,55,6.65,5.8,37,62,2,52,1,-0.85
+STU1231,Kavya Kumar,MBA,8,44,7.75,6.4,46,65,2,50,1,-1.35
+STU1232,Aditya Gupta,B.Tech Computer Science,3,58,6.54,5.38,42,64,2,45,1,-1.16
+STU1233,Shreya Singh,B.Tech Electronics,8,51,6.33,5.28,49,50,2,43,1,-1.05
+STU1234,Pooja Joshi,MCA,7,48,7.18,6.37,47,53,2,42,1,-0.81
+STU1235,Tanvi Kumar,MCA,6,47,7.64,6.4,62,44,2,53,1,-1.24
+STU1236,Navya Verma,B.Tech Mechanical,4,59,7.17,6.18,54,62,2,41,1,-0.99
+STU1237,Ayaan Verma,MCA,5,56,7.4,6.4,44,54,2,52,1,-1.0
+STU1238,Meera Mishra,BCA,5,57,6.46,5.45,30,61,2,51,1,-1.01
+STU1239,Neha Nair,B.Tech Electronics,7,64,7.06,6.35,50,53,1,36,1,-0.71
+STU1240,Myra Mishra,BCA,3,45,7.39,6.4,41,53,2,52,1,-0.99
+STU1241,Vikram Bose,B.Tech Computer Science,4,47,7.23,6.4,48,43,2,56,1,-0.83
+STU1242,Tanvi Joshi,B.Tech Mechanical,4,58,7.08,6.04,51,63,1,51,1,-1.04
+STU1243,Vikram Verma,B.Tech Computer Science,6,61,6.8,5.53,35,65,1,56,1,-1.27
+STU1244,Navya Bose,MBA,7,47,7.19,5.97,40,45,1,49,1,-1.22
+STU1245,Saanvi Gupta,BCA,4,58,6.98,6.28,59,64,1,55,1,-0.7
+STU1246,Reyansh Reddy,B.Tech Mechanical,6,64,7.02,6.4,52,59,2,48,1,-0.62
+STU1247,Meera Chatterjee,B.Tech Mechanical,7,45,6.42,5.73,51,65,2,51,1,-0.69
+STU1248,Ananya Chopra,MCA,6,54,6.74,6.15,43,53,2,45,1,-0.59
+STU1249,Isha Kumar,BCA,6,52,6.39,5.78,45,51,2,52,1,-0.61
+STU1250,Aarav Sharma,B.Tech Computer Science,2,46,6.68,5.77,33,50,2,46,1,-0.91

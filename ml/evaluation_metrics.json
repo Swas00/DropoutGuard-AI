@@ -1,0 +1,73 @@
+{
+  "dataset_source": "UCI Machine Learning Repository (Predict Students' Dropout and Academic Success)",
+  "dataset_records": 4424,
+  "features": [
+    "attendance",
+    "previous_gpa",
+    "current_gpa",
+    "assignment_rate",
+    "internal_marks",
+    "backlogs",
+    "engagement",
+    "gpa_trend"
+  ],
+  "selected_model": "Random Forest",
+  "comparison": {
+    "logistic_regression": {
+      "model": "Logistic Regression",
+      "accuracy": 0.8588,
+      "precision": 0.7751,
+      "recall": 0.7887,
+      "f1": 0.7818,
+      "roc_auc": 0.9199,
+      "confusion_matrix": [
+        [
+          536,
+          65
+        ],
+        [
+          60,
+          224
+        ]
+      ]
+    },
+    "random_forest": {
+      "model": "Random Forest",
+      "accuracy": 0.8678,
+      "precision": 0.7651,
+      "recall": 0.8486,
+      "f1": 0.8047,
+      "roc_auc": 0.9251,
+      "confusion_matrix": [
+        [
+          527,
+          74
+        ],
+        [
+          43,
+          241
+        ]
+      ]
+    }
+  },
+  "feature_importances": {
+    "backlogs": 0.4052,
+    "current_gpa": 0.2276,
+    "previous_gpa": 0.1218,
+    "attendance": 0.0937,
+    "assignment_rate": 0.0454,
+    "gpa_trend": 0.0422,
+    "engagement": 0.0409,
+    "internal_marks": 0.0231
+  },
+  "logistic_coefficients": {
+    "attendance": -0.6581,
+    "previous_gpa": -0.263,
+    "current_gpa": -0.3548,
+    "assignment_rate": 0.5431,
+    "internal_marks": -0.0028,
+    "backlogs": 1.4583,
+    "engagement": -0.6741,
+    "gpa_trend": -0.1965
+  }
+}

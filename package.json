@@ -1,0 +1,14 @@
+{
+  "name": "dropoutguard-ai",
+  "version": "1.0.0",
+  "description": "DropoutGuard AI — Early-Warning Dropout Risk Prediction & Academic Care Platform",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:frontend",
+    "build:frontend": "npm --prefix frontend install && npm --prefix frontend run build",
+    "start": "node backend/server.js",
+    "postinstall": "npm --prefix backend install && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev"
+  }
+}

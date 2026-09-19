@@ -1,0 +1,64 @@
+services:
+  # ----------------------------------------------------
+  # 1. Python FastAPI Machine Learning Microservice
+  # ----------------------------------------------------
+  - type: web
+    name: dropoutguard-ml
+    env: python
+    rootDir: ml
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m uvicorn predict:app --host 0.0.0.0 --port $PORT
+    plan: free
+    envVars:
+      - key: PORT
+        value: 5001
+      - key: PYTHONUNBUFFERED
+        value: 1
+
+  # ----------------------------------------------------
+  # 2. Express Backend API (Serves API + Built SPA)
+  # ----------------------------------------------------
+  - type: web
+    name: dropoutguard-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    plan: free
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ML_API_URL
+        fromService:
+          type: web
+          name: dropoutguard-ml
+          property: host
+      - key: SKIP_MONGO
+        value: false
+      - key: MONGODB_URI
+        sync: false
+
+  # ----------------------------------------------------
+  # 3. High-Performance Static Frontend
+  # ----------------------------------------------------
+  - type: web
+    name: dropoutguard-frontend
+    env: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: dropoutguard-backend
+          property: host
+          suffix: /api
