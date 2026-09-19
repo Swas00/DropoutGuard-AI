@@ -3,7 +3,10 @@ const fs = require('fs');
 const path = require('path');
 const datastore = require('../services/datastore');
 
-const ML_API_URL = process.env.ML_API_URL || 'http://127.0.0.1:5001';
+let ML_API_URL = process.env.ML_API_URL || 'http://127.0.0.1:5001';
+if (ML_API_URL && !ML_API_URL.startsWith('http://') && !ML_API_URL.startsWith('https://')) {
+  ML_API_URL = `http://${ML_API_URL}`;
+}
 const METRICS_FILE_PATH = path.join(__dirname, '../../ml/evaluation_metrics.json');
 
 function computeExplainableFactors(features) {

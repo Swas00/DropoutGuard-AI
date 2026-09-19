@@ -1,4 +1,8 @@
-const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5000/api' : '/api');
+let rawApiBase = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5000/api' : '/api');
+if (rawApiBase && !rawApiBase.startsWith('http://') && !rawApiBase.startsWith('https://') && !rawApiBase.startsWith('/')) {
+  rawApiBase = `https://${rawApiBase}`;
+}
+const API_BASE = rawApiBase;
 
 export interface Student {
   studentId: string;
