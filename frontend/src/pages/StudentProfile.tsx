@@ -396,20 +396,20 @@ export const StudentProfile: React.FC = () => {
           </div>
 
           {/* Precision Risk Gauge Scorecard */}
-          <div className="p-5 rounded-2xl bg-[#070b14]/90 border border-white/[0.08] flex items-center gap-5 sm:min-w-[320px] shadow-xl">
+          <div className="p-5 rounded-2xl bg-[#0b1120] border border-white/[0.14] flex items-center gap-5 sm:min-w-[320px] shadow-2xl">
             <div className="relative flex items-center justify-center">
               <div className={`w-20 h-20 rounded-full border-4 flex flex-col items-center justify-center font-black transition-all ${
-                isHighRisk ? "border-rose-500 text-rose-400 bg-rose-500/10 shadow-neon-coral/30" :
-                isMedRisk ? "border-amber-500 text-amber-400 bg-amber-500/10 shadow-neon-amber/30" :
-                "border-emerald-500 text-emerald-400 bg-emerald-500/10 shadow-neon-emerald/30"
+                isHighRisk ? "border-rose-500 text-rose-400 bg-rose-500/15 shadow-neon-coral/30" :
+                isMedRisk ? "border-amber-500 text-amber-400 bg-amber-500/15 shadow-neon-amber/30" :
+                "border-emerald-500 text-emerald-400 bg-emerald-500/15 shadow-neon-emerald/30"
               }`}>
                 <span className="text-2xl font-mono tabular-nums leading-none">{profile.riskScore}%</span>
-                <span className="text-[9px] font-mono uppercase text-slate-400 mt-1">Risk</span>
+                <span className="text-[9px] font-mono uppercase text-slate-300 mt-1">Risk</span>
               </div>
             </div>
 
             <div>
-              <span className="text-[10px] font-mono uppercase tracking-wider text-slate-400 block">
+              <span className="text-[10px] font-mono uppercase tracking-wider text-slate-300 block">
                 Classification Status
               </span>
               <div className={`text-xl font-display font-black tracking-tight ${
@@ -417,7 +417,7 @@ export const StudentProfile: React.FC = () => {
               }`}>
                 {profile.riskLevel} RISK TIER
               </div>
-              <p className="text-[10px] font-mono text-slate-400 mt-1">
+              <p className="text-[10px] font-mono text-slate-300 mt-1">
                 95% CI: [{Math.max(0, profile.riskScore - 4)}% — {Math.min(100, profile.riskScore + 4)}%]
               </p>
             </div>
@@ -427,8 +427,8 @@ export const StudentProfile: React.FC = () => {
 
         {/* 6 Key Academic Diagnostic Metrics */}
         <div className="mt-8 pt-6 border-t border-white/[0.08] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5">
-          <div className="p-3.5 rounded-xl bg-[#070b14]/80 border border-white/[0.06]">
-            <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Current GPA</span>
+          <div className="p-3.5 rounded-xl bg-[#0b1120] border border-white/[0.12] shadow-lg">
+            <span className="text-[11px] font-mono text-slate-300 uppercase tracking-wider block">Current GPA</span>
             <div className="flex items-center gap-1.5 mt-1">
               <span className="text-lg font-bold text-white font-mono">{academicDetails.currentGpa.toFixed(2)}</span>
               {academicDetails.gpaTrend < 0 ? (
@@ -437,53 +437,53 @@ export const StudentProfile: React.FC = () => {
                 <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />
               )}
             </div>
-            <span className="text-[10px] font-mono text-slate-500">Prior: {academicDetails.previousGpa.toFixed(2)}</span>
+            <span className="text-[10px] font-mono text-slate-400">Prior: {academicDetails.previousGpa.toFixed(2)}</span>
           </div>
 
-          <div className="p-3.5 rounded-xl bg-[#070b14]/80 border border-white/[0.06]">
-            <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Attendance</span>
+          <div className="p-3.5 rounded-xl bg-[#0b1120] border border-white/[0.12] shadow-lg">
+            <span className="text-[11px] font-mono text-slate-300 uppercase tracking-wider block">Attendance</span>
             <div className="text-lg font-bold text-white font-mono mt-1">
               <span className={academicDetails.attendance < 65 ? "text-rose-400 font-bold" : "text-slate-200"}>
                 {academicDetails.attendance}%
               </span>
             </div>
-            <span className="text-[10px] font-mono text-slate-500">Threshold: 75%</span>
+            <span className="text-[10px] font-mono text-slate-400">Threshold: 75%</span>
           </div>
 
-          <div className="p-3.5 rounded-xl bg-[#070b14]/80 border border-white/[0.06]">
-            <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Assignments</span>
+          <div className="p-3.5 rounded-xl bg-[#0b1120] border border-white/[0.12] shadow-lg">
+            <span className="text-[11px] font-mono text-slate-300 uppercase tracking-wider block">Assignments</span>
             <div className="text-lg font-bold text-white font-mono mt-1">
               {academicDetails.assignmentRate}%
             </div>
-            <span className="text-[10px] font-mono text-slate-500">
+            <span className="text-[10px] font-mono text-slate-400">
               {Math.round(academicDetails.assignmentRate / 10)}/10 delivered
             </span>
           </div>
 
-          <div className="p-3.5 rounded-xl bg-[#070b14]/80 border border-white/[0.06]">
-            <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Internals</span>
+          <div className="p-3.5 rounded-xl bg-[#0b1120] border border-white/[0.12] shadow-lg">
+            <span className="text-[11px] font-mono text-slate-300 uppercase tracking-wider block">Internals</span>
             <div className="text-lg font-bold text-white font-mono mt-1">
               {academicDetails.internalMarks}/100
             </div>
-            <span className="text-[10px] font-mono text-slate-500">Midterm Wave</span>
+            <span className="text-[10px] font-mono text-slate-400">Midterm Wave</span>
           </div>
 
-          <div className="p-3.5 rounded-xl bg-[#070b14]/80 border border-white/[0.06]">
-            <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">Course Backlogs</span>
+          <div className="p-3.5 rounded-xl bg-[#0b1120] border border-white/[0.12] shadow-lg">
+            <span className="text-[11px] font-mono text-slate-300 uppercase tracking-wider block">Course Backlogs</span>
             <div className="text-lg font-bold text-white font-mono mt-1">
               <span className={academicDetails.backlogs > 0 ? "text-rose-400 font-bold" : "text-slate-200"}>
                 {academicDetails.backlogs}
               </span>
             </div>
-            <span className="text-[10px] font-mono text-rose-400/80">Empirical #1 Driver</span>
+            <span className="text-[10px] font-mono text-rose-400 font-semibold">Empirical #1 Driver</span>
           </div>
 
-          <div className="p-3.5 rounded-xl bg-[#070b14]/80 border border-white/[0.06]">
-            <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider block">LMS Telemetry</span>
+          <div className="p-3.5 rounded-xl bg-[#0b1120] border border-white/[0.12] shadow-lg">
+            <span className="text-[11px] font-mono text-slate-300 uppercase tracking-wider block">LMS Telemetry</span>
             <div className="text-lg font-bold text-white font-mono mt-1">
               {academicDetails.engagement}%
             </div>
-            <span className="text-[10px] font-mono text-slate-500">
+            <span className="text-[10px] font-mono text-slate-400">
               {academicDetails.engagement < 60 ? "Disengaged" : "Active"}
             </span>
           </div>
@@ -521,14 +521,14 @@ export const StudentProfile: React.FC = () => {
               return (
                 <div 
                   key={idx} 
-                  className="p-4 rounded-xl bg-[#070b14]/80 border border-white/[0.06] hover:border-white/[0.12] transition-all space-y-2.5"
+                  className="p-4 rounded-xl bg-[#0b1120] border border-white/[0.12] hover:border-white/[0.22] transition-all space-y-2.5 shadow-md"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2.5">
-                      <span className="w-5 h-5 rounded-md bg-white/[0.06] text-slate-300 font-mono text-xs font-bold flex items-center justify-center">
+                      <span className="w-5 h-5 rounded-md bg-white/[0.08] text-slate-200 font-mono text-xs font-bold flex items-center justify-center">
                         {idx + 1}
                       </span>
-                      <span className="font-semibold text-sm text-slate-200">{factor.label}</span>
+                      <span className="font-semibold text-sm text-slate-100">{factor.label}</span>
                     </div>
 
                     <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold ${
@@ -540,12 +540,12 @@ export const StudentProfile: React.FC = () => {
                     </span>
                   </div>
 
-                  <p className="text-xs text-slate-400 leading-relaxed pl-7">
+                  <p className="text-xs text-slate-300 leading-relaxed pl-7">
                     {factor.description}
                   </p>
 
                   <div className="pl-7 pt-1">
-                    <div className="w-full h-1.5 bg-slate-900 rounded-full overflow-hidden border border-white/[0.04]">
+                    <div className="w-full h-1.5 bg-slate-900 rounded-full overflow-hidden border border-white/[0.08]">
                       <div 
                         className={`h-full rounded-full transition-all duration-500 ${
                           isHigh ? "bg-gradient-to-r from-rose-500 to-red-400" :
@@ -561,10 +561,10 @@ export const StudentProfile: React.FC = () => {
             })}
           </div>
 
-          <div className="p-3.5 rounded-xl bg-[#070b14]/90 border border-white/[0.08] text-[11px] text-slate-400 flex items-start gap-2.5">
+          <div className="p-3.5 rounded-xl bg-[#0b1120] border border-white/[0.14] text-[11px] text-slate-300 flex items-start gap-2.5 shadow-md">
             <HelpCircle className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
             <span>
-              <strong className="text-slate-300">Ethical AI Guardrail:</strong> Factor contributions are mathematical sensitivity indicators intended to guide faculty advising, not punitive academic probation.
+              <strong className="text-white">Ethical AI Guardrail:</strong> Factor contributions are mathematical sensitivity indicators intended to guide faculty advising, not punitive academic probation.
             </span>
           </div>
         </div>
@@ -581,12 +581,12 @@ export const StudentProfile: React.FC = () => {
                   5-Month Risk Velocity
                 </h2>
               </div>
-              <span className="text-[10px] font-mono text-slate-400 bg-white/[0.04] px-2.5 py-1 rounded-lg border border-white/[0.08]">
+              <span className="text-[10px] font-mono text-slate-300 bg-white/[0.06] px-2.5 py-1 rounded-lg border border-white/[0.1]">
                 Jan – May 2026
               </span>
             </div>
 
-            <p className="text-xs text-slate-400 mt-3">
+            <p className="text-xs text-slate-300 mt-3">
               Longitudinal tracking reveals how early disengagement escalated into high risk:
             </p>
 
@@ -597,11 +597,11 @@ export const StudentProfile: React.FC = () => {
                   key={i} 
                   className={`p-2.5 rounded-xl border text-center transition-all ${
                     i === profile.timeline.length - 1
-                      ? "bg-rose-500/10 border-rose-500/40 shadow-neon-coral/20" 
-                      : "bg-[#070b14]/80 border-white/[0.06]"
+                      ? "bg-rose-500/15 border-rose-500/50 shadow-neon-coral/20" 
+                      : "bg-[#0b1120] border-white/[0.12] shadow-sm"
                   }`}
                 >
-                  <span className="text-[10px] font-mono text-slate-400 block">{item.month}</span>
+                  <span className="text-[10px] font-mono text-slate-300 block">{item.month}</span>
                   <span className={`text-base font-extrabold font-mono mt-1 block ${
                     item.riskScore >= 65 ? "text-rose-400" :
                     item.riskScore >= 35 ? "text-amber-400" :
@@ -726,9 +726,9 @@ export const StudentProfile: React.FC = () => {
           <div className="lg:col-span-2 space-y-5">
             
             {/* Slider 1: Attendance */}
-            <div className="p-4 rounded-xl bg-[#070b14]/80 border border-white/[0.06] space-y-2">
+            <div className="p-4 rounded-xl bg-[#0b1120] border border-white/[0.12] space-y-2 shadow-md">
               <div className="flex items-center justify-between">
-                <label className="text-xs font-semibold text-slate-200">
+                <label className="text-xs font-semibold text-slate-100">
                   Target Attendance Rate
                 </label>
                 <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-lg bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
@@ -743,7 +743,7 @@ export const StudentProfile: React.FC = () => {
                 onChange={(e) => handleSliderChange("attendance", parseInt(e.target.value))}
                 className="w-full h-2 bg-slate-900 rounded-lg appearance-none cursor-pointer accent-indigo-500"
               />
-              <div className="flex justify-between text-[10px] font-mono text-slate-500">
+              <div className="flex justify-between text-[10px] font-mono text-slate-400">
                 <span>40% (Severe)</span>
                 <span>75% (Target Threshold)</span>
                 <span>100% (Perfect)</span>
@@ -751,9 +751,9 @@ export const StudentProfile: React.FC = () => {
             </div>
 
             {/* Slider 2: Assignments */}
-            <div className="p-4 rounded-xl bg-[#070b14]/80 border border-white/[0.06] space-y-2">
+            <div className="p-4 rounded-xl bg-[#0b1120] border border-white/[0.12] space-y-2 shadow-md">
               <div className="flex items-center justify-between">
-                <label className="text-xs font-semibold text-slate-200">
+                <label className="text-xs font-semibold text-slate-100">
                   Target Assignment Submissions
                 </label>
                 <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-lg bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
@@ -768,7 +768,7 @@ export const StudentProfile: React.FC = () => {
                 onChange={(e) => handleSliderChange("assignments", parseInt(e.target.value))}
                 className="w-full h-2 bg-slate-900 rounded-lg appearance-none cursor-pointer accent-cyan-500"
               />
-              <div className="flex justify-between text-[10px] font-mono text-slate-500">
+              <div className="flex justify-between text-[10px] font-mono text-slate-400">
                 <span>30%</span>
                 <span>70% (Passing)</span>
                 <span>100%</span>
@@ -776,9 +776,9 @@ export const StudentProfile: React.FC = () => {
             </div>
 
             {/* Slider 3: Internals */}
-            <div className="p-4 rounded-xl bg-[#070b14]/80 border border-white/[0.06] space-y-2">
+            <div className="p-4 rounded-xl bg-[#0b1120] border border-white/[0.12] space-y-2 shadow-md">
               <div className="flex items-center justify-between">
-                <label className="text-xs font-semibold text-slate-200">
+                <label className="text-xs font-semibold text-slate-100">
                   Projected Internal Exam Score
                 </label>
                 <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-lg bg-amber-500/15 text-amber-300 border border-amber-500/30">
@@ -793,7 +793,7 @@ export const StudentProfile: React.FC = () => {
                 onChange={(e) => handleSliderChange("internals", parseInt(e.target.value))}
                 className="w-full h-2 bg-slate-900 rounded-lg appearance-none cursor-pointer accent-amber-500"
               />
-              <div className="flex justify-between text-[10px] font-mono text-slate-500">
+              <div className="flex justify-between text-[10px] font-mono text-slate-400">
                 <span>40</span>
                 <span>70 (Average)</span>
                 <span>100</span>
@@ -801,9 +801,9 @@ export const StudentProfile: React.FC = () => {
             </div>
 
             {/* Slider 4: Engagement */}
-            <div className="p-4 rounded-xl bg-[#070b14]/80 border border-white/[0.06] space-y-2">
+            <div className="p-4 rounded-xl bg-[#0b1120] border border-white/[0.12] space-y-2 shadow-md">
               <div className="flex items-center justify-between">
-                <label className="text-xs font-semibold text-slate-200">
+                <label className="text-xs font-semibold text-slate-100">
                   Target LMS Engagement
                 </label>
                 <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-lg bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
@@ -823,9 +823,9 @@ export const StudentProfile: React.FC = () => {
           </div>
 
           {/* Simulated Outcome Display Card */}
-          <div className="p-6 rounded-2xl bg-[#070b14]/90 border border-white/[0.08] flex flex-col justify-between shadow-xl space-y-6">
+          <div className="p-6 rounded-2xl bg-[#0b1120] border border-white/[0.14] flex flex-col justify-between shadow-2xl space-y-6">
             <div className="space-y-4">
-              <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider block">
+              <span className="text-[10px] font-mono font-bold text-slate-300 uppercase tracking-wider block">
                 Simulated Outcome
               </span>
 
@@ -833,7 +833,7 @@ export const StudentProfile: React.FC = () => {
                 <div className="space-y-4">
                   <div className="flex items-baseline justify-between">
                     <div>
-                      <div className="text-xs text-slate-400">Projected Risk</div>
+                      <div className="text-xs text-slate-300">Projected Risk</div>
                       <div className={`text-4xl font-display font-black font-mono mt-1 ${
                         simResult.simulated.risk_score_pct >= 65 ? "text-rose-400" :
                         simResult.simulated.risk_score_pct >= 35 ? "text-amber-400" :
@@ -841,23 +841,23 @@ export const StudentProfile: React.FC = () => {
                       }`}>
                         {simResult.simulated.risk_score_pct}%
                       </div>
-                      <span className="text-[10px] font-mono font-bold uppercase text-slate-400">
+                      <span className="text-[10px] font-mono font-bold uppercase text-slate-300">
                         {simResult.simulated.risk_level} RISK
                       </span>
                     </div>
 
                     <div className="text-right">
-                      <div className="text-xs text-slate-400">Net Delta</div>
+                      <div className="text-xs text-slate-300">Net Delta</div>
                       <div className={`text-2xl font-black font-mono mt-1 ${
                         simResult.delta_pct < 0 ? "text-emerald-400" : "text-rose-400"
                       }`}>
                         {simResult.delta_pct > 0 ? "+" : ""}{simResult.delta_pct}%
                       </div>
-                      <span className="text-[10px] font-mono text-slate-500">vs baseline</span>
+                      <span className="text-[10px] font-mono text-slate-400">vs baseline</span>
                     </div>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-black/40 border border-white/[0.06] text-xs text-slate-300 leading-relaxed">
+                  <div className="p-4 rounded-xl bg-[#070b14] border border-white/[0.12] text-xs text-slate-200 leading-relaxed shadow-inner">
                     {simResult.delta_pct < 0 ? (
                       <p className="flex items-start gap-2.5">
                         <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
@@ -914,12 +914,12 @@ export const StudentProfile: React.FC = () => {
         </div>
 
         {aiText ? (
-          <div className="p-6 rounded-2xl bg-[#070b14]/90 border border-indigo-500/30 text-xs text-slate-200 whitespace-pre-line leading-relaxed font-sans shadow-inner">
+          <div className="p-6 rounded-2xl bg-[#0b1120] border border-indigo-500/40 text-xs text-slate-100 whitespace-pre-line leading-relaxed font-sans shadow-xl">
             {aiText}
           </div>
         ) : (
-          <div className="p-10 rounded-2xl bg-black/30 border border-dashed border-white/[0.08] text-center text-slate-400 text-xs">
-            <Brain className="w-9 h-9 mx-auto text-slate-600 mb-2.5" />
+          <div className="p-10 rounded-2xl bg-[#070b14] border border-dashed border-white/[0.12] text-center text-slate-300 text-xs">
+            <Brain className="w-9 h-9 mx-auto text-indigo-400 mb-2.5" />
             <p className="max-w-md mx-auto">Click "Generate Strategy" to formulate a personalized, multi-factor academic advising protocol.</p>
           </div>
         )}
@@ -930,7 +930,7 @@ export const StudentProfile: React.FC = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div className="fixed inset-0 bg-black/80 backdrop-blur-md" onClick={() => setShowLogModal(false)} />
           
-          <div className="relative w-full max-w-lg bento-box bg-[#070b14]/95 p-6 sm:p-7 space-y-5 z-10 border border-white/[0.12] shadow-2xl">
+          <div className="relative w-full max-w-lg bento-box bg-[#0b1120] p-6 sm:p-7 space-y-5 z-10 border border-white/[0.16] shadow-2xl">
             <div className="flex items-center justify-between border-b border-white/[0.08] pb-3">
               <h3 className="text-base font-display font-bold text-white">
                 {t('dispatchTitle', 'Dispatch Academic Intervention')}
@@ -940,25 +940,25 @@ export const StudentProfile: React.FC = () => {
 
             <form onSubmit={handleScheduleIntervention} className="space-y-4 text-xs">
               <div>
-                <label className="block text-slate-300 font-semibold mb-1">
+                <label className="block text-slate-200 font-semibold mb-1">
                   {t('targetStudent', 'Target Student')}
                 </label>
                 <input
                   type="text"
                   readOnly
                   value={`${profile.name} (${profile.studentId}) - ${profile.riskLevel} Risk`}
-                  className="w-full px-3 py-2 rounded-xl bg-black/60 border border-white/[0.08] text-slate-400"
+                  className="w-full px-3 py-2 rounded-xl bg-[#070b14] border border-white/[0.14] text-slate-200"
                 />
               </div>
 
               <div>
-                <label className="block text-slate-300 font-semibold mb-1">
+                <label className="block text-slate-200 font-semibold mb-1">
                   {t('actionProtocol', 'Action Protocol')}
                 </label>
                 <select
                   value={selectedAction}
                   onChange={(e) => setSelectedAction(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl bg-black/60 border border-white/[0.08] text-slate-200 focus:border-indigo-500/80 outline-none cursor-pointer"
+                  className="w-full px-3 py-2 rounded-xl bg-[#070b14] border border-white/[0.14] text-slate-100 focus:border-indigo-500/80 outline-none cursor-pointer"
                 >
                   <option value="Faculty Mentoring & Review">{t('protocol1', 'Faculty Mentoring & 1-on-1 Review')}</option>
                   <option value="Remedial Tutoring Assignment">{t('protocol2', 'Remedial Tutoring & Coursework Support')}</option>
@@ -969,19 +969,19 @@ export const StudentProfile: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-slate-300 font-semibold mb-1">
+                <label className="block text-slate-200 font-semibold mb-1">
                   {t('assignedFaculty', 'Assigned Faculty / Mentor')}
                 </label>
                 <input
                   type="text"
                   value={assignedMentor}
                   onChange={(e) => setAssignedMentor(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl bg-black/60 border border-white/[0.08] text-slate-200 focus:border-indigo-500/80 outline-none"
+                  className="w-full px-3 py-2 rounded-xl bg-[#070b14] border border-white/[0.14] text-slate-100 focus:border-indigo-500/80 outline-none"
                 />
               </div>
 
               <div>
-                <label className="block text-slate-300 font-semibold mb-1">
+                <label className="block text-slate-200 font-semibold mb-1">
                   {t('interventionNotes', 'Intervention Notes & Objectives')}
                 </label>
                 <textarea
@@ -989,7 +989,7 @@ export const StudentProfile: React.FC = () => {
                   value={customNotes}
                   onChange={(e) => setCustomNotes(e.target.value)}
                   placeholder={t('notesPlaceholder', 'Specific targets (e.g. attendance improvement to 75%, backlog recovery)...')}
-                  className="w-full px-3 py-2 rounded-xl bg-black/60 border border-white/[0.08] text-slate-200 placeholder-slate-500 focus:border-indigo-500/80 outline-none"
+                  className="w-full px-3 py-2 rounded-xl bg-[#070b14] border border-white/[0.14] text-slate-100 placeholder-slate-400 focus:border-indigo-500/80 outline-none"
                 />
               </div>
 
@@ -1043,7 +1043,7 @@ export const StudentProfile: React.FC = () => {
       {/* Delete Confirmation Modal */}
       {isDeleteModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
-          <div className="bento-box bg-[#070b14]/95 w-full max-w-md p-6 border border-rose-500/30 rounded-2xl shadow-2xl relative">
+          <div className="bento-box bg-[#0b1120] w-full max-w-md p-6 border border-rose-500/40 rounded-2xl shadow-2xl relative">
             <div className="flex items-center gap-3 mb-4 text-rose-400">
               <div className="w-10 h-10 rounded-xl bg-rose-500/20 border border-rose-500/30 flex items-center justify-center">
                 <Trash2 className="w-5 h-5 text-rose-400" />

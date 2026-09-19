@@ -139,14 +139,14 @@ export const StudentList: React.FC = () => {
             placeholder="Search student ID, name, or keywords..."
             value={search}
             onChange={(e) => { setSearch(e.target.value); setPage(1); }}
-            className="w-full pl-9 pr-3 py-2 rounded-xl bg-[#070b14]/90 border border-white/[0.08] text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500/80 focus:ring-1 focus:ring-indigo-500/40 transition-all"
+            className="w-full pl-9 pr-3 py-2 rounded-xl bg-[#0b1120] border border-white/[0.14] text-xs text-slate-100 placeholder-slate-400 focus:outline-none focus:border-indigo-500/80 focus:ring-1 focus:ring-indigo-500/40 transition-all"
           />
         </div>
 
         <select
           value={riskLevel}
           onChange={(e) => { setRiskLevel(e.target.value); setPage(1); }}
-          className="w-full sm:w-auto px-3 py-2 rounded-xl bg-[#070b14]/90 border border-white/[0.08] text-xs text-slate-300 focus:outline-none focus:border-indigo-500/80 transition-all cursor-pointer"
+          className="w-full sm:w-auto px-3 py-2 rounded-xl bg-[#0b1120] border border-white/[0.14] text-xs text-slate-200 focus:outline-none focus:border-indigo-500/80 transition-all cursor-pointer"
         >
           <option value="ALL">All Risk Tiers</option>
           <option value="HIGH">High Risk Tier</option>
@@ -157,7 +157,7 @@ export const StudentList: React.FC = () => {
         <select
           value={course}
           onChange={(e) => { setCourse(e.target.value); setPage(1); }}
-          className="w-full sm:w-auto px-3 py-2 rounded-xl bg-[#070b14]/90 border border-white/[0.08] text-xs text-slate-300 focus:outline-none focus:border-indigo-500/80 transition-all cursor-pointer"
+          className="w-full sm:w-auto px-3 py-2 rounded-xl bg-[#0b1120] border border-white/[0.14] text-xs text-slate-200 focus:outline-none focus:border-indigo-500/80 transition-all cursor-pointer"
         >
           <option value="ALL">All Academic Programs</option>
           <option value="MCA">MCA</option>
@@ -171,7 +171,7 @@ export const StudentList: React.FC = () => {
         <select
           value={semester}
           onChange={(e) => { setSemester(e.target.value); setPage(1); }}
-          className="w-full sm:w-auto px-3 py-2 rounded-xl bg-[#070b14]/90 border border-white/[0.08] text-xs text-slate-300 focus:outline-none focus:border-indigo-500/80 transition-all cursor-pointer"
+          className="w-full sm:w-auto px-3 py-2 rounded-xl bg-[#0b1120] border border-white/[0.14] text-xs text-slate-200 focus:outline-none focus:border-indigo-500/80 transition-all cursor-pointer"
         >
           <option value="ALL">All Semesters</option>
           <option value="1">Semester 1</option>
@@ -184,11 +184,11 @@ export const StudentList: React.FC = () => {
       </div>
 
       {/* Directory Table */}
-      <div className="bento-box overflow-hidden">
+      <div className="bento-box overflow-hidden border border-white/[0.12] shadow-2xl">
         <div className="overflow-x-auto">
-          <table className="w-full text-left text-xs border-collapse">
+          <table className="w-full text-left text-xs border-collapse min-w-[760px]">
             <thead>
-              <tr className="border-b border-white/[0.08] text-slate-400 bg-black/40 font-mono">
+              <tr className="border-b border-white/[0.12] text-slate-300 bg-[#0b1120] font-mono">
                 <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Student</th>
                 <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Program & Sem</th>
                 <th 
@@ -197,7 +197,7 @@ export const StudentList: React.FC = () => {
                 >
                   <div className="flex items-center gap-1.5">
                     <span>Attendance</span>
-                    <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                    <ArrowUpDown className="w-3 h-3 text-slate-400" />
                   </div>
                 </th>
                 <th 
@@ -206,7 +206,7 @@ export const StudentList: React.FC = () => {
                 >
                   <div className="flex items-center gap-1.5">
                     <span>Current GPA</span>
-                    <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                    <ArrowUpDown className="w-3 h-3 text-slate-400" />
                   </div>
                 </th>
                 <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Backlogs</th>
@@ -216,14 +216,14 @@ export const StudentList: React.FC = () => {
                 >
                   <div className="flex items-center gap-1.5">
                     <span>Predicted Risk</span>
-                    <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                    <ArrowUpDown className="w-3 h-3 text-slate-400" />
                   </div>
                 </th>
                 <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Status</th>
                 <th className="py-3.5 px-4 text-right font-semibold uppercase tracking-wider text-[11px]">Action</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-white/[0.04]">
+            <tbody className="divide-y divide-white/[0.04] bg-[#070b14]">
               {loading ? (
                 <tr>
                   <td colSpan={8} className="py-16 text-center text-slate-400 font-mono">

@@ -118,11 +118,11 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
       />
 
       {/* Command Dialog */}
-      <div className="relative w-full max-w-2xl bg-slate-900 border border-slate-700/80 shadow-2xl rounded-2xl overflow-hidden z-10 flex flex-col max-h-[80vh] ring-1 ring-white/10 animate-in fade-in zoom-in-95 duration-150">
+      <div className="relative w-full max-w-2xl bg-[#0b1120] border border-white/[0.16] shadow-2xl rounded-2xl overflow-hidden z-10 flex flex-col max-h-[80vh] animate-in fade-in zoom-in-95 duration-150">
         
         {/* Search Bar */}
-        <div className="flex items-center px-4 py-3.5 border-b border-slate-800 bg-slate-900/90">
-          <Search className="w-5 h-5 text-emerald-400 mr-3 shrink-0" />
+        <div className="flex items-center px-4 py-3.5 border-b border-white/[0.1] bg-[#070b14]">
+          <Search className="w-5 h-5 text-indigo-400 mr-3 shrink-0" />
           <input
             ref={inputRef}
             type="text"
@@ -132,7 +132,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
               setSelectedIndex(0);
             }}
             placeholder="Type a command, student name (e.g. Kavya), or ID (STU1024)..."
-            className="w-full bg-transparent text-sm sm:text-base text-white placeholder-slate-500 focus:outline-none font-medium"
+            className="w-full bg-transparent text-sm sm:text-base text-white placeholder-slate-400 focus:outline-none font-medium"
           />
           <div className="flex items-center gap-1.5 shrink-0">
             <kbd className="hidden sm:inline-flex items-center gap-0.5 px-2 py-0.5 text-[10px] font-mono text-slate-400 bg-slate-800 border border-slate-700 rounded">

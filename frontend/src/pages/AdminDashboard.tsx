@@ -538,7 +538,7 @@ export const AdminDashboard: React.FC = () => {
                 placeholder="Search name or ID (e.g. STU1024)..."
                 value={search}
                 onChange={(e) => { setSearch(e.target.value); setPage(1); }}
-                className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-[#070b14] border border-white/[0.1] text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all"
+                className="w-full pl-9 pr-3.5 py-2.5 rounded-xl bg-[#0b1120] border border-white/[0.14] text-xs text-slate-100 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all"
               />
             </div>
 
@@ -546,7 +546,7 @@ export const AdminDashboard: React.FC = () => {
             <select
               value={riskFilter}
               onChange={(e) => { setRiskFilter(e.target.value); setPage(1); }}
-              className="w-full sm:w-auto px-3.5 py-2.5 rounded-xl bg-[#070b14] border border-white/[0.1] text-xs text-slate-300 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all cursor-pointer"
+              className="w-full sm:w-auto px-3.5 py-2.5 rounded-xl bg-[#0b1120] border border-white/[0.14] text-xs text-slate-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all cursor-pointer"
             >
               <option value="ALL">All Risk Tiers</option>
               <option value="HIGH">High Risk (Critically Flagged)</option>
@@ -558,7 +558,7 @@ export const AdminDashboard: React.FC = () => {
             <select
               value={courseFilter}
               onChange={(e) => { setCourseFilter(e.target.value); setPage(1); }}
-              className="w-full sm:w-auto px-3.5 py-2.5 rounded-xl bg-[#070b14] border border-white/[0.1] text-xs text-slate-300 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all cursor-pointer"
+              className="w-full sm:w-auto px-3.5 py-2.5 rounded-xl bg-[#0b1120] border border-white/[0.14] text-xs text-slate-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/50 transition-all cursor-pointer"
             >
               <option value="ALL">All Departments</option>
               <option value="MCA">MCA</option>
@@ -572,10 +572,10 @@ export const AdminDashboard: React.FC = () => {
         </div>
 
         {/* Data Table */}
-        <div className="overflow-x-auto rounded-2xl border border-white/[0.08]">
-          <table className="w-full text-left text-xs border-collapse">
+        <div className="overflow-x-auto rounded-2xl border border-white/[0.12] shadow-xl">
+          <table className="w-full text-left text-xs border-collapse min-w-[760px]">
             <thead>
-              <tr className="border-b border-white/[0.08] text-slate-400 bg-[#070b14] font-mono">
+              <tr className="border-b border-white/[0.12] text-slate-300 bg-[#0b1120] font-mono">
                 <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Student Dossier</th>
                 <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Program / Sem</th>
                 <th 
@@ -584,7 +584,7 @@ export const AdminDashboard: React.FC = () => {
                 >
                   <div className="flex items-center gap-1">
                     <span>Attendance</span>
-                    <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                    <ArrowUpDown className="w-3 h-3 text-slate-400" />
                   </div>
                 </th>
                 <th 
@@ -593,7 +593,7 @@ export const AdminDashboard: React.FC = () => {
                 >
                   <div className="flex items-center gap-1">
                     <span>Current GPA</span>
-                    <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                    <ArrowUpDown className="w-3 h-3 text-slate-400" />
                   </div>
                 </th>
                 <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Backlogs</th>
@@ -603,14 +603,14 @@ export const AdminDashboard: React.FC = () => {
                 >
                   <div className="flex items-center gap-1">
                     <span>Dropout Risk</span>
-                    <ArrowUpDown className="w-3 h-3 text-slate-500" />
+                    <ArrowUpDown className="w-3 h-3 text-slate-400" />
                   </div>
                 </th>
                 <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Status</th>
                 <th className="py-3.5 px-4 text-right font-semibold uppercase tracking-wider text-[11px]">Action</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-white/[0.04] bg-[#070b14]/50">
+            <tbody className="divide-y divide-white/[0.04] bg-[#070b14]">
               {loading ? (
                 <tr>
                   <td colSpan={8} className="py-14 text-center text-slate-400 font-mono">

@@ -375,7 +375,7 @@ export const BackgroundVideo: React.FC = () => {
         <div className="absolute bottom-[10%] left-[-5%] w-[750px] h-[550px] bg-violet-600/10 rounded-full blur-[150px] pointer-events-none" />
 
         {/* Cinematic Vignette Masks */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#030712]/50 via-[#030712]/75 to-[#030712]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#030712]/85 via-[#030712]/92 to-[#030712]/98" />
       </div>
 
       {/* Retro CRT Scanline Grid & Sweeping Radar Beam */}
@@ -414,12 +414,12 @@ export const BackgroundVideo: React.FC = () => {
       )}
 
       {/* Floating Ambient Cinema & Audio Master HUD Controller (Bottom-Left) */}
-      <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40 print:hidden select-none">
+      <div className="fixed bottom-20 md:bottom-6 left-3 sm:left-6 z-30 print:hidden select-none">
         <div className="relative group">
           
           {/* Expanded Settings Flyout Panel */}
           {isControlsExpanded && (
-            <div className="mb-2 p-3 rounded-2xl bg-[#070b14]/95 border border-white/[0.12] shadow-2xl backdrop-blur-2xl text-xs space-y-3 animate-in fade-in slide-in-from-bottom-3 duration-200 w-64 max-w-[calc(100vw-2rem)]">
+            <div className="mb-2 p-3 rounded-2xl bg-[#0b1120] border border-white/[0.14] shadow-2xl backdrop-blur-2xl text-xs space-y-3 animate-in fade-in slide-in-from-bottom-3 duration-200 w-64 max-w-[calc(100vw-2rem)]">
               
               {/* Visualizer Mode Selection */}
               <div>

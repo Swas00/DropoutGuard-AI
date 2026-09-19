@@ -103,13 +103,13 @@ export const InterventionsPage: React.FC = () => {
 
       {/* Summary KPI Scorecards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-        <div className="bento-box p-5 border-amber-500/20 bg-gradient-to-b from-amber-950/15 to-[#070b14]/90 flex items-center justify-between shadow-neon-amber/10">
+        <div className="bento-box p-5 border-amber-500/30 bg-[#0b1120] flex items-center justify-between shadow-neon-amber/10">
           <div>
             <span className="text-[11px] font-mono text-amber-400 font-semibold uppercase tracking-wider block">
               {t('pendingAction', 'Pending Action')}
             </span>
             <div className="text-3xl font-display font-black text-amber-300 font-mono mt-1">{pendingCount}</div>
-            <p className="text-[10px] text-amber-300/70 mt-1 font-mono">
+            <p className="text-[10px] text-amber-300/80 mt-1 font-mono">
               {t('pendingDesc', 'Awaiting faculty contact')}
             </p>
           </div>
@@ -118,13 +118,13 @@ export const InterventionsPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bento-box p-5 border-cyan-500/20 bg-gradient-to-b from-cyan-950/15 to-[#070b14]/90 flex items-center justify-between shadow-neon-cyan/10">
+        <div className="bento-box p-5 border-cyan-500/30 bg-[#0b1120] flex items-center justify-between shadow-neon-cyan/10">
           <div>
             <span className="text-[11px] font-mono text-cyan-400 font-semibold uppercase tracking-wider block">
               {t('activeInProgress', 'Active In-Progress')}
             </span>
             <div className="text-3xl font-display font-black text-cyan-300 font-mono mt-1">{inProgressCount}</div>
-            <p className="text-[10px] text-cyan-300/70 mt-1 font-mono">
+            <p className="text-[10px] text-cyan-300/80 mt-1 font-mono">
               {t('inProgressDesc', 'Under active advising')}
             </p>
           </div>
@@ -133,13 +133,13 @@ export const InterventionsPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="bento-box p-5 border-emerald-500/20 bg-gradient-to-b from-emerald-950/15 to-[#070b14]/90 flex items-center justify-between shadow-neon-emerald/10">
+        <div className="bento-box p-5 border-emerald-500/30 bg-[#0b1120] flex items-center justify-between shadow-neon-emerald/10">
           <div>
             <span className="text-[11px] font-mono text-emerald-400 font-semibold uppercase tracking-wider block">
               {t('resolvedCases', 'Resolved Cases')}
             </span>
             <div className="text-3xl font-display font-black text-emerald-300 font-mono mt-1">{completedCount}</div>
-            <p className="text-[10px] text-emerald-300/70 mt-1 font-mono">
+            <p className="text-[10px] text-emerald-300/80 mt-1 font-mono">
               {t('resolvedDesc', 'Remediation successful')}
             </p>
           </div>
@@ -152,7 +152,7 @@ export const InterventionsPage: React.FC = () => {
       {/* Filter Row */}
       <div className="bento-box p-4 flex flex-wrap items-center justify-between gap-4">
         <div className="flex flex-wrap items-center gap-3">
-          <div className="text-xs text-slate-400 font-mono flex items-center gap-1.5 pl-1">
+          <div className="text-xs text-slate-300 font-mono flex items-center gap-1.5 pl-1">
             <Filter className="w-3.5 h-3.5 text-indigo-400" />
             <span>{t('workflowFilters', 'Workflow Filters:')}</span>
           </div>
@@ -160,7 +160,7 @@ export const InterventionsPage: React.FC = () => {
           <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value)}
-            className="px-3 py-1.5 rounded-xl bg-[#070b14]/90 border border-white/[0.08] text-xs text-slate-300 focus:outline-none focus:border-indigo-500/80 cursor-pointer"
+            className="px-3 py-1.5 rounded-xl bg-[#0b1120] border border-white/[0.14] text-xs text-slate-200 focus:outline-none focus:border-indigo-500/80 cursor-pointer"
           >
             <option value="ALL">{t('filterStatusAll', 'All Statuses')} ({interventions.length})</option>
             <option value="Pending">{t('filterPending', 'Pending Only')} ({pendingCount})</option>
@@ -171,7 +171,7 @@ export const InterventionsPage: React.FC = () => {
           <select
             value={priorityFilter}
             onChange={(e) => setPriorityFilter(e.target.value)}
-            className="px-3 py-1.5 rounded-xl bg-[#070b14]/90 border border-white/[0.08] text-xs text-slate-300 focus:outline-none focus:border-indigo-500/80 cursor-pointer"
+            className="px-3 py-1.5 rounded-xl bg-[#0b1120] border border-white/[0.14] text-xs text-slate-200 focus:outline-none focus:border-indigo-500/80 cursor-pointer"
           >
             <option value="ALL">{t('filterPriorityAll', 'All Risk Priorities')}</option>
             <option value="HIGH">{t('filterHigh', 'Critical High Risk')}</option>
@@ -195,7 +195,7 @@ export const InterventionsPage: React.FC = () => {
             </div>
           </div>
         ) : filtered.length === 0 ? (
-          <div className="bento-box p-14 text-center text-slate-500 font-mono">
+          <div className="bento-box p-14 text-center text-slate-400 font-mono">
             No interventions match the selected criteria.
           </div>
         ) : (
@@ -211,7 +211,7 @@ export const InterventionsPage: React.FC = () => {
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
                   <div className="space-y-2">
                     <div className="flex flex-wrap items-center gap-2.5">
-                      <span className="font-mono text-xs font-bold px-2.5 py-0.5 rounded-lg bg-black/60 border border-white/[0.08] text-indigo-400">
+                      <span className="font-mono text-xs font-bold px-2.5 py-0.5 rounded-lg bg-[#070b14] border border-white/[0.14] text-indigo-400">
                         {item.studentId}
                       </span>
                       <h3 className="text-sm font-semibold text-white">{item.studentName}</h3>
@@ -230,14 +230,14 @@ export const InterventionsPage: React.FC = () => {
                       Protocol: <span className="text-white font-semibold">{item.recommendation}</span>
                     </div>
 
-                    <p className="text-xs text-slate-400 max-w-3xl leading-relaxed">
+                    <p className="text-xs text-slate-300 max-w-3xl leading-relaxed">
                       {item.notes}
                     </p>
 
                     <div className="flex flex-wrap items-center gap-4 text-[11px] text-slate-400 font-mono pt-1">
                       <span className="flex items-center gap-1.5">
                         <User className="w-3.5 h-3.5 text-indigo-400" />
-                        <span>Advisor: <strong className="text-slate-300">{item.assignedFaculty}</strong></span>
+                        <span>Advisor: <strong className="text-slate-200">{item.assignedFaculty}</strong></span>
                       </span>
                       <span className="flex items-center gap-1.5">
                         <Calendar className="w-3.5 h-3.5 text-cyan-400" />
@@ -247,8 +247,8 @@ export const InterventionsPage: React.FC = () => {
                   </div>
 
                   {/* Status Progression Controls */}
-                  <div className="flex flex-col sm:flex-row md:flex-col items-end gap-3 shrink-0">
-                    <div className="flex items-center gap-1 p-1 rounded-xl bg-black/50 border border-white/[0.08] shadow-inner">
+                  <div className="w-full md:w-auto flex flex-col sm:flex-row md:flex-col items-start sm:items-end gap-3 shrink-0">
+                    <div className="w-full sm:w-auto flex items-center justify-between sm:justify-start gap-1 p-1 rounded-xl bg-[#070b14] border border-white/[0.14] shadow-inner">
                       <button
                         onClick={() => handleStatusChange(item.id, 'Pending')}
                         disabled={updatingId === item.id}

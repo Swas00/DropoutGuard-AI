@@ -69,11 +69,12 @@ export function App() {
 
             <button
               onClick={() => setMetricsOpen(true)}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 text-white text-xs font-bold shadow-xl shadow-emerald-500/25 border border-emerald-400/30 transition-all hover:scale-105"
+              className="flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 text-white text-xs font-bold shadow-xl shadow-emerald-500/25 border border-emerald-400/30 transition-all hover:scale-105 cursor-pointer"
               title="Inspect Machine Learning Model Evaluation & Metrics"
             >
               <Cpu className="w-4 h-4" />
-              <span>ML Model Metrics (0.925 ROC-AUC)</span>
+              <span className="hidden sm:inline">ML Model Metrics (0.925 ROC-AUC)</span>
+              <span className="sm:hidden text-[11px] font-bold">ML Metrics</span>
             </button>
           </div>
 

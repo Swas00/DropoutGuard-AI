@@ -130,7 +130,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full bg-[#030712]/90 backdrop-blur-2xl border-b border-white/[0.08] shadow-2xl transition-all">
+      <header className="sticky top-0 z-40 w-full bg-[#070b14] border-b border-white/[0.12] shadow-2xl transition-all">
         <div className="max-w-[1600px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 gap-2 sm:gap-4">
             
@@ -279,10 +279,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
 
                   {/* Dropdown Menu */}
                   {isProfileOpen && (
-                    <div className="absolute right-0 mt-2 w-72 sm:w-80 rounded-2xl bg-[#070b14]/98 backdrop-blur-3xl border border-white/[0.12] shadow-2xl p-3 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                    <div className="absolute right-0 mt-2 w-72 sm:w-80 rounded-2xl bg-[#0b1120] border border-white/[0.16] shadow-2xl p-3 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
                       
                       {/* Active Profile Info Card */}
-                      <div className="p-3 rounded-xl bg-white/[0.03] border border-white/[0.06] mb-3">
+                      <div className="p-3 rounded-xl bg-[#070b14] border border-white/[0.12] mb-3">
                         <div className="flex items-center gap-3">
                           <div className={`w-10 h-10 rounded-xl bg-gradient-to-tr ${roleMeta.gradient} flex items-center justify-center text-white font-bold text-sm shadow-lg shrink-0`}>
                             {getInitials(user.name)}
@@ -484,10 +484,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
 
         {/* Full-Screen Mobile Slide-Down Navigation Drawer */}
         {isMobileMenuOpen && (
-          <div className="md:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-[#030712]/98 backdrop-blur-3xl border-t border-white/[0.08] overflow-y-auto px-4 py-5 space-y-4 animate-in fade-in slide-in-from-top-3 duration-200 shadow-2xl">
+          <div className="md:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-[#070b14] border-t border-white/[0.14] overflow-y-auto px-4 py-5 space-y-4 animate-in fade-in slide-in-from-top-3 duration-200 shadow-2xl">
             
             {/* 1. Mobile User Profile / Auth Action Card */}
-            <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/[0.08]">
+            <div className="p-3.5 rounded-2xl bg-[#0b1120] border border-white/[0.14]">
               {user ? (
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
@@ -725,7 +725,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
       {/* Mobile Persistent Bottom Navigation Dock (Visible on < md screens when minimized) */}
       <nav 
         aria-label="Mobile Bottom Navigation"
-        className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#030712]/95 backdrop-blur-3xl border-t border-white/[0.1] shadow-[0_-8px_30px_rgba(0,0,0,0.85)] px-2 py-1.5"
+        className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#070b14] border-t border-white/[0.14] shadow-[0_-8px_30px_rgba(0,0,0,0.95)] px-2 py-1.5"
       >
         <div className="flex items-center justify-around max-w-lg mx-auto">
           {navLinks.map((link) => {

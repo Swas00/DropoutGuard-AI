@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="border-t border-white/[0.08] bg-[#030712]/90 backdrop-blur-2xl py-14 mt-24 text-slate-400 text-xs font-sans relative overflow-hidden">
+    <footer className="border-t border-white/[0.12] bg-[#070b14] py-14 mt-24 text-slate-400 text-xs font-sans relative overflow-hidden">
       {/* Top ambient glowing line */}
       <div className="absolute top-0 left-1/4 right-1/4 h-[1px] bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent shadow-[0_0_12px_rgba(99,102,241,0.6)]" />
 
@@ -28,11 +28,11 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             
-            <p className="text-slate-400 max-w-lg leading-relaxed text-xs">
+            <p className="text-slate-300 max-w-lg leading-relaxed text-xs">
               Institutional predictive intelligence and early-warning decision support platform for higher education. Detect disengagement patterns, explain root causes with empirical machine learning, and execute human-centered academic advising workflows.
             </p>
 
-            <div className="p-3.5 rounded-2xl bg-white/[0.02] border border-white/[0.06] text-[11px] text-slate-400 max-w-lg backdrop-blur-md">
+            <div className="p-3.5 rounded-2xl bg-[#0b1120] border border-white/[0.12] text-[11px] text-slate-300 max-w-lg">
               <span className="font-bold text-indigo-400">Ethical AI Mandate: </span>
               Predictive models quantify mathematical disengagement sensitivity to guide proactive faculty care; never used for automated punitive diagnoses or deterministic dismissals.
             </div>

@@ -121,58 +121,58 @@ export const LandingPage: React.FC = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
                   <div 
                     onMouseEnter={() => soundFx.playHover()}
-                    className="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-indigo-500/30 transition-all cursor-pointer hover:bg-indigo-500/[0.03]"
+                    className="p-4 rounded-2xl bg-[#0b1120] border border-white/[0.12] hover:border-indigo-500/40 transition-all cursor-pointer hover:bg-[#11182c]"
                   >
-                    <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Cohort Monitored</div>
+                    <div className="text-[11px] font-mono text-slate-300 uppercase tracking-wider">Cohort Monitored</div>
                     <div className="text-3xl font-extrabold text-white font-mono mt-1">1,250</div>
-                    <div className="text-[11px] text-emerald-400 flex items-center gap-1 mt-1 font-mono">
+                    <div className="text-[11px] text-emerald-400 flex items-center gap-1 mt-1 font-mono font-semibold">
                       <span>✓ 100% active telemetry</span>
                     </div>
                   </div>
 
                   <div 
                     onMouseEnter={() => soundFx.playHover()}
-                    className="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-rose-500/30 transition-all cursor-pointer hover:bg-rose-500/[0.03]"
+                    className="p-4 rounded-2xl bg-[#0b1120] border border-white/[0.12] hover:border-rose-500/40 transition-all cursor-pointer hover:bg-[#11182c]"
                   >
-                    <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">High Risk Alert</div>
-                    <div className="text-3xl font-extrabold text-rose-400 font-mono mt-1">84 <span className="text-xs text-slate-400 font-normal">(6.7%)</span></div>
-                    <div className="text-[11px] text-rose-300/90 flex items-center gap-1 mt-1 font-mono">
+                    <div className="text-[11px] font-mono text-slate-300 uppercase tracking-wider">High Risk Alert</div>
+                    <div className="text-3xl font-extrabold text-rose-400 font-mono mt-1">84 <span className="text-xs text-slate-300 font-normal">(6.7%)</span></div>
+                    <div className="text-[11px] text-rose-300 flex items-center gap-1 mt-1 font-mono font-semibold">
                       <span>● Priority advising queue</span>
                     </div>
                   </div>
 
                   <div 
                     onMouseEnter={() => soundFx.playHover()}
-                    className="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-cyan-500/30 transition-all cursor-pointer hover:bg-cyan-500/[0.03]"
+                    className="p-4 rounded-2xl bg-[#0b1120] border border-white/[0.12] hover:border-cyan-500/40 transition-all cursor-pointer hover:bg-[#11182c]"
                   >
-                    <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">ML Validation</div>
-                    <div className="text-3xl font-extrabold text-cyan-300 font-mono mt-1">0.925 <span className="text-xs text-slate-400 font-normal">AUC</span></div>
-                    <div className="text-[10px] text-slate-400 mt-1 font-mono">
+                    <div className="text-[11px] font-mono text-slate-300 uppercase tracking-wider">ML Validation</div>
+                    <div className="text-3xl font-extrabold text-cyan-300 font-mono mt-1">0.925 <span className="text-xs text-slate-300 font-normal">AUC</span></div>
+                    <div className="text-[10px] text-slate-300 mt-1 font-mono font-medium">
                       UCI Benchmark (4,424 samples)
                     </div>
                   </div>
 
                   <div 
                     onMouseEnter={() => soundFx.playHover()}
-                    className="p-4 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-indigo-500/30 transition-all cursor-pointer hover:bg-indigo-500/[0.03]"
+                    className="p-4 rounded-2xl bg-[#0b1120] border border-white/[0.12] hover:border-indigo-500/40 transition-all cursor-pointer hover:bg-[#11182c]"
                   >
-                    <div className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Intervention SLA</div>
+                    <div className="text-[11px] font-mono text-slate-300 uppercase tracking-wider">Intervention SLA</div>
                     <div className="text-3xl font-extrabold text-indigo-300 font-mono mt-1">4.2h</div>
-                    <div className="text-[10px] text-indigo-400 mt-1 font-mono">
+                    <div className="text-[10px] text-indigo-300 mt-1 font-mono font-medium">
                       Mean advisor response
                     </div>
                   </div>
                 </div>
 
                 {/* Highlighted Live Demo Student Teaser */}
-                <div className="mt-5 p-3.5 rounded-2xl bg-[#070b14]/90 border border-amber-500/35 flex flex-wrap items-center justify-between gap-3 text-xs shadow-lg">
+                <div className="mt-5 p-3.5 rounded-2xl bg-[#0b1120] border border-amber-500/40 flex flex-wrap items-center justify-between gap-3 text-xs shadow-xl">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center font-mono font-black border border-amber-500/30">
+                    <div className="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center font-mono font-black border border-amber-500/40">
                       !
                     </div>
                     <div>
                       <div className="font-bold text-white text-sm">Active Case Study: STU1024 (Kavya Sharma, MCA Sem 3)</div>
-                      <div className="text-slate-400 text-[11px]">Primary drivers: 2 Course Backlogs (40.5%), GPA drop (-0.9), Attendance (58%)</div>
+                      <div className="text-slate-300 text-[11px]">Primary drivers: 2 Course Backlogs (40.5%), GPA drop (-0.9), Attendance (58%)</div>
                     </div>
                   </div>
                   <Link 
@@ -194,9 +194,9 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* Enterprise Trust & Compliance Strip */}
-      <section className="py-7 border-y border-white/[0.08] bg-[#070b14]/60 backdrop-blur-xl relative z-10">
+      <section className="py-7 border-y border-white/[0.12] bg-[#070b14] relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center sm:justify-between gap-6 text-xs text-slate-400 font-mono uppercase tracking-wider">
+          <div className="flex flex-wrap items-center justify-center sm:justify-between gap-6 text-xs text-slate-300 font-mono uppercase tracking-wider">
             <div className="flex items-center gap-2.5">
               <Lock className="w-4 h-4 text-emerald-400" />
               <span>FERPA Compliant Data Vault</span>
@@ -302,7 +302,7 @@ export const LandingPage: React.FC = () => {
       </section>
 
       {/* Feature Bento Grid */}
-      <section className="py-24 bg-[#070b14]/50 border-y border-white/[0.08] relative z-10">
+      <section className="py-24 bg-[#070b14] border-y border-white/[0.12] relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-300 text-xs font-mono font-bold uppercase tracking-widest border border-cyan-500/25 mb-3">

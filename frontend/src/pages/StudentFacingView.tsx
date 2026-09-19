@@ -46,9 +46,9 @@ export const StudentFacingView: React.FC = () => {
         </div>
 
         {/* Current Academic Status Spotlight */}
-        <div className="mt-8 p-6 rounded-2xl bg-[#070b14]/90 border border-emerald-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-xl relative z-10">
+        <div className="mt-8 p-6 rounded-2xl bg-[#0b1120] border border-emerald-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-xl relative z-10">
           <div>
-            <span className="text-[11px] font-mono font-semibold text-slate-400 uppercase tracking-wider block">
+            <span className="text-[11px] font-mono font-semibold text-slate-300 uppercase tracking-wider block">
               {t('academicStanding', 'Semester Academic Standing')}
             </span>
             <div className="flex items-center gap-3 mt-1.5">
@@ -165,11 +165,11 @@ export const StudentFacingView: React.FC = () => {
             </div>
           </div>
           <ul className="space-y-2.5 text-xs text-slate-300">
-            <li className="p-3.5 rounded-xl bg-[#070b14]/80 border border-white/[0.06] flex items-center justify-between hover:bg-[#0c1222] hover:border-indigo-500/40 transition-all cursor-pointer">
+            <li className="p-3.5 rounded-xl bg-[#0b1120] border border-white/[0.12] flex items-center justify-between hover:bg-[#11182c] hover:border-indigo-500/40 transition-all cursor-pointer">
               <span className="font-medium text-slate-200">{t('course1', 'CS-401: Distributed Algorithms')}</span>
               <span className="text-[10px] font-mono text-indigo-400 font-semibold">{t('course1Time', 'Meets Tuesdays 5 PM')}</span>
             </li>
-            <li className="p-3.5 rounded-xl bg-[#070b14]/80 border border-white/[0.06] flex items-center justify-between hover:bg-[#0c1222] hover:border-indigo-500/40 transition-all cursor-pointer">
+            <li className="p-3.5 rounded-xl bg-[#0b1120] border border-white/[0.12] flex items-center justify-between hover:bg-[#11182c] hover:border-indigo-500/40 transition-all cursor-pointer">
               <span className="font-medium text-slate-200">{t('course2', 'CS-405: Database Internals')}</span>
               <span className="text-[10px] font-mono text-indigo-400 font-semibold">{t('course2Time', 'Meets Thursdays 4 PM')}</span>
             </li>
@@ -190,7 +190,7 @@ export const StudentFacingView: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="p-4 rounded-xl bg-[#070b14]/80 border border-white/[0.06] text-xs text-slate-300 space-y-3.5 leading-relaxed">
+          <div className="p-4 rounded-xl bg-[#0b1120] border border-white/[0.12] text-xs text-slate-300 space-y-3.5 leading-relaxed">
             <p>
               {t('deansProgramText', 'Your current academic momentum qualifies you for undergraduate research fellowships with the CS Department faculty.')}
             </p>

@@ -158,7 +158,7 @@ export const LmsIntegrationModal: React.FC<LmsIntegrationModalProps> = ({
       />
 
       {/* Main Modal */}
-      <div className="relative w-full max-w-5xl bento-box bg-[#070b14]/98 p-6 sm:p-8 space-y-6 z-10 border border-white/[0.12] shadow-2xl max-h-[92vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-200">
+      <div className="relative w-full max-w-5xl bento-box bg-[#0b1120] p-6 sm:p-8 space-y-6 z-10 border border-white/[0.16] shadow-2xl max-h-[92vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-200">
         
         {/* Header */}
         <div className="flex items-start justify-between border-b border-white/[0.08] pb-4">
@@ -177,7 +177,7 @@ export const LmsIntegrationModal: React.FC<LmsIntegrationModalProps> = ({
                   LTI 1.3 Advantage
                 </span>
               </div>
-              <p className="text-xs text-slate-400 font-mono mt-0.5">
+              <p className="text-xs text-slate-300 font-mono mt-0.5">
                 Automated continuous sync for student attendance, assignment submissions, and LMS gradebooks.
               </p>
             </div>
@@ -430,42 +430,44 @@ export const LmsIntegrationModal: React.FC<LmsIntegrationModalProps> = ({
             <span className="text-[10px] font-mono text-slate-500">{syncHistory.length} Recorded Syncs</span>
           </div>
 
-          <div className="bento-box p-0 overflow-hidden border-white/[0.08]">
-            <table className="w-full text-left text-xs">
-              <thead className="bg-black/50 text-[10px] font-mono uppercase tracking-wider text-slate-400 border-b border-white/[0.08]">
-                <tr>
-                  <th className="py-2.5 px-4">Provider</th>
-                  <th className="py-2.5 px-3">Timestamp</th>
-                  <th className="py-2.5 px-3">Records</th>
-                  <th className="py-2.5 px-3">Attendance Delta</th>
-                  <th className="py-2.5 px-3">Status</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-white/[0.04] font-mono text-[11px]">
-                {syncHistory.map((item) => (
-                  <tr key={item.id} className="hover:bg-white/[0.02] transition-colors">
-                    <td className="py-2.5 px-4 font-bold text-white flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
-                      <span>{item.providerName}</span>
-                    </td>
-                    <td className="py-2.5 px-3 text-slate-400 text-[10px]">
-                      {new Date(item.timestamp).toLocaleString()}
-                    </td>
-                    <td className="py-2.5 px-3 text-slate-200">
-                      {item.recordsProcessed} students
-                    </td>
-                    <td className="py-2.5 px-3 text-cyan-300">
-                      {item.attendanceDeltaAvg}
-                    </td>
-                    <td className="py-2.5 px-3">
-                      <span className="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 text-[9px] font-bold">
-                        {item.status}
-                      </span>
-                    </td>
+          <div className="bento-box p-0 overflow-hidden border-white/[0.12] shadow-xl">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs min-w-[560px]">
+                <thead className="bg-[#070b14] text-[10px] font-mono uppercase tracking-wider text-slate-300 border-b border-white/[0.1]">
+                  <tr>
+                    <th className="py-2.5 px-4">Provider</th>
+                    <th className="py-2.5 px-3">Timestamp</th>
+                    <th className="py-2.5 px-3">Records</th>
+                    <th className="py-2.5 px-3">Attendance Delta</th>
+                    <th className="py-2.5 px-3">Status</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="divide-y divide-white/[0.04] font-mono text-[11px] bg-[#0b1120]">
+                  {syncHistory.map((item) => (
+                    <tr key={item.id} className="hover:bg-white/[0.04] transition-colors">
+                      <td className="py-2.5 px-4 font-bold text-white flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                        <span>{item.providerName}</span>
+                      </td>
+                      <td className="py-2.5 px-3 text-slate-300 text-[10px]">
+                        {new Date(item.timestamp).toLocaleString()}
+                      </td>
+                      <td className="py-2.5 px-3 text-slate-100">
+                        {item.recordsProcessed} students
+                      </td>
+                      <td className="py-2.5 px-3 text-cyan-300 font-semibold">
+                        {item.attendanceDeltaAvg}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        <span className="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 text-[9px] font-bold">
+                          {item.status}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 

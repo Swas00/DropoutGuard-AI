@@ -100,7 +100,7 @@ export const AddStudentModal: React.FC<AddStudentModalProps> = ({ isOpen, onClos
       <div className="fixed inset-0 bg-black/80 backdrop-blur-md" onClick={onClose} />
 
       {/* Modal Dialog */}
-      <div className="relative w-full max-w-2xl bento-box bg-[#070b14]/95 p-6 sm:p-8 space-y-6 z-10 border border-white/[0.12] shadow-2xl overflow-y-auto max-h-[90vh] animate-in fade-in zoom-in-95 duration-200">
+      <div className="relative w-full max-w-2xl bento-box bg-[#0b1120] p-6 sm:p-8 space-y-6 z-10 border border-white/[0.16] shadow-2xl overflow-y-auto max-h-[90vh] animate-in fade-in zoom-in-95 duration-200">
         
         {/* Header */}
         <div className="flex items-center justify-between border-b border-white/[0.08] pb-4">
@@ -110,7 +110,7 @@ export const AddStudentModal: React.FC<AddStudentModalProps> = ({ isOpen, onClos
             </div>
             <div>
               <h3 className="text-lg font-display font-bold text-white">Enroll & Provision Student Record</h3>
-              <p className="text-xs text-slate-400 font-mono">Real-time ML risk scoring will automatically calibrate upon submission</p>
+              <p className="text-xs text-slate-300 font-mono">Real-time ML risk scoring will automatically calibrate upon submission</p>
             </div>
           </div>
           <button 
@@ -122,10 +122,10 @@ export const AddStudentModal: React.FC<AddStudentModalProps> = ({ isOpen, onClos
         </div>
 
         {/* Real-Time Prediction Preview Pill */}
-        <div className="p-3.5 rounded-2xl bg-black/50 border border-white/[0.08] flex items-center justify-between">
+        <div className="p-3.5 rounded-2xl bg-[#070b14] border border-white/[0.12] flex items-center justify-between">
           <div className="flex items-center gap-2 text-xs">
             <Sparkles className="w-4 h-4 text-indigo-400" />
-            <span className="text-slate-300 font-medium">Estimated ML Early-Warning Risk:</span>
+            <span className="text-slate-200 font-medium">Estimated ML Early-Warning Risk:</span>
           </div>
           <div className="flex items-center gap-2">
             <span className={`px-2.5 py-0.5 rounded-full text-xs font-mono font-bold ${
@@ -150,36 +150,36 @@ export const AddStudentModal: React.FC<AddStudentModalProps> = ({ isOpen, onClos
           {/* Identity Info */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-slate-300 font-semibold mb-1">Student Full Name *</label>
+              <label className="block text-slate-200 font-semibold mb-1">Student Full Name *</label>
               <input
                 type="text"
                 required
                 placeholder="e.g. Priya Nair"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl bg-black/60 border border-white/[0.08] text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500/80 focus:ring-1 focus:ring-indigo-500/40 transition-all"
+                className="w-full px-3 py-2 rounded-xl bg-[#070b14] border border-white/[0.14] text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500/80 focus:ring-1 focus:ring-indigo-500/40 transition-all"
               />
             </div>
 
             <div>
-              <label className="block text-slate-300 font-semibold mb-1">Student ID (Optional - Auto-Assigned)</label>
+              <label className="block text-slate-200 font-semibold mb-1">Student ID (Optional - Auto-Assigned)</label>
               <input
                 type="text"
                 placeholder="e.g. STU1251"
                 value={studentId}
                 onChange={(e) => setStudentId(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl bg-black/60 border border-white/[0.08] text-white font-mono placeholder-slate-500 focus:outline-none focus:border-indigo-500/80 transition-all"
+                className="w-full px-3 py-2 rounded-xl bg-[#070b14] border border-white/[0.14] text-white font-mono placeholder-slate-400 focus:outline-none focus:border-indigo-500/80 transition-all"
               />
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-slate-300 font-semibold mb-1">Academic Program / Department *</label>
+              <label className="block text-slate-200 font-semibold mb-1">Academic Program / Department *</label>
               <select
                 value={course}
                 onChange={(e) => setCourse(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl bg-black/60 border border-white/[0.08] text-white focus:outline-none focus:border-indigo-500/80 cursor-pointer"
+                className="w-full px-3 py-2 rounded-xl bg-[#070b14] border border-white/[0.14] text-white focus:outline-none focus:border-indigo-500/80 cursor-pointer"
               >
                 <option value="B.Tech Computer Science">B.Tech Computer Science</option>
                 <option value="B.Tech Information Technology">B.Tech Information Technology</option>
@@ -191,7 +191,7 @@ export const AddStudentModal: React.FC<AddStudentModalProps> = ({ isOpen, onClos
             </div>
 
             <div>
-              <label className="block text-slate-300 font-semibold mb-1">Current Semester (1 - 8) *</label>
+              <label className="block text-slate-200 font-semibold mb-1">Current Semester (1 - 8) *</label>
               <input
                 type="number"
                 min="1"
@@ -199,13 +199,13 @@ export const AddStudentModal: React.FC<AddStudentModalProps> = ({ isOpen, onClos
                 required
                 value={semester}
                 onChange={(e) => setSemester(parseInt(e.target.value) || 1)}
-                className="w-full px-3 py-2 rounded-xl bg-black/60 border border-white/[0.08] text-white font-mono focus:outline-none focus:border-indigo-500/80"
+                className="w-full px-3 py-2 rounded-xl bg-[#070b14] border border-white/[0.14] text-white font-mono focus:outline-none focus:border-indigo-500/80"
               />
             </div>
           </div>
 
           {/* Academic Telemetry Metrics */}
-          <div className="p-4 rounded-xl bg-black/40 border border-white/[0.08] space-y-4">
+          <div className="p-4 rounded-xl bg-[#070b14] border border-white/[0.12] space-y-4">
             <span className="text-[10px] font-mono uppercase tracking-wider text-indigo-400 font-bold block">
               Continuous Assessment Signals
             </span>

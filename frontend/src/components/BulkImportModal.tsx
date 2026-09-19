@@ -159,7 +159,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({ isOpen, onClos
       <div className="fixed inset-0 bg-black/80 backdrop-blur-md" onClick={onClose} />
 
       {/* Modal Container */}
-      <div className="relative w-full max-w-2xl bento-box bg-[#070b14]/95 p-6 sm:p-8 space-y-6 z-10 border border-white/[0.12] shadow-2xl overflow-y-auto max-h-[90vh] animate-in fade-in zoom-in-95 duration-200">
+      <div className="relative w-full max-w-2xl bento-box bg-[#0b1120] p-6 sm:p-8 space-y-6 z-10 border border-white/[0.16] shadow-2xl overflow-y-auto max-h-[90vh] animate-in fade-in zoom-in-95 duration-200">
         
         {/* Header */}
         <div className="flex items-center justify-between border-b border-white/[0.08] pb-4">
@@ -169,7 +169,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({ isOpen, onClos
             </div>
             <div>
               <h3 className="text-lg font-display font-bold text-white">Batch Student Ingestion (CSV)</h3>
-              <p className="text-xs text-slate-400 font-mono">Upload university cohort records for automated ML risk scoring</p>
+              <p className="text-xs text-slate-300 font-mono">Upload university cohort records for automated ML risk scoring</p>
             </div>
           </div>
           <button 
@@ -181,10 +181,10 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({ isOpen, onClos
         </div>
 
         {/* Template Download Bar */}
-        <div className="p-3.5 rounded-xl bg-black/50 border border-white/[0.08] flex items-center justify-between">
+        <div className="p-3.5 rounded-xl bg-[#070b14] border border-white/[0.12] flex items-center justify-between">
           <div className="space-y-0.5">
             <span className="text-xs font-semibold text-slate-200 block">Institutional CSV Template</span>
-            <span className="text-[10px] text-slate-400 font-mono">Standardized headers for academic telemetry ingestion</span>
+            <span className="text-[10px] text-slate-300 font-mono">Standardized headers for academic telemetry ingestion</span>
           </div>
           <button
             type="button"
@@ -201,7 +201,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({ isOpen, onClos
           onDragOver={(e) => e.preventDefault()}
           onDrop={handleDrop}
           onClick={() => fileInputRef.current?.click()}
-          className="border-2 border-dashed border-white/[0.12] hover:border-cyan-500/60 rounded-2xl p-8 text-center bg-black/30 hover:bg-[#0c1222]/40 transition-all cursor-pointer space-y-3 group"
+          className="border-2 border-dashed border-white/[0.16] hover:border-cyan-500/70 rounded-2xl p-8 text-center bg-[#070b14] hover:bg-[#0d1527] transition-all cursor-pointer space-y-3 group"
         >
           <input 
             type="file" 
@@ -210,14 +210,14 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({ isOpen, onClos
             accept=".csv" 
             className="hidden" 
           />
-          <div className="w-12 h-12 rounded-2xl bg-[#0b101e] text-slate-400 group-hover:text-cyan-400 flex items-center justify-center mx-auto border border-white/[0.08] group-hover:scale-110 transition-all shadow-sm">
+          <div className="w-12 h-12 rounded-2xl bg-[#0b101e] text-slate-300 group-hover:text-cyan-400 flex items-center justify-center mx-auto border border-white/[0.1] group-hover:scale-110 transition-all shadow-sm">
             <UploadCloud className="w-6 h-6" />
           </div>
           <div>
-            <p className="text-sm font-semibold text-slate-200">
+            <p className="text-sm font-semibold text-slate-100">
               {file ? file.name : 'Click to select CSV file or drag & drop here'}
             </p>
-            <p className="text-xs text-slate-500 mt-1">
+            <p className="text-xs text-slate-400 mt-1">
               Supports .csv files with student identifiers, grades, and attendance metrics
             </p>
           </div>
@@ -241,16 +241,16 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({ isOpen, onClos
         {parsedData.length > 0 && (
           <div className="space-y-2">
             <div className="flex items-center justify-between text-xs font-mono">
-              <span className="text-slate-300 font-semibold flex items-center gap-1.5">
+              <span className="text-slate-200 font-semibold flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
                 Parsed {parsedData.length} records (Previewing first 4)
               </span>
               <span className="text-emerald-400 font-bold">Ready for Ingestion</span>
             </div>
 
-            <div className="overflow-x-auto rounded-xl border border-white/[0.08] bg-black/40">
-              <table className="w-full text-left text-xs font-mono">
-                <thead className="bg-[#0b101e] text-slate-400 border-b border-white/[0.08]">
+            <div className="overflow-x-auto rounded-xl border border-white/[0.12] bg-[#070b14]">
+              <table className="w-full text-left text-xs font-mono min-w-[540px]">
+                <thead className="bg-[#0b101e] text-slate-300 border-b border-white/[0.12]">
                   <tr>
                     <th className="py-2.5 px-3">Student ID</th>
                     <th className="py-2.5 px-3">Name</th>
@@ -262,7 +262,7 @@ export const BulkImportModal: React.FC<BulkImportModalProps> = ({ isOpen, onClos
                 </thead>
                 <tbody className="divide-y divide-white/[0.04]">
                   {parsedData.slice(0, 4).map((s, idx) => (
-                    <tr key={idx} className="text-slate-300">
+                    <tr key={idx} className="text-slate-200">
                       <td className="py-2.5 px-3 text-indigo-400 font-bold">{s.studentId}</td>
                       <td className="py-2.5 px-3 font-medium text-white">{s.name}</td>
                       <td className="py-2.5 px-3 truncate max-w-[140px]">{s.course}</td>
