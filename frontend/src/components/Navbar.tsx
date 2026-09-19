@@ -162,8 +162,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
               </Link>
             </div>
 
-            {/* Center: Desktop Navigation Links (Visible on lg: >= 1024px) */}
-            <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5">
+            {/* Center: Desktop Navigation Links (Visible on md: >= 768px) */}
+            <nav className="hidden md:flex items-center gap-1 xl:gap-1.5">
               {navLinks.map((link) => {
                 const Icon = link.icon;
                 const isActive = location.pathname === link.to;
@@ -180,7 +180,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                     }`}
                   >
                     <Icon className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${isActive ? 'text-indigo-400' : 'text-slate-400'}`} />
-                    {/* Always visible responsive label: short label on lg, full label on xl */}
+                    {/* Always visible responsive label: short label on md/lg, full label on xl */}
                     <span className="inline xl:hidden">{link.shortLabel}</span>
                     <span className="hidden xl:inline">{link.label}</span>
                     {isActive && (
@@ -191,8 +191,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
               })}
             </nav>
 
-            {/* Right: Desktop Action Cluster (Visible on lg: >= 1024px) */}
-            <div className="hidden lg:flex items-center gap-2 xl:gap-2.5 shrink-0">
+            {/* Right: Desktop Action Cluster (Visible on md: >= 768px) */}
+            <div className="hidden md:flex items-center gap-2 xl:gap-2.5 shrink-0">
               
               {/* Quick Search / Command Palette Button */}
               <button
@@ -409,8 +409,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
 
             </div>
 
-            {/* Right: Mobile & Tablet Top Bar (Visible on < lg screens) */}
-            <div className="flex lg:hidden items-center gap-1.5 sm:gap-2 shrink-0">
+            {/* Right: Mobile & Tablet Top Bar (Visible on < md screens) */}
+            <div className="flex md:hidden items-center gap-1.5 sm:gap-2 shrink-0">
               
               {/* Quick Search Button (Mobile) */}
               <button
@@ -418,7 +418,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                   soundFx.playClick();
                   onOpenCommandPalette();
                 }}
-                className="p-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-white/[0.08] text-slate-400 hover:text-white transition-all cursor-pointer"
+                className="p-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-white/[0.08] text-slate-300 hover:text-white transition-all cursor-pointer"
                 title="Search students or command (Ctrl+K)"
                 aria-label="Search"
               >
@@ -431,7 +431,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                 className={`p-2 rounded-xl border transition-all cursor-pointer ${
                   isSoundOn
                     ? 'bg-cyan-500/15 border-cyan-500/40 text-cyan-300'
-                    : 'bg-slate-900/80 border-white/[0.08] text-slate-500'
+                    : 'bg-slate-900/80 border-white/[0.08] text-slate-400'
                 }`}
                 title={isSoundOn ? 'Mute' : 'Unmute'}
                 aria-label="Toggle Sound"
@@ -450,7 +450,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
               {user && (
                 <button
                   onClick={() => setIsMobileMenuOpen(true)}
-                  className={`w-8 h-8 rounded-full bg-gradient-to-tr ${roleMeta.gradient} flex items-center justify-center text-white text-xs font-bold ring-1 ring-white/20 cursor-pointer shrink-0`}
+                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-tr ${roleMeta.gradient} flex items-center justify-center text-white text-[11px] font-bold ring-1 ring-white/20 cursor-pointer shrink-0`}
                   title={`Signed in as ${user.name}`}
                   aria-label="View Account Menu"
                 >
@@ -482,9 +482,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
           </div>
         </div>
 
-        {/* Full-Screen Mobile & Tablet Slide-Down Navigation Drawer */}
+        {/* Full-Screen Mobile Slide-Down Navigation Drawer */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-[#030712]/98 backdrop-blur-3xl border-t border-white/[0.08] overflow-y-auto px-4 py-5 space-y-4 animate-in fade-in slide-in-from-top-3 duration-200 shadow-2xl">
+          <div className="md:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-[#030712]/98 backdrop-blur-3xl border-t border-white/[0.08] overflow-y-auto px-4 py-5 space-y-4 animate-in fade-in slide-in-from-top-3 duration-200 shadow-2xl">
             
             {/* 1. Mobile User Profile / Auth Action Card */}
             <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/[0.08]">
@@ -721,6 +721,41 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
           </div>
         )}
       </header>
+
+      {/* Mobile Persistent Bottom Navigation Dock (Visible on < md screens when minimized) */}
+      <nav 
+        aria-label="Mobile Bottom Navigation"
+        className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#030712]/95 backdrop-blur-3xl border-t border-white/[0.1] shadow-[0_-8px_30px_rgba(0,0,0,0.85)] px-2 py-1.5"
+      >
+        <div className="flex items-center justify-around max-w-lg mx-auto">
+          {navLinks.map((link) => {
+            const Icon = link.icon;
+            const isActive = location.pathname === link.to;
+            return (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => soundFx.playClick()}
+                className={`flex flex-col items-center justify-center py-1 px-2 sm:px-3 rounded-xl transition-all cursor-pointer ${
+                  isActive
+                    ? 'text-cyan-400 bg-white/[0.06] shadow-glow-sm'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <div className={`p-1 rounded-lg transition-transform ${isActive ? 'scale-110 text-indigo-400' : ''}`}>
+                  <Icon className="w-4 h-4" />
+                </div>
+                <span className={`text-[10px] font-semibold tracking-tight ${isActive ? 'text-white font-bold' : ''}`}>
+                  {link.shortLabel}
+                </span>
+                {isActive && (
+                  <span className="w-1 h-1 bg-cyan-400 rounded-full mt-0.5 shadow-[0_0_6px_rgba(6,182,212,0.9)]" />
+                )}
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
 
       {/* Auth Modal for Sign In / Register */}
       <AuthModal

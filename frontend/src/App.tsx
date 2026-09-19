@@ -42,7 +42,7 @@ export function App() {
           <div className="relative z-10 flex flex-col min-h-screen">
             <Navbar onOpenCommandPalette={() => setCommandPaletteOpen(true)} />
             
-            <main className="flex-1">
+            <main className="flex-1 pb-20 md:pb-0">
               <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/dashboard" element={<AdminDashboard />} />
@@ -56,7 +56,7 @@ export function App() {
             </main>
 
           {/* Floating Quick Action for Hackathon Judges to Inspect ML Metrics */}
-          <div className="fixed bottom-6 right-6 z-40 print:hidden flex items-center gap-2">
+          <div className="fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-30 print:hidden flex items-center gap-2">
             <button
               onClick={() => setCommandPaletteOpen(true)}
               className="hidden lg:flex items-center gap-1.5 px-3 py-2 rounded-full bg-slate-900/90 hover:bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700/80 shadow-lg backdrop-blur-md transition-all hover:scale-105"
