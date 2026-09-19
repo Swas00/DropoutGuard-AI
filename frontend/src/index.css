@@ -478,100 +478,174 @@ input[type=range]::-webkit-slider-thumb:hover {
 
 /* ==========================================================================
    Comprehensive Light Theme Architecture System
-   Ensures 100% crisp contrast, zero washed-out surfaces, and seamless toggle
+   100% High-Contrast, Zero-Transparency Glitches, Razor-Sharp Readability
    ========================================================================== */
+
+/* 1. Root & Body Surface */
 html.light body,
 html:not(.dark) body {
   background-color: #f8fafc;
   color: #0f172a;
 }
 
-/* Glass & Bento Surfaces in Light Mode */
+/* 2. Primary Card & Container Surfaces */
 html.light .glass-card,
-html:not(.dark) .glass-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
-}
-
+html:not(.dark) .glass-card,
 html.light .glass-card-hover,
-html:not(.dark) .glass-card-hover {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+html:not(.dark) .glass-card-hover,
+html.light .glass-card-solid,
+html:not(.dark) .glass-card-solid,
+html.light .bento-box,
+html:not(.dark) .bento-box {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03) !important;
+  color: #0f172a;
 }
 
 html.light .glass-card-hover:hover,
 html:not(.dark) .glass-card-hover:hover {
-  border-color: #6366f1;
-  box-shadow: 0 12px 28px -3px rgba(99, 102, 241, 0.15), 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+  border-color: #6366f1 !important;
+  box-shadow: 0 12px 28px -3px rgba(99, 102, 241, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.05) !important;
   transform: translateY(-3px);
-}
-
-html.light .glass-card-solid,
-html:not(.dark) .glass-card-solid {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
-}
-
-html.light .bento-box,
-html:not(.dark) .bento-box {
-  background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.05), transparent 60%), #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
 }
 
 html.light .laser-beam-inner,
 html:not(.dark) .laser-beam-inner {
-  background: #ffffff;
+  background: #ffffff !important;
   color: #0f172a;
 }
 
-/* Background Utility Classes Adaptations */
+/* 3. Replacement for Dark Shell Classes */
 html.light .bg-\[\#0b1120\],
 html:not(.dark) .bg-\[\#0b1120\] {
-  background-color: #ffffff;
-  border-color: #e2e8f0;
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
 }
 
 html.light .bg-\[\#070b14\],
 html:not(.dark) .bg-\[\#070b14\] {
-  background-color: #f8fafc;
-  border-color: #e2e8f0;
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
 }
 
 html.light .bg-\[\#030712\],
 html:not(.dark) .bg-\[\#030712\] {
-  background-color: #f1f5f9;
+  background-color: #f1f5f9 !important;
 }
 
 html.light header.bg-\[\#070b14\],
 html:not(.dark) header.bg-\[\#070b14\] {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-bottom-color: #e2e8f0;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: #e2e8f0 !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
 
 html.light nav.bg-\[\#070b14\],
 html:not(.dark) nav.bg-\[\#070b14\] {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-top-color: #e2e8f0;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-top-color: #e2e8f0 !important;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06) !important;
 }
 
+/* 4. Replacing Dark Slate Solid and Semi-Transparent Blocks with Crisp Slate-50/100 */
 html.light .bg-slate-900,
 html.light .bg-slate-900\/80,
 html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-850,
+html.light .bg-slate-800,
+html.light .bg-slate-800\/80,
+html.light .bg-slate-800\/60,
+html.light .bg-slate-950,
+html.light .bg-slate-950\/80,
+html.light .bg-slate-950\/90,
 html:not(.dark) .bg-slate-900,
 html:not(.dark) .bg-slate-900\/80,
-html:not(.dark) .bg-slate-900\/90 {
+html:not(.dark) .bg-slate-900\/90,
+html:not(.dark) .bg-slate-900\/60,
+html:not(.dark) .bg-slate-850,
+html:not(.dark) .bg-slate-800,
+html:not(.dark) .bg-slate-800\/80,
+html:not(.dark) .bg-slate-800\/60,
+html:not(.dark) .bg-slate-950,
+html:not(.dark) .bg-slate-950\/80,
+html:not(.dark) .bg-slate-950\/90 {
   background-color: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #1e293b;
+}
+
+/* 5. Fix Transparent White Overlays (which disappear on white backgrounds) */
+html.light .bg-white\/\[0\.02\],
+html.light .bg-white\/\[0\.03\],
+html.light .bg-white\/\[0\.04\],
+html.light .bg-white\/\[0\.05\],
+html.light .bg-white\/\[0\.06\],
+html.light .bg-white\/\[0\.08\],
+html.light .bg-white\/\[0\.1\],
+html.light .bg-white\/\[0\.10\],
+html.light .bg-white\/\[0\.12\],
+html.light .bg-white\/\[0\.14\],
+html.light .bg-white\/\[0\.15\],
+html.light .bg-white\/\[0\.16\],
+html.light .bg-white\/\[0\.2\],
+html.light .bg-white\/\[0\.20\],
+html.light .bg-white\/10,
+html.light .bg-white\/20,
+html:not(.dark) .bg-white\/\[0\.02\],
+html:not(.dark) .bg-white\/\[0\.03\],
+html:not(.dark) .bg-white\/\[0\.04\],
+html:not(.dark) .bg-white\/\[0\.05\],
+html:not(.dark) .bg-white\/\[0\.06\],
+html:not(.dark) .bg-white\/\[0\.08\],
+html:not(.dark) .bg-white\/\[0\.1\],
+html:not(.dark) .bg-white\/\[0\.10\],
+html:not(.dark) .bg-white\/\[0\.12\],
+html:not(.dark) .bg-white\/\[0\.14\],
+html:not(.dark) .bg-white\/\[0\.15\],
+html:not(.dark) .bg-white\/\[0\.16\],
+html:not(.dark) .bg-white\/\[0\.2\],
+html:not(.dark) .bg-white\/\[0\.20\],
+html:not(.dark) .bg-white\/10,
+html:not(.dark) .bg-white\/20 {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #1e293b;
+}
+
+/* Hover states for transparent white buttons/rows */
+html.light .hover\:bg-white\/\[0\.04\]:hover,
+html.light .hover\:bg-white\/\[0\.05\]:hover,
+html.light .hover\:bg-white\/\[0\.06\]:hover,
+html.light .hover\:bg-white\/\[0\.08\]:hover,
+html.light .hover\:bg-slate-800:hover,
+html.light .hover\:bg-slate-850:hover,
+html:not(.dark) .hover\:bg-white\/\[0\.04\]:hover,
+html:not(.dark) .hover\:bg-white\/\[0\.05\]:hover,
+html:not(.dark) .hover\:bg-white\/\[0\.06\]:hover,
+html:not(.dark) .hover\:bg-white\/\[0\.08\]:hover,
+html:not(.dark) .hover\:bg-slate-800:hover,
+html:not(.dark) .hover\:bg-slate-850:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+/* 6. Fix Transparent Black Overlays inside cards */
+html.light .bg-black\/20,
+html.light .bg-black\/30,
+html.light .bg-black\/40,
+html.light .bg-black\/50,
+html:not(.dark) .bg-black\/20,
+html:not(.dark) .bg-black\/30,
+html:not(.dark) .bg-black\/40,
+html:not(.dark) .bg-black\/50 {
+  background-color: #f8fafc;
   border-color: #e2e8f0;
 }
 
-/* Typography Hierarchy in Light Mode */
+/* 7. High-Contrast Typography in Light Mode */
 html.light .text-white:not(.btn-primary *):not(.btn-primary):not(.btn-cyber *):not(.btn-cyber):not(.badge-enterprise):not([data-keep-white]):not([data-keep-white] *),
 html:not(.dark) .text-white:not(.btn-primary *):not(.btn-primary):not(.btn-cyber *):not(.btn-cyber):not(.badge-enterprise):not([data-keep-white]):not([data-keep-white] *) {
   color: #0f172a;
@@ -597,23 +671,119 @@ html:not(.dark) .text-slate-400 {
   color: #64748b;
 }
 
-/* Border Adapters in Light Mode */
+/* Watermark and decorative large numbers */
+html.light .text-slate-800,
+html:not(.dark) .text-slate-800 {
+  color: #cbd5e1;
+}
+
+/* 8. Neon Palette Accessibility Adapters for Light Theme */
+html.light .text-cyan-300:not(.btn-cyber *):not(.btn-primary *),
+html.light .text-cyan-400:not(.btn-cyber *):not(.btn-primary *),
+html:not(.dark) .text-cyan-300:not(.btn-cyber *):not(.btn-primary *),
+html:not(.dark) .text-cyan-400:not(.btn-cyber *):not(.btn-primary *) {
+  color: #0284c7;
+}
+
+html.light .text-indigo-300:not(.btn-primary *),
+html.light .text-indigo-400:not(.btn-primary *),
+html:not(.dark) .text-indigo-300:not(.btn-primary *),
+html:not(.dark) .text-indigo-400:not(.btn-primary *) {
+  color: #4338ca;
+}
+
+html.light .text-amber-200,
+html.light .text-amber-300,
+html.light .text-amber-400,
+html:not(.dark) .text-amber-200,
+html:not(.dark) .text-amber-300,
+html:not(.dark) .text-amber-400 {
+  color: #b45309;
+}
+
+html.light .text-emerald-300,
+html.light .text-emerald-400,
+html:not(.dark) .text-emerald-300,
+html:not(.dark) .text-emerald-400 {
+  color: #047857;
+}
+
+html.light .text-rose-300,
+html.light .text-rose-400,
+html:not(.dark) .text-rose-300,
+html:not(.dark) .text-rose-400 {
+  color: #be123c;
+}
+
+/* 9. Alert Banners in Light Mode (replaces dark -950/80 background with crisp, readable pastels) */
+html.light .bg-emerald-950\/80,
+html:not(.dark) .bg-emerald-950\/80 {
+  background-color: #ecfdf5 !important;
+  color: #065f46 !important;
+  border-color: #a7f3d0 !important;
+}
+
+html.light .bg-rose-950\/80,
+html:not(.dark) .bg-rose-950\/80 {
+  background-color: #fff1f2 !important;
+  color: #9f1239 !important;
+  border-color: #fecdd3 !important;
+}
+
+html.light .bg-amber-950\/80,
+html:not(.dark) .bg-amber-950\/80 {
+  background-color: #fffbeb !important;
+  color: #92400e !important;
+  border-color: #fde68a !important;
+}
+
+html.light .bg-indigo-950\/60,
+html:not(.dark) .bg-indigo-950\/60 {
+  background-color: #eef2ff !important;
+  color: #3730a3 !important;
+  border-color: #c7d2fe !important;
+}
+
+/* 10. Border & Divider Adapters in Light Mode */
+html.light .border-white\/\[0\.04\],
+html.light .border-white\/\[0\.05\],
 html.light .border-white\/\[0\.06\],
 html.light .border-white\/\[0\.08\],
+html.light .border-white\/\[0\.1\],
+html.light .border-white\/\[0\.10\],
 html.light .border-white\/\[0\.12\],
 html.light .border-white\/\[0\.13\],
 html.light .border-white\/\[0\.14\],
 html.light .border-white\/\[0\.16\],
+html.light .border-white\/20,
+html.light .border-slate-800,
+html.light .border-slate-700,
+html:not(.dark) .border-white\/\[0\.04\],
+html:not(.dark) .border-white\/\[0\.05\],
 html:not(.dark) .border-white\/\[0\.06\],
 html:not(.dark) .border-white\/\[0\.08\],
+html:not(.dark) .border-white\/\[0\.1\],
+html:not(.dark) .border-white\/\[0\.10\],
 html:not(.dark) .border-white\/\[0\.12\],
 html:not(.dark) .border-white\/\[0\.13\],
 html:not(.dark) .border-white\/\[0\.14\],
-html:not(.dark) .border-white\/\[0\.16\] {
+html:not(.dark) .border-white\/\[0\.16\],
+html:not(.dark) .border-white\/20,
+html:not(.dark) .border-slate-800,
+html:not(.dark) .border-slate-700 {
   border-color: #e2e8f0;
 }
 
-/* Buttons in Light Mode */
+html.light .divide-white\/\[0\.04\],
+html.light .divide-white\/\[0\.06\],
+html.light .divide-white\/\[0\.08\],
+html:not(.dark) .divide-white\/\[0\.04\],
+html:not(.dark) .divide-white\/\[0\.06\],
+html:not(.dark) .divide-white\/\[0\.08\] {
+  border-color: #f1f5f9;
+}
+
+/* 11. Buttons in Light Mode */
 html.light .btn-secondary,
 html:not(.dark) .btn-secondary {
   color: #1e293b;
@@ -640,7 +810,7 @@ html:not(.dark) .btn-ghost:hover {
   background: rgba(0, 0, 0, 0.05);
 }
 
-/* Table Design in Light Mode */
+/* 12. Table Design in Light Mode */
 html.light .enterprise-th,
 html:not(.dark) .enterprise-th {
   color: #475569;
@@ -659,7 +829,7 @@ html:not(.dark) .interactive-tr:hover {
   background-color: #f1f5f9;
 }
 
-/* Forms, Inputs, and Sliders in Light Mode */
+/* 13. Forms, Inputs, Sliders in Light Mode */
 html.light input:not([type=range]):not([type=checkbox]):not([type=radio]),
 html.light select,
 html.light textarea,
@@ -688,7 +858,31 @@ html:not(.dark) input[type=range] {
   border-color: #cbd5e1;
 }
 
-/* Scrollbars in Light Mode */
+/* 14. Recharts SVG Chart Adaptations for Light Mode */
+html.light .recharts-default-tooltip,
+html:not(.dark) .recharts-default-tooltip {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1) !important;
+  color: #0f172a !important;
+}
+
+html.light .recharts-tooltip-item,
+html:not(.dark) .recharts-tooltip-item {
+  color: #0f172a !important;
+}
+
+html.light .recharts-cartesian-grid line,
+html:not(.dark) .recharts-cartesian-grid line {
+  stroke: #e2e8f0 !important;
+}
+
+html.light .recharts-pie-sector path,
+html:not(.dark) .recharts-pie-sector path {
+  stroke: #ffffff !important;
+}
+
+/* 15. Scrollbars in Light Mode */
 html.light ::-webkit-scrollbar-track,
 html:not(.dark) ::-webkit-scrollbar-track {
   background: #f1f5f9;
@@ -704,10 +898,10 @@ html:not(.dark) ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
 
-/* CRT Scanlines in Light Mode softened */
+/* 16. Scanlines softened in Light Mode */
 html.light .scanline-crt,
 html:not(.dark) .scanline-crt {
-  opacity: 0.15;
+  opacity: 0.12;
 }
 
 /* Print-to-PDF Stylesheet for Official Diagnostic Reports */

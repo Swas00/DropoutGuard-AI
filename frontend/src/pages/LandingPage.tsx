@@ -54,7 +54,7 @@ export const LandingPage: React.FC = () => {
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08] font-display">
               Turn Academic Signals into <br />
-              <span className="bg-gradient-to-r from-indigo-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-600 dark:from-indigo-300 dark:via-purple-300 dark:to-cyan-300 bg-clip-text text-transparent">
                 Proactive Student Retention
               </span>
             </h1>

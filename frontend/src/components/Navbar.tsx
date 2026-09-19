@@ -166,8 +166,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
               </Link>
             </div>
 
-            {/* Center: Desktop Navigation Links (Visible on md: >= 768px) */}
-            <nav className="hidden md:flex items-center gap-1 xl:gap-1.5">
+            {/* Center: Desktop Navigation Links (Visible on lg: >= 1024px) */}
+            <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5">
               {navLinks.map((link) => {
                 const Icon = link.icon;
                 const isActive = location.pathname === link.to;
@@ -184,7 +184,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                     }`}
                   >
                     <Icon className={`w-3.5 h-3.5 shrink-0 transition-transform duration-200 ${isActive ? 'text-indigo-400' : 'text-slate-400'}`} />
-                    {/* Always visible responsive label: short label on md/lg, full label on xl */}
+                    {/* Always visible responsive label: short label on lg, full label on xl */}
                     <span className="inline xl:hidden">{link.shortLabel}</span>
                     <span className="hidden xl:inline">{link.label}</span>
                     {isActive && (
@@ -195,8 +195,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
               })}
             </nav>
 
-            {/* Right: Desktop Action Cluster (Visible on md: >= 768px) */}
-            <div className="hidden md:flex items-center gap-2 xl:gap-2.5 shrink-0">
+            {/* Right: Desktop Action Cluster (Visible on lg: >= 1024px) */}
+            <div className="hidden lg:flex items-center gap-2 xl:gap-2.5 shrink-0">
               
               {/* Quick Search / Command Palette Button */}
               <button
@@ -435,10 +435,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
 
             </div>
 
-            {/* Right: Mobile & Tablet Top Bar (Visible on < md screens) */}
-            <div className="flex md:hidden items-center gap-1.5 sm:gap-2 shrink-0">
+            {/* Right: Mobile & Tablet Top Bar (Visible on < lg screens: < 1024px) */}
+            <div className="flex lg:hidden items-center gap-1 sm:gap-2 shrink-0">
               
-              {/* Quick Search Button (Mobile) */}
+              {/* Quick Search Button (Mobile & Tablet) */}
               <button
                 onClick={() => {
                   soundFx.playClick();
@@ -451,10 +451,31 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                 <Search className="w-4 h-4 text-slate-300" />
               </button>
 
-              {/* Audio FX Toggle Button (Mobile) */}
+              {/* Light / Dark Theme Switcher (Mobile & Tablet) */}
+              <button
+                onClick={() => {
+                  toggleTheme();
+                  soundFx.playClick();
+                }}
+                className={`p-2 rounded-xl border transition-all cursor-pointer ${
+                  theme === 'dark'
+                    ? 'bg-slate-900/80 border-white/[0.08] text-amber-400 hover:text-amber-300'
+                    : 'bg-white border-slate-300 text-indigo-600 shadow-sm'
+                }`}
+                title={theme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+                aria-label="Toggle Theme"
+              >
+                {theme === 'dark' ? (
+                  <Sun className="w-4 h-4" />
+                ) : (
+                  <Moon className="w-4 h-4" />
+                )}
+              </button>
+
+              {/* Audio FX Toggle Button (Mobile & Tablet) */}
               <button
                 onClick={toggleSound}
-                className={`p-2 rounded-xl border transition-all cursor-pointer ${
+                className={`hidden sm:inline-flex p-2 rounded-xl border transition-all cursor-pointer ${
                   isSoundOn
                     ? 'bg-cyan-500/15 border-cyan-500/40 text-cyan-300'
                     : 'bg-slate-900/80 border-white/[0.08] text-slate-400'
@@ -469,10 +490,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
                 )}
               </button>
 
-              {/* Regional Multi-Language Selector (Mobile) */}
+              {/* Regional Multi-Language Selector (Mobile & Tablet) */}
               <LanguageSwitcher />
 
-              {/* User Avatar (If authenticated on mobile) */}
+              {/* User Avatar (If authenticated on mobile & tablet) */}
               {user && (
                 <button
                   onClick={() => setIsMobileMenuOpen(true)}
@@ -508,9 +529,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
           </div>
         </div>
 
-        {/* Full-Screen Mobile Slide-Down Navigation Drawer */}
+        {/* Full-Screen Mobile Slide-Down Navigation Drawer (Visible on < lg) */}
         {isMobileMenuOpen && (
-          <div className="md:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-[#070b14] border-t border-white/[0.14] overflow-y-auto px-4 py-5 space-y-4 animate-in fade-in slide-in-from-top-3 duration-200 shadow-2xl">
+          <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-[#070b14] border-t border-white/[0.14] overflow-y-auto px-4 py-5 space-y-4 animate-in fade-in slide-in-from-top-3 duration-200 shadow-2xl">
             
             {/* 1. Mobile User Profile / Auth Action Card */}
             <div className="p-3.5 rounded-2xl bg-[#0b1120] border border-white/[0.14]">
@@ -766,10 +787,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommandPalette }) => {
         )}
       </header>
 
-      {/* Mobile Persistent Bottom Navigation Dock (Visible on < md screens when minimized) */}
+      {/* Mobile Persistent Bottom Navigation Dock (Visible on < lg screens: tablets and phones) */}
       <nav 
         aria-label="Mobile Bottom Navigation"
-        className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#070b14] border-t border-white/[0.14] shadow-[0_-8px_30px_rgba(0,0,0,0.95)] px-2 py-1.5"
+        className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#070b14] border-t border-white/[0.14] shadow-[0_-8px_30px_rgba(0,0,0,0.95)] px-2 py-1.5"
       >
         <div className="flex items-center justify-around max-w-lg mx-auto">
           {navLinks.map((link) => {

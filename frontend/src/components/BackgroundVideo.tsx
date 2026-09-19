@@ -432,7 +432,7 @@ export const BackgroundVideo: React.FC = () => {
       )}
 
       {/* Floating Ambient Cinema & Audio Master HUD Controller (Bottom-Left) */}
-      <div className="fixed bottom-20 md:bottom-6 left-3 sm:left-6 z-30 print:hidden select-none">
+      <div className="fixed bottom-20 lg:bottom-6 left-3 sm:left-6 z-30 print:hidden select-none">
         <div className="relative group">
           
           {/* Expanded Settings Flyout Panel */}
