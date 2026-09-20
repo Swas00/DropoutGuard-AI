@@ -140,7 +140,7 @@ export const BackgroundVideo: React.FC = () => {
 
       // Clear or trail
       if (activeMode === 'matrix') {
-        ctx.fillStyle = 'rgba(3, 7, 18, 0.12)';
+        ctx.fillStyle = theme === 'dark' ? 'rgba(3, 7, 18, 0.14)' : 'rgba(248, 250, 252, 0.18)';
         ctx.fillRect(0, 0, width, height);
       } else {
         ctx.clearRect(0, 0, width, height);
@@ -162,9 +162,11 @@ export const BackgroundVideo: React.FC = () => {
             const dist = Math.sqrt(dx * dx + dy * dy);
 
             if (dist < maxDist) {
-              const alpha = (1 - dist / maxDist) * (intensity === 'vivid' ? 0.35 : 0.15);
-              ctx.strokeStyle = `rgba(99, 102, 241, ${alpha})`;
-              ctx.lineWidth = 0.8;
+              const alpha = (1 - dist / maxDist) * (intensity === 'vivid' ? 0.45 : 0.25);
+              ctx.strokeStyle = theme === 'dark' 
+                ? `rgba(99, 102, 241, ${alpha})` 
+                : `rgba(67, 56, 202, ${alpha * 1.3})`;
+              ctx.lineWidth = theme === 'dark' ? 0.9 : 1.2;
               ctx.beginPath();
               ctx.moveTo(particles[i].x, particles[i].y);
               ctx.lineTo(particles[j].x, particles[j].y);
@@ -178,9 +180,11 @@ export const BackgroundVideo: React.FC = () => {
             const cdy = particles[i].y - mouseRef.current.y;
             const cdist = Math.sqrt(cdx * cdx + cdy * cdy);
             if (cdist < mouseDist) {
-              const cAlpha = (1 - cdist / mouseDist) * (intensity === 'vivid' ? 0.6 : 0.3);
-              ctx.strokeStyle = `rgba(6, 182, 212, ${cAlpha})`;
-              ctx.lineWidth = 1.2;
+              const cAlpha = (1 - cdist / mouseDist) * (intensity === 'vivid' ? 0.75 : 0.45);
+              ctx.strokeStyle = theme === 'dark' 
+                ? `rgba(6, 182, 212, ${cAlpha})` 
+                : `rgba(2, 132, 199, ${cAlpha * 1.4})`;
+              ctx.lineWidth = 1.4;
               ctx.beginPath();
               ctx.moveTo(particles[i].x, particles[i].y);
               ctx.lineTo(mouseRef.current.x, mouseRef.current.y);
@@ -199,9 +203,11 @@ export const BackgroundVideo: React.FC = () => {
           if (p.y < 0) p.y = height;
           if (p.y > height) p.y = 0;
 
-          ctx.fillStyle = `rgba(129, 140, 248, ${p.alpha * (intensity === 'vivid' ? 0.9 : 0.5)})`;
+          ctx.fillStyle = theme === 'dark'
+            ? `rgba(129, 140, 248, ${p.alpha * (intensity === 'vivid' ? 0.95 : 0.65)})`
+            : `rgba(67, 56, 202, ${p.alpha * (intensity === 'vivid' ? 0.9 : 0.7)})`;
           ctx.beginPath();
-          ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+          ctx.arc(p.x, p.y, theme === 'dark' ? p.radius : p.radius * 1.1, 0, Math.PI * 2);
           ctx.fill();
         }
 
@@ -234,7 +240,9 @@ export const BackgroundVideo: React.FC = () => {
             const size = Math.min(3, (1 - star.z / width) * 3);
             const alpha = Math.min(1, (1 - star.z / width) * 1.2);
 
-            ctx.strokeStyle = `rgba(165, 180, 252, ${alpha})`;
+            ctx.strokeStyle = theme === 'dark' 
+              ? `rgba(165, 180, 252, ${alpha})`
+              : `rgba(79, 70, 229, ${alpha})`;
             ctx.lineWidth = size;
             ctx.beginPath();
             ctx.moveTo(ppx, ppy);
@@ -245,7 +253,6 @@ export const BackgroundVideo: React.FC = () => {
 
       } else if (activeMode === 'matrix') {
         // Render Cyber Matrix Rain
-        ctx.fillStyle = intensity === 'vivid' ? '#22d3ee' : '#10b981';
         ctx.font = `${fontSize}px 'JetBrains Mono', monospace`;
 
         for (let i = 0; i < rainDrops.length; i++) {
@@ -254,11 +261,13 @@ export const BackgroundVideo: React.FC = () => {
           const y = rainDrops[i] * fontSize;
 
           // Glowing leader glyph
-          ctx.fillStyle = '#ffffff';
+          ctx.fillStyle = theme === 'dark' ? '#ffffff' : '#0f172a';
           ctx.fillText(char, x, y);
 
           // Trail glyph
-          ctx.fillStyle = intensity === 'vivid' ? 'rgba(34, 211, 238, 0.75)' : 'rgba(16, 185, 129, 0.7)';
+          ctx.fillStyle = theme === 'dark'
+            ? (intensity === 'vivid' ? 'rgba(34, 211, 238, 0.85)' : 'rgba(16, 185, 129, 0.75)')
+            : (intensity === 'vivid' ? 'rgba(2, 132, 199, 0.85)' : 'rgba(5, 150, 105, 0.8)');
           ctx.fillText(matrixChars[Math.floor(Math.random() * matrixChars.length)], x, y - fontSize);
 
           if (y > height && Math.random() > 0.975) {
@@ -290,13 +299,13 @@ export const BackgroundVideo: React.FC = () => {
 
           const grad = ctx.createLinearGradient(0, baseHeight - 50, 0, height);
           if (w === 0) {
-            grad.addColorStop(0, intensity === 'vivid' ? 'rgba(99, 102, 241, 0.25)' : 'rgba(99, 102, 241, 0.12)');
+            grad.addColorStop(0, intensity === 'vivid' ? 'rgba(99, 102, 241, 0.35)' : 'rgba(99, 102, 241, 0.18)');
             grad.addColorStop(1, 'transparent');
           } else if (w === 1) {
-            grad.addColorStop(0, intensity === 'vivid' ? 'rgba(6, 182, 212, 0.22)' : 'rgba(6, 182, 212, 0.10)');
+            grad.addColorStop(0, intensity === 'vivid' ? 'rgba(6, 182, 212, 0.30)' : 'rgba(6, 182, 212, 0.15)');
             grad.addColorStop(1, 'transparent');
           } else {
-            grad.addColorStop(0, intensity === 'vivid' ? 'rgba(168, 85, 247, 0.20)' : 'rgba(168, 85, 247, 0.08)');
+            grad.addColorStop(0, intensity === 'vivid' ? 'rgba(168, 85, 247, 0.28)' : 'rgba(168, 85, 247, 0.12)');
             grad.addColorStop(1, 'transparent');
           }
           ctx.fillStyle = grad;
@@ -313,7 +322,7 @@ export const BackgroundVideo: React.FC = () => {
       window.removeEventListener('resize', handleResize);
       cancelAnimationFrame(animationId);
     };
-  }, [activeMode, intensity]);
+  }, [activeMode, intensity, theme]);
 
   // Video playback sync
   const togglePlay = () => {
@@ -369,31 +378,33 @@ export const BackgroundVideo: React.FC = () => {
           </video>
         )}
 
-        {/* Dynamic Multi-Mode Canvas Overlay */}
+        {/* Multi-layered Radiant Aurora Lights */}
+        <div className={`absolute top-[-10%] left-[20%] w-[850px] h-[520px] rounded-full blur-[140px] pointer-events-none ${
+          theme === 'dark' ? 'bg-indigo-600/15' : 'bg-indigo-300/25'
+        }`} />
+        <div className={`absolute top-[30%] right-[-5%] w-[650px] h-[480px] rounded-full blur-[130px] pointer-events-none ${
+          theme === 'dark' ? 'bg-cyan-500/12' : 'bg-cyan-300/25'
+        }`} />
+        <div className={`absolute bottom-[10%] left-[-5%] w-[750px] h-[550px] rounded-full blur-[150px] pointer-events-none ${
+          theme === 'dark' ? 'bg-violet-600/12' : 'bg-violet-300/20'
+        }`} />
+
+        {/* Soft Ambient Vignette Tone */}
+        <div className={`absolute inset-0 transition-colors duration-300 ${
+          theme === 'dark' 
+            ? 'bg-gradient-to-b from-[#030712]/50 via-transparent to-[#030712]/70' 
+            : 'bg-gradient-to-b from-slate-50/50 via-transparent to-slate-100/60'
+        }`} />
+
+        {/* Dynamic Multi-Mode Canvas Overlay - Positioned ON TOP of the background tone so it's fully crisp & visible */}
         <canvas
           ref={canvasRef}
           className={`absolute inset-0 w-full h-full pointer-events-none transition-opacity duration-300 ${
-            theme === 'dark' ? 'opacity-100' : 'opacity-40'
+            theme === 'dark' 
+              ? (intensity === 'vivid' ? 'opacity-100' : 'opacity-85') 
+              : (intensity === 'vivid' ? 'opacity-90' : 'opacity-70')
           }`}
         />
-
-        {/* Multi-layered Radiant Aurora Lights */}
-        <div className={`absolute top-[-10%] left-[20%] w-[850px] h-[520px] rounded-full blur-[140px] pointer-events-none ${
-          theme === 'dark' ? 'bg-indigo-600/12' : 'bg-indigo-300/20'
-        }`} />
-        <div className={`absolute top-[30%] right-[-5%] w-[650px] h-[480px] rounded-full blur-[130px] pointer-events-none ${
-          theme === 'dark' ? 'bg-cyan-500/10' : 'bg-cyan-300/20'
-        }`} />
-        <div className={`absolute bottom-[10%] left-[-5%] w-[750px] h-[550px] rounded-full blur-[150px] pointer-events-none ${
-          theme === 'dark' ? 'bg-violet-600/10' : 'bg-violet-300/15'
-        }`} />
-
-        {/* Cinematic Vignette Masks */}
-        <div className={`absolute inset-0 transition-colors duration-300 ${
-          theme === 'dark' 
-            ? 'bg-gradient-to-b from-[#030712]/85 via-[#030712]/92 to-[#030712]/98' 
-            : 'bg-gradient-to-b from-slate-50/70 via-slate-100/85 to-slate-200/90'
-        }`} />
       </div>
 
       {/* Retro CRT Scanline Grid & Sweeping Radar Beam */}

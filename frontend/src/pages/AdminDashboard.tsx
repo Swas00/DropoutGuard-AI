@@ -39,14 +39,20 @@ import {
   Line, 
   CartesianGrid 
 } from "recharts";
-import { api, DashboardStats, Student } from "../lib/api";
+import { 
+  api, 
+  DashboardStats, 
+  Student, 
+  DEFAULT_DASHBOARD_STATS, 
+  DEFAULT_STUDENTS 
+} from "../lib/api";
 import { AddStudentModal } from "../components/AddStudentModal";
 import { BulkImportModal } from "../components/BulkImportModal";
 import { LmsIntegrationModal } from "../components/LmsIntegrationModal";
 
 export const AdminDashboard: React.FC = () => {
-  const [stats, setStats] = useState<DashboardStats | null>(null);
-  const [students, setStudents] = useState<Student[]>([]);
+  const [stats, setStats] = useState<DashboardStats>(DEFAULT_DASHBOARD_STATS);
+  const [students, setStudents] = useState<Student[]>(DEFAULT_STUDENTS.slice(0, 10));
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [riskFilter, setRiskFilter] = useState("ALL");
@@ -334,9 +340,9 @@ export const AdminDashboard: React.FC = () => {
               N=1,250
             </span>
           </div>
-          <div className="h-64 w-full">
+          <div className="h-64 w-full min-h-[256px]">
             {stats ? (
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
                 <PieChart>
                   <Pie
                     data={stats.riskDistribution}
@@ -386,9 +392,9 @@ export const AdminDashboard: React.FC = () => {
               Correlation -0.74
             </span>
           </div>
-          <div className="h-64 w-full">
+          <div className="h-64 w-full min-h-[256px]">
             {stats ? (
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
                 <ScatterChart margin={{ top: 10, right: 20, bottom: 20, left: -10 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="rgba(255, 255, 255, 0.05)" />
                   <XAxis 
@@ -442,9 +448,9 @@ export const AdminDashboard: React.FC = () => {
               Stacked Tiers
             </span>
           </div>
-          <div className="h-64 w-full">
+          <div className="h-64 w-full min-h-[256px]">
             {stats ? (
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
                 <BarChart data={stats.departmentRisk} margin={{ top: 10, right: 10, left: -20, bottom: 20 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="rgba(255, 255, 255, 0.05)" />
                   <XAxis dataKey="department" tick={{ fill: "#64748b", fontSize: 10 }} interval={0} angle={-15} textAnchor="end" />
@@ -481,9 +487,9 @@ export const AdminDashboard: React.FC = () => {
               5-Month Trend
             </span>
           </div>
-          <div className="h-64 w-full">
+          <div className="h-64 w-full min-h-[256px]">
             {stats ? (
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
                 <LineChart data={stats.riskTrend} margin={{ top: 10, right: 20, left: -20, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="rgba(255, 255, 255, 0.05)" />
                   <XAxis dataKey="month" tick={{ fill: "#64748b", fontSize: 11 }} />
