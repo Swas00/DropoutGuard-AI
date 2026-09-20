@@ -465,11 +465,17 @@
     .badge-danger { background: rgba(244, 63, 94, 0.15); color: #fda4af; border: 1px solid rgba(244, 63, 94, 0.3); }
     .badge-warning { background: rgba(245, 158, 11, 0.15); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.3); }
 
-    /* Print styling: Converts deck into a beautiful multi-page PDF */
+    /* Print styling: Converts deck into a beautiful 16:9 multi-page PDF */
     @media print {
-      body {
-        background: #ffffff !important;
-        color: #0f172a !important;
+      @page {
+        size: 16in 9in;
+        margin: 0;
+      }
+      html, body {
+        background: #070b14 !important;
+        color: #f8fafc !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
       }
       .top-toolbar, .bottom-bar, .speaker-notes-drawer {
         display: none !important;
@@ -478,29 +484,23 @@
         margin: 0 !important;
         padding: 0 !important;
         display: block !important;
+        background: #070b14 !important;
       }
       .slide {
         display: flex !important;
         page-break-after: always !important;
         break-after: page !important;
-        min-height: 100vh !important;
+        height: 100vh !important;
+        width: 100vw !important;
+        max-width: none !important;
         border-radius: 0 !important;
         border: none !important;
-        background: #ffffff !important;
-        color: #0f172a !important;
+        background: #070b14 !important;
+        color: #f8fafc !important;
         box-shadow: none !important;
-        padding: 40px !important;
-      }
-      .slide-title {
-        color: #0f172a !important;
-      }
-      .stat-num {
-        color: #4f46e5 !important;
-      }
-      .card {
-        background: #f8fafc !important;
-        border-color: #e2e8f0 !important;
-        color: #0f172a !important;
+        padding: 48px 64px !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
       }
     }
   </style>
