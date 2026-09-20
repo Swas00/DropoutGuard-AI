@@ -20,7 +20,8 @@ import {
   Activity,
   UserPlus,
   UploadCloud,
-  Zap
+  Zap,
+  RotateCcw
 } from "lucide-react";
 import { 
   PieChart, 
@@ -579,57 +580,75 @@ export const AdminDashboard: React.FC = () => {
         </div>
 
         {/* Data Table */}
-        <div className="overflow-x-auto rounded-2xl border border-white/[0.12] shadow-xl">
-          <table className="w-full text-left text-xs border-collapse min-w-[760px]">
-            <thead>
-              <tr className="border-b border-white/[0.12] text-slate-300 bg-[#0b1120] font-mono">
-                <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Student Dossier</th>
-                <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Program / Sem</th>
-                <th 
-                  className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px] cursor-pointer hover:text-white transition-colors"
-                  onClick={() => handleSort("attendance")}
-                >
-                  <div className="flex items-center gap-1">
-                    <span>Attendance</span>
-                    <ArrowUpDown className="w-3 h-3 text-slate-400" />
-                  </div>
-                </th>
-                <th 
-                  className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px] cursor-pointer hover:text-white transition-colors"
-                  onClick={() => handleSort("currentGpa")}
-                >
-                  <div className="flex items-center gap-1">
-                    <span>Current GPA</span>
-                    <ArrowUpDown className="w-3 h-3 text-slate-400" />
-                  </div>
-                </th>
-                <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Backlogs</th>
-                <th 
-                  className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px] cursor-pointer hover:text-white transition-colors"
-                  onClick={() => handleSort("riskScore")}
-                >
-                  <div className="flex items-center gap-1">
-                    <span>Dropout Risk</span>
-                    <ArrowUpDown className="w-3 h-3 text-slate-400" />
-                  </div>
-                </th>
-                <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Status</th>
-                <th className="py-3.5 px-4 text-right font-semibold uppercase tracking-wider text-[11px]">Action</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-white/[0.04] bg-[#070b14]">
-              {loading ? (
-                <tr>
-                  <td colSpan={8} className="py-14 text-center text-slate-400 font-mono">
-                    <span className="inline-block animate-spin mr-2">⟳</span> Ingesting telemetry records...
-                  </td>
+        <div className="overflow-hidden rounded-2xl border border-white/[0.12] shadow-xl">
+          <div className="sm:hidden px-4 py-2 text-[11px] text-slate-400 flex items-center justify-between border-b border-white/[0.08] font-mono bg-white/[0.02]">
+            <span>⇄ Swipe table horizontally to inspect all metrics</span>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs border-collapse min-w-[760px]">
+              <thead>
+                <tr className="border-b border-white/[0.12] text-slate-300 bg-[#0b1120] font-mono">
+                  <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Student Dossier</th>
+                  <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Program / Sem</th>
+                  <th 
+                    className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px] cursor-pointer hover:text-white transition-colors"
+                    onClick={() => handleSort("attendance")}
+                  >
+                    <div className="flex items-center gap-1">
+                      <span>Attendance</span>
+                      <ArrowUpDown className="w-3 h-3 text-slate-400" />
+                    </div>
+                  </th>
+                  <th 
+                    className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px] cursor-pointer hover:text-white transition-colors"
+                    onClick={() => handleSort("currentGpa")}
+                  >
+                    <div className="flex items-center gap-1">
+                      <span>Current GPA</span>
+                      <ArrowUpDown className="w-3 h-3 text-slate-400" />
+                    </div>
+                  </th>
+                  <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Backlogs</th>
+                  <th 
+                    className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px] cursor-pointer hover:text-white transition-colors"
+                    onClick={() => handleSort("riskScore")}
+                  >
+                    <div className="flex items-center gap-1">
+                      <span>Dropout Risk</span>
+                      <ArrowUpDown className="w-3 h-3 text-slate-400" />
+                    </div>
+                  </th>
+                  <th className="py-3.5 px-4 font-semibold uppercase tracking-wider text-[11px]">Status</th>
+                  <th className="py-3.5 px-4 text-right font-semibold uppercase tracking-wider text-[11px]">Action</th>
                 </tr>
-              ) : students.length === 0 ? (
-                <tr>
-                  <td colSpan={8} className="py-14 text-center text-slate-500 font-mono">
-                    No student records match the active criteria.
-                  </td>
-                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/[0.04] bg-[#070b14]">
+                {loading ? (
+                  <tr>
+                    <td colSpan={8} className="py-14 text-center text-slate-400 font-mono">
+                      <span className="inline-block animate-spin mr-2">⟳</span> Ingesting telemetry records...
+                    </td>
+                  </tr>
+                ) : students.length === 0 ? (
+                  <tr>
+                    <td colSpan={8} className="py-14 text-center text-slate-400 font-mono">
+                      <div className="flex flex-col items-center justify-center gap-3">
+                        <p className="text-sm">No student records match the active criteria.</p>
+                        <button
+                          onClick={() => {
+                            setSearch("");
+                            setRiskFilter("ALL");
+                            setCourseFilter("ALL");
+                            setPage(1);
+                          }}
+                          className="px-4 py-2 rounded-xl bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/40 text-xs font-semibold cursor-pointer transition-all inline-flex items-center gap-2 shadow-sm"
+                        >
+                          <RotateCcw className="w-3.5 h-3.5" />
+                          <span>Reset Filters & Show All</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
               ) : (
                 students.map((stu) => {
                   const isAnchor = stu.studentId === "STU1024";
@@ -733,6 +752,7 @@ export const AdminDashboard: React.FC = () => {
             </tbody>
           </table>
         </div>
+      </div>
 
         {/* Pagination Controls */}
         <div className="flex items-center justify-between pt-4 border-t border-white/[0.08] text-xs text-slate-400 font-mono">

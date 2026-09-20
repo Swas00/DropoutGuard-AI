@@ -106,7 +106,7 @@ Evaluated on the held-out test set:
 ---
 
 ## 6. Demonstration Scenario (`STU1024`)
-- **Profile:** Kavya Sharma (MCA, Semester 3)
+- **Profile:** Kavya Sharma (B.Tech Computer Science, Semester 4)
 - **Type:** Calibrated synthetic demonstration scenario (clearly labeled in UI)
 - **Indicators:** Attendance: 58%, Current GPA: 6.2 (Previous: 7.1, Trend: -0.9), Assignments: 50%, Backlogs: 2, Internal Marks: 61, Engagement: 55%
 - **Calibrated Risk Score:** **78% — HIGH**

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, ArrowUpDown, Eye, Users, AlertTriangle, UserPlus, UploadCloud, ChevronLeft, ChevronRight, Sparkles, SlidersHorizontal, Zap } from 'lucide-react';
+import { Search, ArrowUpDown, Eye, Users, AlertTriangle, UserPlus, UploadCloud, ChevronLeft, ChevronRight, Sparkles, SlidersHorizontal, Zap, RotateCcw } from 'lucide-react';
 import { api, Student } from '../lib/api';
 import { AddStudentModal } from '../components/AddStudentModal';
 import { BulkImportModal } from '../components/BulkImportModal';
@@ -185,6 +185,9 @@ export const StudentList: React.FC = () => {
 
       {/* Directory Table */}
       <div className="bento-box overflow-hidden border border-white/[0.12] shadow-2xl">
+        <div className="sm:hidden px-4 py-2 text-[11px] text-slate-400 flex items-center justify-between border-b border-white/[0.08] font-mono bg-white/[0.02]">
+          <span>⇄ Swipe table horizontally to inspect all metrics</span>
+        </div>
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs border-collapse min-w-[760px]">
             <thead>
@@ -235,8 +238,23 @@ export const StudentList: React.FC = () => {
                 </tr>
               ) : students.length === 0 ? (
                 <tr>
-                  <td colSpan={8} className="py-16 text-center text-slate-500 font-mono">
-                    No students match the selected filter criteria.
+                  <td colSpan={8} className="py-16 text-center text-slate-400 font-mono">
+                    <div className="flex flex-col items-center justify-center gap-3">
+                      <p className="text-sm">No students match the selected filter criteria.</p>
+                      <button
+                        onClick={() => {
+                          setSearch('');
+                          setRiskLevel('ALL');
+                          setCourse('ALL');
+                          setSemester('ALL');
+                          setPage(1);
+                        }}
+                        className="px-4 py-2 rounded-xl bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/40 text-xs font-semibold cursor-pointer transition-all inline-flex items-center gap-2 shadow-sm"
+                      >
+                        <RotateCcw className="w-3.5 h-3.5" />
+                        <span>Reset Filters & Show All Students</span>
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ) : (

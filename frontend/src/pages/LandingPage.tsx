@@ -171,7 +171,7 @@ export const LandingPage: React.FC = () => {
                       !
                     </div>
                     <div>
-                      <div className="font-bold text-white text-sm">Active Case Study: STU1024 (Kavya Sharma, MCA Sem 3)</div>
+                      <div className="font-bold text-white text-sm">Active Case Study: STU1024 (Kavya Sharma, B.Tech CS Sem 4)</div>
                       <div className="text-slate-300 text-[11px]">Primary drivers: 2 Course Backlogs (40.5%), GPA drop (-0.9), Attendance (58%)</div>
                     </div>
                   </div>
