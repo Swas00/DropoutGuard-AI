@@ -619,3 +619,102 @@ export function getFilteredMockStudents(params: {
     students: paginated
   };
 }
+
+export const DEFAULT_LMS_CONNECTORS: any[] = [
+  {
+    id: 'canvas',
+    name: 'Instructure Canvas LMS',
+    shortName: 'Canvas LMS',
+    protocol: 'LTI 1.3 Advantage (IMS Global)',
+    icon: 'Layers',
+    color: '#e11d48',
+    endpointUrl: 'https://canvas.apex.edu/api/v1',
+    clientId: 'apex-lti-canvas-prod-2026',
+    tokenMasked: 'canvas_sec_••••••••••••••••92a4',
+    courseIds: ['CS-301', 'CS-302', 'IT-204', 'EC-401', 'ME-305'],
+    autoSyncInterval: 'Every 6 Hours',
+    status: 'CONNECTED',
+    lastSyncTime: new Date(Date.now() - 2 * 3600000).toISOString(),
+    lastSyncStatus: 'SUCCESS (32 records updated)',
+    syncedCount: 850
+  },
+  {
+    id: 'moodle',
+    name: 'Moodle Academic Workspace',
+    shortName: 'Moodle LMS',
+    protocol: 'REST WebServices v2 (Token Auth)',
+    icon: 'BookOpen',
+    color: '#f59e0b',
+    endpointUrl: 'https://moodle.apex.edu/webservice/rest/server.php',
+    clientId: 'moodle-ws-client-01',
+    tokenMasked: 'mdl_tkn_••••••••••••••••4f81',
+    courseIds: ['CS-101', 'EE-201', 'CE-302'],
+    autoSyncInterval: 'Daily at 02:00 UTC',
+    status: 'CONNECTED',
+    lastSyncTime: new Date(Date.now() - 14 * 3600000).toISOString(),
+    lastSyncStatus: 'SUCCESS (18 records updated)',
+    syncedCount: 240
+  },
+  {
+    id: 'google_classroom',
+    name: 'Google Classroom for Higher Ed',
+    shortName: 'Classroom',
+    protocol: 'Google Workspace Education OAuth 2.0',
+    icon: 'GraduationCap',
+    color: '#10b981',
+    endpointUrl: 'https://classroom.googleapis.com/v1',
+    clientId: '984712039481-apexedu.apps.googleusercontent.com',
+    tokenMasked: 'ya29.a0AfH••••••••••••••••c19b',
+    courseIds: ['HUM-102', 'MATH-201'],
+    autoSyncInterval: 'Daily at 04:00 UTC',
+    status: 'CONNECTED',
+    lastSyncTime: new Date(Date.now() - 8 * 3600000).toISOString(),
+    lastSyncStatus: 'SUCCESS (12 records updated)',
+    syncedCount: 160
+  },
+  {
+    id: 'banner',
+    name: 'Ellucian Banner SIS',
+    shortName: 'Banner SIS',
+    protocol: 'Ellucian Ethos API / JDBC Adapter',
+    icon: 'Building2',
+    color: '#6366f1',
+    endpointUrl: 'https://banner.apex.edu:8443/api/ethos',
+    clientId: 'banner-ethos-apex-sys',
+    tokenMasked: 'ethos_key_••••••••••••••••77dd',
+    courseIds: ['ALL_ACTIVE_SECTIONS'],
+    autoSyncInterval: 'Real-time Webhook Stream',
+    status: 'CONNECTED',
+    lastSyncTime: new Date(Date.now() - 45 * 60000).toISOString(),
+    lastSyncStatus: 'SUCCESS (Full Registry Sync)',
+    syncedCount: 1250
+  }
+];
+
+export const DEFAULT_LMS_HISTORY: any[] = [
+  {
+    id: 'SYNC-001',
+    provider: 'canvas',
+    providerName: 'Instructure Canvas LMS',
+    timestamp: new Date(Date.now() - 2 * 3600000).toISOString(),
+    status: 'SUCCESS',
+    recordsProcessed: 32,
+    attendanceDeltaAvg: '+1.4%',
+    assignmentRateDeltaAvg: '+2.8%',
+    riskTransitions: { toCritical: 0, toLow: 3, unchanged: 29 },
+    message: 'Telemetry ingest complete. 3 students improved from Medium to Low risk.'
+  },
+  {
+    id: 'SYNC-002',
+    provider: 'banner',
+    providerName: 'Ellucian Banner SIS',
+    timestamp: new Date(Date.now() - 24 * 3600000).toISOString(),
+    status: 'SUCCESS',
+    recordsProcessed: 1250,
+    attendanceDeltaAvg: '0.0%',
+    assignmentRateDeltaAvg: '+0.4%',
+    riskTransitions: { toCritical: 1, toLow: 2, unchanged: 1247 },
+    message: 'Scheduled nightly census sync completed without schema errors.'
+  }
+];
+
