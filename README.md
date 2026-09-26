@@ -1,6 +1,5 @@
 # DropoutGuard AI 🎓🛡️
 ### AI-Powered Early-Warning and Intervention System for Student Dropout Risk
-**HackDevengers 2.0 • Open Innovation Track • 24-Hour Hackathon Project**
 
 > **Core Workflow: Detect ➔ Explain ➔ Intervene ➔ Monitor**
 
